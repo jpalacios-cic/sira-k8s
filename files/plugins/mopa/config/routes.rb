@@ -1,0 +1,1 @@
+get '/projects/:project_id/mopa', :to => 'mopa#index'

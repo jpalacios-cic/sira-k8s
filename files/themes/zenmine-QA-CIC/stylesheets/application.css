@@ -1,0 +1,15 @@
+/* Zenmine Theme version 5.0, Copyright (C) 2019-2022 - Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* INITIALIZE */
+/**********************************************************/
+
+@import url(default.css);
+@import url(icons.css);
+@import url(forms.css);
+@import url(plugins.css);
+@import url(style.css);
+@import url(admin.css);
+@import url(mobile.css);
+@import url(version.css);
+@import url(../customize/customize.css);

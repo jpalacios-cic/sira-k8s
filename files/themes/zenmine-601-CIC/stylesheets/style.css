@@ -1,0 +1,3831 @@
+/* Zenmine Theme version 6.0.1, Copyright (C) 2019-2025 - Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* DEFAULT */
+/**********************************************************/
+
+
+h1, h2, h3, h4{
+	font-weight:500;
+}
+
+html{
+	height:100%;
+	font-size: 62.5%;
+}
+
+html>body #content {
+    min-height: initial;
+}
+
+body{    
+	font-size:1.3rem;
+	font-weight: 400;
+	height:100%;
+	background-color: #F7F7F7;
+}
+
+body.action-login, body.action-lost_password, body.action-register{
+    height: 100%;
+}
+
+body.action-login{
+	background-color:#fff;
+}
+
+body:not(.action-login):not(.action-lost_password):not(.action-register) #main{
+	background-color: transparent;
+	padding: 0.5% 1.5%;
+}
+
+em.info{
+	display: inline-block;
+	width: 100%;
+}
+
+body:not(.action-login):not(.action-register):not(.action-lost_password) #main #content{
+ 	/*position:relative;*/
+	width: 85%;
+    display: inline-block;
+    vertical-align:top;
+    /*transition: .3s;*/
+}
+
+body pre, body code, body pre span, body code span {
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace;
+}
+
+.transition{
+	transition:.3s;
+}
+
+body:not(.action-login):not(.action-register):not(.action-lost_password) #main.nosidebar #content {
+    width: 100%;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.full-width{
+	width: 99% !important
+}
+
+.sidebar-hide{
+	margin-left: -14% !important
+}
+
+.sidebar-hide{
+	opacity:0;
+}
+
+.version-overview .table{
+	width:70%;
+}
+
+.openclose::before{
+	font-family: 'zenmine';
+    content: "\e831";
+    transform: rotate(270deg);
+    display: inline-block;
+    color: #d2c7c7;
+    font-size: 22px;
+    position: absolute;
+    /*top: 5px;*/
+    margin-left: -42px;
+    cursor: pointer;
+}
+
+.openclose:hover:before{
+    color: #000;
+}
+
+#sidebar{
+	color: hsla(0, 0%, 70%, 1)
+}
+
+.action-done_ratio #wrapper, .controller-boards.action-new #wrapper, .controller-checklist_templates #wrapper, .controller-repositories #wrapper, .controller-versions #wrapper, .controller-issue_categories #wrapper, .controller-deal_imports #wrapper, .controller-contact_imports #wrapper, .controller-reports #wrapper, .controller-agile_versions #wrapper, .controller-search #wrapper, body.controller-users.action-show, body.controller-people_work_experiences #wrapper, body.controller-agile_charts #wrapper, body.controller-people_holidays #wrapper, body.controller-people_calendars #wrapper, body.controller-departments #wrapper, body.controller-deals #wrapper, body.controller-contacts #wrapper, body.controller-files #wrapper, body.controller-wiki #wrapper, body.controller-documents #wrapper, body.controller-agile_boards #wrapper, body.controller-news #wrapper, body.controller-timelog #wrapper, body.controller-my #wrapper, body.controller-welcome #wrapper, body.controller-people #wrapper, body.controller-projects #wrapper, body.controller-activities #wrapper, body.controller-issues #wrapper, body.controller-gantts #wrapper, body.controller-calendars #wrapper{	
+}
+
+body.controller-agile_boards #sidebar, body.controller-users.action-show #sidebar, body.controller-agile_charts #sidebar, body.controller-people_holidays #sidebar, body.controller-people_calendars #sidebar, body.controller-departments #sidebar, body.controller-deals #sidebar, body.controller-contacts #sidebar, body.controller-files #sidebar, body.controller-wiki #sidebar, body.controller-documents #sidebar, body.controller-news #sidebar, body.controller-timelog #sidebar, body.controller-my #sidebar, body.controller-welcome #sidebar, body.controller-people #sidebar, body.controller-projects #sidebar, body.controller-activities #sidebar, body.controller-issues #sidebar, body.controller-gantts #sidebar, body.controller-calendars #sidebar{
+
+}
+
+.action-login #wrapper, .action-login #wrapper2, .action-login #wrapper3, .action-login #content{
+	background: #fff;
+}
+
+#wrapper{
+	overflow:hidden;
+	margin:0 auto;
+	background: none;
+	min-height:100%;
+}
+
+#wrapper2{
+	min-height:100%;
+}
+
+#content{
+	padding:0;
+	border:0;
+}
+
+.block-receiver{
+	border: 0;
+	padding: 8px 2px;
+}
+
+.dragging .block-receiver{
+}
+
+.dragging .block-receiver .mypage-box{
+	margin: 6px;
+}
+
+body:not(.controller-search) .box, .controller-issues .attachments, #tab-content-versions > form > fieldset,
+.wiki.wiki-page,
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    line-height: 1.5em;
+    border: 0;
+    word-wrap: break-word;
+    border-radius: 4px;
+}
+
+.controller-boards table.list th, .controller-boards .table-list-header{
+	width:10%;
+	text-align:center;
+}
+
+body:not(.controller-search) .box,
+#tab-content-versions > form > fieldset,
+.wiki.wiki-page,
+#commit-keywords,
+.message{
+	background-color: #fff;
+	padding: 2%;
+	clear: both;
+}
+
+.wiki.wiki-page{
+	margin-top:60px;
+}
+
+.controller-reports .table th{
+	width:10%;
+	text-align:center;
+}
+.list.messages th{
+	width:10%;
+
+}
+.list.messages td{
+	text-align:center!important;
+}
+
+.list.messages td.subject{
+	text-align:justify!important;
+}
+
+#message_subject,
+#message_content{
+	text-align:left;
+}
+
+fieldset > legend {
+    font-weight: 600;
+    font-size: 1.5rem;
+    width: 100%;
+    float: left;
+    margin-bottom: 14px;
+    margin-top: 4px;
+    padding:0;
+}
+
+.controller-issues .attachments{
+	background-color: #f7f7f7;
+}
+
+#attachments_form label, #attachments_form .attachments_form{
+	float:left;
+}
+
+#version-summary,
+.controller-favorite_projects fieldset,
+.controller-agile_boards #content form:nth-of-type(2),
+.controller-contacts #query_form #query_form_content, .controller-people_calendars #query_form,
+#tab-content-boards .table-list-row, #helpdesk_tickets,
+.list.messages, .list.boards, .helpdesk_chart,
+.controller-timelog.action-index #content form:nth-of-type(2),
+.controller-contacts.action-index #contacts_notes, 
+.controller-issues.action-index .autoscroll, .splitcontentright > .list.issue-report,
+.splitcontentleft > .list.issue-report,
+.list.files, body:not(.admin):not(.controller-users) .projects.root > .root,
+.controller-departments.action-index #content .autoscroll,
+.controller-people_holidays.action-index #content form,
+body:not(.action-contacts_notes) .controller-contacts #content form,
+.controller-timelog #content #query_form_content,
+body:not(.action-contacts_notes):not(.controller-timelog) #query_form_content,
+#people_list, .issues.box, .spent_time.box, .members.box,
+.autoscroll, .controller-reports .table, .list.roles, .list.trackers, .list.issue_statuses, .list.custom_fields, .list.enumerations,
+.action-info .table,  .mypage-box#block-news,
+.controller-roles.action-index .table, .controller-groups.action-index .table, .controller-trackers.action-index .table, .controller-issue_statuses.action-index .table, .custom_fields.action-index .table, .controller-enumerations.action-index .table .list,
+.controller-gantts.action-show #query_form,
+.controller-evms.action-index #query_form {
+    background: #FFF;
+	display: block;
+    margin: 1% 0 0 0;
+    padding: 25px 25px 20px 25px;
+    border-radius: 4px;
+	border:0;
+	padding:0;
+}
+
+.list.roles, .list.trackers, .list.issue_statuses, .list.enumerations, .controller-enumerations.action-index .table .list{
+	display:table;
+	margin-bottom: 2em;
+}
+
+.list.custom_fields{
+	margin:0;
+	display:table
+}
+
+.mypage-box#block-news,
+.mypage-box#block-documents{
+	padding: 25px 25px 20px 25px!important
+}
+
+.mypage-box#block-activity{
+	padding: 0 0 2px 20px;
+	overflow: hidden;
+}
+
+.mypage-box span::before{
+	display:none!important
+}
+
+.mypage-box#block-news h3,
+.mypage-box#block-documents h3{
+	padding:0
+}
+
+/*Repositories*/
+
+.controller-repositories .openclose,
+.controller-my .openclose,
+.controller-admin .openclose,
+.controller-files .openclose,
+.controller-boards .openclose,
+/*.controller-wiki .openclose,*/
+.controller-timelog .openclose,
+.controller-projects .openclose,
+.tab-content .box.tabular.settings::before{
+	display:none;
+}
+
+.controller-repositories #browser{
+	overflow:hidden;
+}
+
+.controller-repositories .autoscroll form{
+	padding:2%;
+}
+
+.controller-repositories table.list td.id {
+padding-left: 60px !important;
+}
+
+/*path {
+    stroke:#5679eb;
+    fill: #2f2c2f;
+    stroke-width: 1px;
+}*/
+
+/*circle {
+    stroke: #5679eb;
+    fill: #fff;
+}*/
+
+
+/*div.revision-graph{
+	margin-left:-14px;
+}*/
+
+#browser tr:last-child{
+	border:none;
+}
+
+body:not(.controller-calendars):not(.controller_gantts):not(.action-contacts_notes):not(.controller-timelog) #query_form_with_buttons{
+	padding: 0;
+}
+
+#query_form_with_buttons .buttons{
+	display:none;
+}
+
+.controller-issues.action-index .autoscroll, .controller-timelog.action-index #content form:nth-of-type(2){
+	margin:0;
+}
+
+table.progress tbody:before{
+	content:none !important;
+}
+
+table.progress {
+    width: 80px;
+}
+
+table.progress td.closed {
+    background-color: #1DC9A0;
+}
+
+table.progress td.done {
+    background-color: #1DC9A0;
+}
+
+table.progress td.todo {
+    background: #f3f3f3 none repeat scroll 0%;
+    position: relative;
+    top: 0;
+}
+
+p.percent {
+    font-size: 1.2rem;
+}
+
+p.progress-info {
+    clear: left;
+    font-size: 100%;
+    margin-top: 0;
+    color: #777;
+}
+
+.version-overview table.progress {
+    width: 40em;
+    height: .4em;
+}
+
+.version-overview table.progress td {
+    height: .4em;
+}
+
+table.progress td:last-child {
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+table.progress td:first-child {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+tr.issue td.done_ratio table.progress {
+	height: 2px;
+	float:inherit;
+}
+
+tr.issue.idnt td.subject {
+    background: none;
+}
+
+tr.issue.idnt td.subject:before {
+    font-family: 'zenmine';
+    content:"\e856";
+    position: relative;
+    left: -4px;
+}
+
+#content{
+	width:100%;
+	background-image: none;
+	background-color: transparent !important;
+}
+
+.people_header, .contacts_header, .filters h2{
+	display: inline-block;
+}
+
+body:not(.admin) #content > h2, body:not(.admin) #content > div > h2, body:not(.admin) .people_header, body:not(.admin) .contacts_header, .filters h2 {
+	color: #333333;
+}
+
+body:not(.admin) #content > h2 {
+    /*padding-bottom: 20px;*/
+}
+
+#content #login-form input[type=text], #content #login-form input[type=password], .action-lost_password #content #mail{
+	border: 1px solid #ccc;
+    border-radius: 4px;
+    width:100%;
+    font-size:1.8rem;
+    padding: 5px;
+}
+
+#login-form table {
+    border: none;
+    background-color: transparent;
+	margin: 0 auto;
+}
+
+.action-lost_password h1{
+	display:none;
+}
+
+.action-lost_password input.btn.btn-sm.btn-primary{
+	float:none!important;
+	display:table!important;
+}
+
+.controller-favorite_projects .filters h2:before, #content > h2:before, #content > div > h2:before, .people_header:before, .contacts_header:before, .controller-people h2:before{
+	font-size: 36px !important;
+}
+
+body:not(.controller-projects) form{
+	display: block;
+}
+
+body:not(.admin):not(.controller-my):not(.controller-projects):not(.action-new) form:nth-child(0){
+	margin-bottom:-20px;
+	margin-top:-20px;
+}
+
+#quick-search form{
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+#projects-quick-search, #header form {
+    float: left;
+    width: 200px;
+    position: relative;
+}
+
+#project-jump.drdn {
+  margin-left:2%;
+  float:left;
+}
+
+.drdn-items>*:focus{
+	border:0;
+}
+
+#projects-quick-search {
+    float: none;
+    text-align: left;
+    padding-left: 4px!important;
+    width: 100%!important;
+    height: 32px;
+    font-size: 1.4rem;
+}
+
+.issues.box,
+.spent_time.box,
+.members.box,
+#projects-index ul.projects li.root{
+	padding:2%;
+}
+
+:not(.controller-boards.action-show) p.subtitle {
+    font-size: 16px;
+    margin: -10px 0 30px 48px;
+	font-style: normal;
+}
+
+.autoscroll{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#api-access-key.autoscroll{
+	padding-bottom: 20px;
+}
+
+table.list, .table-list{
+	border:0;
+}
+
+table.list.files:before, table.list.odd-even.time-entries::before {
+	display:none
+}
+
+table.issue-report{
+	width:initial;
+}
+
+.version-overview table.progress{
+	width:98%;
+}
+
+.icon{
+	padding-left:0;
+}
+
+.collapsible table:not(#filters-table) tbody tr:hover{
+	background:none !important;
+}
+
+table.list th, .table-list-header{
+	padding: 20px 0 15px 0;
+	background:none;
+	font-size: 1.3rem;
+	font-weight: 500;
+	border-bottom: 1px solid #cccccc;
+	line-height: 11px;
+}
+
+th.checkbox.hide-when-print{
+ 	width:30px;
+}
+
+.controller-projects .list.issue-report th{
+	text-align:center!important;
+}
+
+td.subject {
+    min-width: 180px;
+}
+
+table.list >  tbody >  tr >  td:not(.status){
+	height: 26px;
+	padding: 4px 8px;
+}
+
+table.issues tr td.status {margin-top: 6px;}
+
+table.list td.checkbox{
+	/*padding: 4px 8px;*/
+}
+
+table.list td.id {
+	padding-left: 0 !important;	
+}
+
+table .context-menu-selection,  table .context-menu-selection:hover{
+    background-color: #f9f9f9!important;
+    color: #232020 !important;
+}
+
+div.journal .contextual {
+    margin-right: 10px;
+    margin-top: 10px;
+	margin-bottom: 0;
+}
+
+.contextual {
+    right: 0;
+    top: 0;
+    float: right;
+    white-space: nowrap;
+    line-height: 1.4rem;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+#tab-content-activities .contextual {
+	margin-top: -70px;
+}
+
+.icon.icon-stats.btn.btn-sm.btn-primary,
+#revision_selector,
+#branch,
+#rev{
+	display: inline-block;
+	vertical-align:middle;
+}
+
+.icon.icon-stats.btn.btn-sm.btn-primary{
+	text-decoration: none;
+}
+
+#revision_selector #branch{
+	background:#fff;
+	border-radius:3px;
+	margin-right:5px; 
+}
+
+.controller-calendars #query_form #query_form_with_buttons .contextual{
+	color: transparent;
+	width: 100%;
+}
+
+.controller-calendars #query_form #query_form_with_buttons .contextual a {
+    border: 1px solid #ccc;
+    padding: 4px 16px 10px 16px;
+    border-radius: 3px;
+    color: #BBBBBB;
+    text-decoration:none;
+}
+
+.controller-calendars #query_form #query_form_with_buttons .contextual a[accesskey=p]{
+	float:left;
+}
+
+.controller-calendars #query_form #query_form_with_buttons .contextual a[accesskey=n]{
+	float:right;
+}
+
+.controller-calendars #query_form #query_form_with_buttons .contextual a:hover{
+	background-color:#BBBBBB;
+	color:#FFFFFF;
+}
+
+.controller-calendars table.cal{
+	border: none
+}
+
+.controller-calendars table.cal thead th.week-number {
+    width: auto;
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    border-left: none;
+    background: #efefef;
+}
+
+.controller-calendars table.cal thead th, table.cal td.week-number{
+	border: 1px solid #d7d7d7;
+	vertical-align: middle;
+}
+
+.controller-calendars table.cal td p.day-num {
+    text-align: right;
+    font-size: 1.4rem;
+    padding-right:7px;
+}
+
+.controller-calendars div.issue{
+	padding:4px;
+}
+
+.controller-calendars .issue {
+    /*padding: 2px 6px 2px 2px !important;*/
+    text-decoration: none;
+}
+
+.controller-calendars a.issue {
+    white-space: nowrap;
+}
+
+.tip{
+	font-size:.7rem;
+}
+
+.controller-wiki .contextual,
+.controller-documents .contextual{
+	margin-top:0;
+}
+
+.icon-zoom-in,
+.icon-zoom-out{
+	margin-top:40px;
+}
+
+#content .context-menu-selection a, #content .context-menu-selection a:hover, #content table.contacts.index tr.context-menu-selection td, #content table.people.index tr.context-menu-selection h2{
+    color: #5679EB!important;
+}
+
+
+.mypage-box .contextual{
+	float: right;
+    white-space: nowrap;
+    line-height: 1.4em;
+    margin: 5px 0px;
+    padding-left: 10px;
+    margin-top: 18px;
+    font-size: 11px;
+}
+
+.mypage-box .contextual .icon-close{
+	display: inline-block;
+    vertical-align: middle;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    font-size: 0;
+    background-image: none;
+    margin-top: -10px;
+    height: 18px;
+}
+
+.mypage-box .contextual .icon-settings::before{
+    display:none!important;
+}
+
+.mypage-box .contextual .icon-settings {
+    padding: 0;
+    margin-right: 2px;
+    height: 22px;
+    margin-top: 4px;
+    overflow: visible;
+    background-image:none;
+    font-size: 0;
+}
+
+.mypage-box#block-calendar .filtercheckmark{
+	display:none!important
+}
+
+
+.mypage-box h3 .icon-add{
+	padding:0;
+}
+
+.mypage-box .contextual .ui-sortable-handle, .mypage-box .contextual .sort-handle{
+ 	margin-right: 6px;
+    margin-left: 14px;
+    background-image: none;
+    margin-top: 4px;
+ }
+
+.wiki.wiki-page .icon-only::after{
+	display:none;
+}
+
+.controller-reports .icon-only.icon-zoom-in{
+	margin:0;
+	display: contents;
+	font-size:0;
+}
+
+.mypage-box .contextual:first-child{
+	margin-right:2%;
+}
+
+.mypage-box .contextual a,  body:not(.admin) .sort-handle{
+	color: #666;
+	opacity: 0.3;
+	vertical-align:initial;
+}
+
+.mypage-box:hover .contextual a:hover, .sort-handle:hover{
+	text-decoration:none;
+	opacity: 1 !important;
+	cursor: move;
+}
+
+.mypage-box .contextual > *:before{
+	font-size:1.5rem !important;
+}
+
+.admin .sort-handle{
+	width:26px;
+	height:20px;
+}
+
+a.sort{
+	padding-right: 10px;
+}
+
+#projects-index{
+    font-size: 1.6rem;
+	display: inline;	
+}
+
+body:not(.controller-search):not(.controller-invoices) fieldset{
+	margin-bottom: 20px;
+	position:relative;
+}
+
+#errorExplanation, div.flash, .nodata, .warning, .conflict {
+    font-size: 14px;
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    width: 50%;
+    margin: 1rem auto;	
+    padding: 1rem;
+}
+
+.action-login div.flash,  .action-register div.flash{
+    position: absolute;
+    z-index: 999;
+    right: 14%;
+    bottom: 18%;
+    width: 20%;
+}
+
+.action-lost_password div.flash{
+	margin: 6% auto -6% auto;
+}
+
+#errorExplanation ul{
+	display: inline-flex;
+	list-style: none;
+}
+
+.nodata, .warning {
+    text-align: center !important; 
+	color:#fff;
+}
+
+.nodata{
+	background-color:transparent;
+	clear:both;
+	color:#c3c3c3;
+}
+
+.warning {
+	background-color: #e86b95;
+}
+
+hr {
+    width: 100%;
+    height: 1px;
+    background: #fff;
+    border: 0;
+    margin: 25px 0;
+}
+
+html > body .tabular p{
+	/*overflow: inherit;*/
+	padding-left:initial;
+}
+
+table.cal thead th, table.cal td.week-number{
+	color:#252525;	
+	text-align: center;
+	font-weight:400;
+}
+
+table.cal td p.day-num {
+    text-align: right;
+    font-size: 0.9rem;
+    padding-right: 7px;
+}
+
+table.cal div.issue {
+	position:relative;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+table.cal .tooltip{    
+	position: unset;
+}
+
+.ui-widget-header {
+    background: #f3f5f7;
+    border: 0;
+    color: #000;
+    font-weight: bold;
+    border-radius: 2px;
+}
+
+#content .tabs ul{
+	height: 38px;
+}
+
+.action-new #content .tabs ul{
+	height:auto;
+}
+
+.icon-multiple {
+    background: none;
+}
+
+
+/**********************************************************/
+/* HEADER */
+/**********************************************************/
+
+.action-login #header h1:before, 
+.action-register #header h1:before, 
+.action-lost_password #header h1:before { 
+	content: "";	
+}
+
+.action-register #header h1,
+.action-login #header h1,
+.action-login #account li:first-child,
+.action-register #account li:last-child {
+    display: none;
+}
+
+.action-login #top-menu a,
+.action-register #top-menu a,
+.action-lost_password #top-menu a,
+.action-login #top-menu a::after,
+.action-register #top-menu a::after,
+.action-lost_password #top-menu a::after{
+	color:#BBBBBB;
+}
+
+.action-register #top-menu, .action-login #top-menu, .action-lost_password #top-menu{
+	background:transparent;
+	position:absolute;
+	z-index: 77;
+}
+
+#top-menu {
+    width: 98%;
+    padding-left:1%;
+    padding-right:1%;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+}
+
+#loggedas{
+	order:2;
+}
+
+#top-menu > ul {
+	order:1;
+	margin: 0;
+	padding: 0;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.action-login #account,
+.action-register #account,
+.action-lost_password #account{
+  position:absolute;
+  right:1%;
+}
+
+#top-menu li {
+  float:left;
+  list-style-type:none;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  white-space:nowrap;
+}
+
+#top-menu a, #top-menu #loggedas{
+	font-size:1.2rem;
+	margin: 0;
+	text-decoration:none;
+	font-weight: 400;
+	display:table-cell;
+	vertical-align:middle;
+	height:32px;
+}
+
+#top-menu #loggedas, #top-menu .my-account{
+	font-size:0;
+	vertical-align:middle;
+	display: table-cell;
+	line-height: 0;
+}
+
+.user{
+ font-size:1.2rem;
+}
+
+#top-menu li, #loggedas{
+	padding: 0 14px;
+	vertical-align: middle;
+}
+
+#account li:last-of-type{
+	border-right:0;
+	list-style:none;
+}
+
+ #header{
+ 	min-height: 59px;
+	margin-bottom: 0;
+	background-color:#fff;
+	padding-top: 1px;
+	padding-right: 0;
+	padding-bottom: 0;	
+    background-repeat: no-repeat;
+	background-size: auto 60px;
+    background-position-y: 0px;
+    background-position-x: 14px;
+	padding-left:0;
+}
+
+/*#header:not(.sticky) #main-menu {*/
+#header #main-menu {
+	margin-bottom: 1.5rem;
+}
+
+.action-login #header, .action-register #header, .action-lost_password #header{
+	-webkit-box-shadow: inherit;
+    -moz-box-shadow: inherit;
+    box-shadow: inherit;
+	text-align:center;
+	width:99%;
+	pointer-events:none;
+}
+
+.action-login #header:after, .action-register #header:after, .action-lost_password #header:after {    
+    margin-top: 12px;
+    display: block;
+}
+
+#header h1 {
+    font-size: 2.2rem;
+    padding-left: 68px;
+    margin: 15px 4px;
+    overflow: visible;
+    background-position: 0;
+    font-weight: 400;
+    max-width:50%;
+    white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.action-login #header h1, .action-register #header h1, .action-lost_password #header h1 { 
+	padding-left: 0px;
+}
+
+#header h1 .breadcrumbs{
+	margin-top: -6px;
+}
+
+#main-menu, #main-menu li a.new-object{
+	left: 0px;	
+}
+
+#main-menu{
+	background:#fff;
+	position:relative;
+	height:50px;
+}
+
+#main-menu ul:not(.menu-children) {
+    margin-left: 1%;
+}
+
+#main-menu li{
+    margin: 0;
+    padding:0;
+    height: 50px;
+    overflow: hidden;
+}
+
+#main-menu .menu-children li{
+	height: 44px;
+}
+
+#main-menu li a{	
+	color: #333333;
+}
+
+
+#main-menu li a::before{		
+	color: #BBBBBB;
+	opacity:0.5;
+}
+
+#main-menu li a.new-object{
+  background-color: transparent;
+  font-weight:300 !important;
+  padding: 3px 20px 2px 20px !important;
+  vertical-align: middle;
+}
+
+#main-menu li a.new-object:after{
+  height:0 !important;
+}
+
+table.list td.buttons a, div.buttons a {
+    margin-right: 0.6em;
+    display: inline;
+    font-size: 0;
+}
+
+table.list td.buttons a::before, div.buttons a::before {
+	font-size:1.4rem;
+}	
+
+span.toggle-multiselect::before,body.controller-workflows.action-edit form p a::before, body.controller-workflows.action-permissions form p a::before{
+    color: #ccc;
+    border: 1px solid #ccc!important;
+    position: absolute;
+    padding: 12px 14px!important;
+    border-radius: 4px;
+    margin-top: 1px;
+}
+
+body.controller-workflows.action-edit form p a img, body.controller-workflows.action-permissions form p a img{
+	display:none;
+}
+
+.drdn .drdn-trigger{
+	padding:11px 14px;
+	border-radius:3px;
+}
+
+body:not(.controller-wiki) .drdn .drdn-trigger .icon-actions{
+	padding:0;
+	transition:.5s
+}
+
+#sidebar .icon-del:before {
+    display: none;
+}
+
+tr.project .icon, tr.user .icon, /*tr.givable .icon,*/ tr.builtin .icon, td.buttons .icon {
+    background: transparent!important;
+    color: #bbb!important;
+    font-size: 0;
+}
+
+td.buttons .icon::before{
+	font-size:1.4rem;
+}
+
+tr.project .icon:hover, tr.user .icon:hover, tr.givable .icon:hover, tr.builtin .icon:hover, td.buttons .icon:hover {
+    color: #000!important;
+}
+
+tr.project.idnt td.name span {
+    background: none;
+}
+
+.controller-welcome .register::after{
+	content:"\e8ea";
+	margin-left:7px;
+}
+
+.controller-welcome .login::after{
+	margin-left:7px;
+}
+
+.buttons .icon-checked:not(.disabled){
+	background: rgba(29,201,160,.15) !important;
+}
+
+.buttons .icon-checked:not(.disabled):hover{
+	background: rgba(29,201,160) !important;
+	color:#FFFFFF !important;
+}
+
+.gantt_subjects .icon::before,
+.gantt_subjects .filtercheckmark,
+#gantt_area .filtercheckmark{
+	display:none!important
+}
+
+.time-entries .activity::before{
+	display:none;
+}
+
+.icon-checked:not(.disabled){
+	color: #1DC9A0!important;
+}
+
+.table .issues::before{
+	display:none
+}
+
+body:not(.controller-users) .projects.root .root ul.projects li{
+	display: inline-block;
+    vertical-align: middle;
+    width: 95%;
+}
+
+.drdn-content .projects::before,
+#top-menu .projects::before,
+.controller-projects .projects.root::before{
+	display:none;
+}
+
+.wiki.description::before{
+	display:none;
+}
+
+#main-menu .menu-children li:before {
+	border:0;
+}
+
+#main-menu li a, #main-menu li a:hover{
+	font-weight: 400;
+	padding: 12px 14px 22px 14px;
+	display:inline-block;   
+	font-size: 1.3rem;
+}
+
+#main-menu.tabs a:after {
+    display: block;
+    content: '';
+    position: relative;
+    top: 18px;
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+}
+
+#main-menu.tabs .menu-children a::after {
+	transform: scaleX(0);
+    transform-origin: 50% 50%;
+    transition: transform 125ms ease-in-out;
+ }
+
+ #main-menu.tabs .menu-children a:hover::after {
+	transform: scaleX(1);
+ }
+
+#main-menu.tabs .menu-children a:after {
+    bottom: 0;
+    height: 1px;
+}
+
+#main-menu.tabs a:hover:after {
+    content: '';
+    height: 1px;
+    position: relative;
+    top: 19px;
+    opacity:1;
+}
+
+#main-menu.tabs a.selected:after {
+    position: relative;
+    top: 19px;
+    display: block;
+    height: 1px;
+    content: '';
+    opacity:1;
+}
+
+.menu-children a:hover{
+	background: #F7F7F7 !important;
+	color: #000 !important;
+	border: none !important
+}
+
+#main-menu li .selected::before, #main-menu li a:hover::before{
+	opacity:1;
+}
+
+#main-menu li a:hover, #main-menu li a.selected:hover{	
+	background: #FFF;
+    color: #5578EB;
+}
+
+#main-menu .menu-children{
+	border:0;
+	-webkit-box-shadow: 0 6px 8px 1px rgba(0,0,0,0.14);
+    -moz-box-shadow: 0 6px 8px 1px rgba(0,0,0,0.14);
+    box-shadow: 0 6px 8px 1px rgba(0,0,0,0.14);
+    margin-left: -1%;
+}
+
+#main-menu .menu-children li a{
+	padding: 14px 40px !important;
+	background: transparent;
+	color: #555;
+	width: 100%;
+}
+
+#main-menu.tabs .menu-children li a:hover::after{
+	top:14px;
+}
+
+td.priority div, .priority.attribute .value > div{
+	text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    min-width: 60px;
+    text-align: center;
+}
+
+/**********************************************************/
+/* STATUS COLORS */
+/**********************************************************/
+
+
+table.issues tr td.status, .issue .attributes .attribute.status .value {
+  /*background-color: transparent !important;*/
+  /*padding: 2px 5px;
+  border-radius: 3px;*/
+  font-size: 1rem;
+  /*display: inline-block;
+  width: auto; */
+  text-transform: uppercase;
+  /*text-align: center;*/
+}
+
+
+
+div.issue .attributes .attribute{
+	padding-left:0;
+}
+
+div.issue .attributes .attribute div{
+	/*background:transparent!important;*/
+}
+
+div.issue .attributes .attribute .normal .value{
+	width: fit-content;
+	padding: 2px 10px!important;
+}
+
+div.issue .attributes .attribute .inmediate .value{
+	width: fit-content;
+	padding: 2px 10px!important;
+}
+
+div.issue .attributes .attribute .low .value{
+	width: fit-content;
+	padding: 2px 10px!important;
+}
+
+div.issue .attributes .attribute .urgent .value{
+	width: fit-content;
+	padding: 2px 10px!important;
+
+}
+
+div.issue .attributes .attribute .high .value{
+	width: fit-content;
+	padding: 2px 10px!important;
+}
+
+.list thead a, .issues th a::after {
+    color: #333 !important;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.list thead a{
+	margin-left:14px;
+}
+
+.list thead a:hover, .issues th a:hover:after  {
+    color: #000!important;
+    text-decoration: none;
+}
+
+#new-object{
+	font-size: 30px !important;
+	font-weight:500 !important;
+}
+
+#account ul li:nth-child(1){
+	display:block;
+}
+
+.breadcrumbs .separator {
+	font-size: 14px;
+}
+
+.breadcrumbs a {
+	font-size: 11px;
+}
+
+.current-project, 
+#header h1,  
+#header .breadcrumbs a {
+	text-overflow: ellipsis;
+} 
+
+.current-project {
+	min-height: 18px;
+    display: block;
+}	
+
+a.sort.asc {
+	background-image: none;
+}
+
+a.sort.desc {
+	background-image:none;
+}
+
+a.sort::after{
+	opacity:1 !important;
+}
+
+#top-menu a, #top-menu a::before, #top-menu a::after{
+    opacity: 0.8;
+}
+
+#top-menu a:hover, #top-menu a:hover::before, #top-menu a:hover::after{
+    opacity: 1;
+}
+
+
+/**********************************************************/
+/* SEARCH */
+/**********************************************************/
+
+#search-results-counts + h3{
+	margin-top:30px;
+}
+
+#search-results {
+    margin-left: 0;
+}
+
+dt.project::before {
+    content: "\e838";
+}
+
+.controller-search .box{
+	background-color:#ffffff;
+	border:none;
+	padding:1%;
+}
+
+div#activity dd, #search-results dd {
+    font-size: 1rem;
+}
+
+
+/**********************************************************/
+/* SIDEBAR */
+/**********************************************************/
+
+body:not(.action-login):not(.action-register):not(.action-lost_password) #sidebar{
+	position:relative;
+    float: left;
+    width: 13%;
+    margin-right: 2%;
+    background: none!important;
+    box-shadow: none!important;
+    height: 100%;
+    display: inline-block;
+    vertical-align: top;
+    /*transition: .3s;*/
+}
+
+#sidebar a{
+	color:#666;
+}
+
+#sidebar a, #sidebar p label{
+	position:relative;
+	font-size: 1.3rem;
+	font-weight: 400;
+	text-decoration:none;
+	display: inline-block;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    margin-right:2px;
+    margin-bottom: 4px;
+}
+
+a.issue.closed, a.issue.closed:link, a.issue.closed:visited {
+    text-decoration: line-through !important;
+}
+
+#sidebar a.selected {
+    background-color: transparent;
+}
+
+#sidebar .contextual a{
+	font-size: 1.2rem;
+}
+
+
+#sidebar p label .checkbox{
+	margin-left: 0;
+	margin-right: -2px;
+}
+
+#sidebar h3, .controller-settings fieldset > legend{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 1.1rem !important;
+	padding: 0;
+	overflow-x: hidden;
+    text-overflow: ellipsis;
+    opacity: 0.4;
+}
+
+#sidebar h3 {
+	margin: 22px 0 16px 0;
+}
+
+#sidebar > h3:first-of-type{
+	margin-top:8px;
+}
+
+#sidebar ul li {
+    overflow: hidden;
+    width: 100%;
+	text-overflow: ellipsis;
+	position:relative;
+}
+
+#sidebar h4 {
+    border-bottom: 0;
+    padding-bottom: 0;
+    padding-top: 10px;
+    color: #ccc;
+    font-weight: 100;
+}
+
+#menuhide{
+	height:20px;
+	width:20px;
+	margin-top: 8px;
+    position: absolute;
+	right: 0;
+    margin-right: 8px;
+	cursor: pointer;
+	padding:4px;	
+	color: rgba(255,255,255,0.5);
+}
+
+#menuhide.open{
+	transform: scaleX(-1);
+    -moz-transform: scaleX(-1); /* Firefox */
+    -webkit-transform: scaleX(-1); /* Chrome - Safari */
+    -o-transform: scaleX(-1); 
+}
+
+#menuhide.closed{
+	transform: scaleX(1);
+    -moz-transform: scaleX(1); /* Firefox */
+    -webkit-transform: scaleX(1); /* Chrome - Safari */
+    -o-transform: scaleX(1);
+	margin-right: -8px;
+}
+
+#menuhide:hover{
+	color: rgba(255,255,255,1);
+}
+
+#sidebar .wiki {
+    font-size: 1.1rem;
+    clear:both;
+}
+
+
+
+#sidebar .attributes tr td a {
+	word-break: break-all;
+	max-width:60%;
+}
+
+
+#sidebar .attributes tr td a:hover{
+	padding:5px !important;
+	margin-top:-5px;
+	margin-left:-5px;
+    max-width: 100%;
+    background: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1), 0 3px 8px rgba(0,0,0,0.07);	
+	color:#222 !important;
+}
+
+#sidebar hr {
+    background: rgba(255,255,255,0.2)!important;
+}
+
+
+#sidebar .icon-only.icon-del{	
+	padding-bottom: 0;
+}
+
+#sidebar .icon-only.icon-del:before{	
+	margin-left: 0;
+	font-size: 14px !important;
+}
+
+#sidebar .queries{
+	display: inline-block;
+}
+
+
+
+/**********************************************************/
+/* FOOTER */
+/**********************************************************/
+
+#footer, .action-login #footer, .action-register #footer, .action-lost_password #footer{
+	background: transparent;
+	border: none;
+	padding: 20px 0;
+	font-size: 12px;
+	color:#BBBBBB;
+}
+
+.action-login #footer, .action-register #footer, .action-lost_password #footer{
+	right:0;
+	width:50%;
+}	
+
+.action-login #footer a, .action-register #footer a, .action-lost_password #footer a{
+	width:40%;
+}
+
+#footer .bgr:after, #footer:after{
+	content: "- Zenmine Theme by bestredminetheme.com"
+}
+
+body:not(.admin):not(.action-login):not(.action-register):not(.action-lost_password) #footer {	
+	border-top:none;
+	margin-top: 20px;
+}
+
+
+/**********************************************************/
+/* LOGIN PAGE*/
+/**********************************************************/
+
+
+#hero{
+	width:50%;
+	height:100%;
+	float:left;
+	background-size:cover;
+    position:fixed;
+}
+
+.logo_login {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    height: 90px;
+    margin-bottom: 60px;
+    animation: pulse 1s;
+    width: 350px;
+    margin-top: -40px;
+}
+
+@keyframes pulse {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+#login-form label, label[for=mail]{
+	font-weight:400;
+	margin-bottom:6px;
+}
+
+.action-login #top-menu #account + ul, .action-register #top-menu #account + ul, .action-lost_password #top-menu #account + ul{
+	display:none;
+}
+
+.action-login #wrapper,  .action-lost_password #wrapper {
+	background-size: cover;
+}
+
+.action-login #content, .action-register #content, .action-lost_password #content{
+	height:100%;
+	/*overflow-y: scroll;*/
+	overflow-y: auto;
+}
+
+.action-login .gototop, .action-register .gototop, .action-lost_password .gototop{
+	display: none;
+}
+
+.action-login #header, .action-register #header, .action-lost_password #header {
+	background-color: transparent;
+	background-image: none;
+	position: absolute;
+	z-index: 10;
+	top: 4px;
+	padding-left: 0;
+}
+
+.action-login #header h1:before, 
+.action-register #header h1:before, 
+.action-lost_password #header h1:before {
+	position:relative; 
+	display:block;
+	margin-bottom:10px;
+	float:none;
+}
+
+.action-login #header h1, .action-register #header h1, .action-lost_password #header h1{
+	font-size: 14px;
+	font-weight:700;
+	position: absolute;
+    margin-top: 8px;
+}
+
+.action-register #content, .action-lost_password #content{
+	text-align:center;	
+}
+
+.action-login #login-form, 
+.action-register .box, 
+.action-lost_password .box{
+	border: none;	
+	font-size: 1.1rem;
+	border-radius: 4px;
+	text-align: left;
+}
+ 
+#username{
+	margin-bottom: 35px!important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition-delay: 999999s;
+    -webkit-transition: color 999999s ease-out, background-color 999999s ease-out;		
+}
+
+.action-login #login-form input[type=text], 
+.action-login #login-form input[type=password]{
+	border-radius: 0;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+}
+
+.settings input,
+#tab-content-users label{
+	display:inline-block!important;
+	vertical-align: initial;
+}
+
+.settings input[type=number], #person_data input[type=number]{
+    border-radius: 4px;
+    min-height: 32px;
+    min-width: 30px;
+    border: 1px solid #ccc;
+}
+
+.settings .filtercheckmark{
+	left:38.6%;
+	top:8px!important
+}
+
+.scm_name .filtercheckmark {
+	left:0;
+	top:5px!important;
+}
+
+#settings_host_name,
+#settings_repositories_encodings,
+#settings_mail_from,
+#settings_mail_handler_excluded_filenames{
+	width:33rem;
+}
+
+.settings .jstBlock{
+	width: 80%;
+	display: inline-block;
+	vertical-align:top;
+}
+
+body.controller-projects.action-settings .jstBlock{
+	width:90%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+body.controller-projects.action-settings #project_is_public + .filtercheckmark,
+body.controller-projects.action-settings #project_inherit_members + .filtercheckmark{
+	left: 108px;
+    top: 8px;
+}
+
+body.controller-projects.action-settings #project_inherit_members {
+    top: 8px!important;
+    width: 25px!important;
+    height: 16px!important;
+}
+
+fieldset.box .tabular.settings::before{
+	display: none
+}
+
+#tab-content-projects .settings label{
+	display:block;
+}
+
+#tab-content-timelog .settings p label.block .filtercheckmark{
+	left:0;
+	top:5px!important
+}
+
+#settings_timelog_required_fields_ + .block{
+	margin-top:-42px;
+}
+
+#tab-content-projects .settings p label.block .filtercheckmark {
+    left: 105%;
+    top: 6px!important;
+}
+
+#settings_timelog_accept_0_hours + .filtercheckmark{
+	left:38.4%;
+}
+
+#tab-content-projects .settings .filtercheckmark {
+    top: 2px!important;
+}
+
+#tab-content-issues .inline{
+	position: relative;
+	display: inline;
+}
+
+.inline .filtercheckmark {
+    left: 102%;
+    top: 6px!important;
+}
+
+.issue-card .user{ 
+	padding-right: 20px;
+	/*margin-top:-4px;*/
+}
+
+#tab-content-attachments textarea,
+#tab-content-mail_handler textarea{
+	width:60%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#tab-content-mail_handler .block{
+	display: initial !important;
+}
+
+#tab-content-mail_handler .block .filtercheckmark{
+	left:0;
+	top:5px!important
+}
+
+#notified_events, #notified_events label{
+	position:relative;
+}
+
+label[for="settings_new_project_user_role_id"]{
+	display: inline-block!important;
+}
+
+input[type="file"]{
+	border: 0 !important;
+}
+
+.action-register #wrapper, .action-register #wrapper2, .action-register #wrapper3, .action-login #wrapper, .action-login #wrapper2, .action-login #wrapper3,  .action-lost_password #wrapper, .action-lost_password #wrapper2, .action-lost_password #wrapper3 {
+    height: 100%;
+}
+
+.action-register #footer,
+.action-login #footer, .action-lost_password #footer {	
+	bottom: 0;
+    position: absolute;  
+    z-index:777; 
+    background-color: #fff; 
+}
+
+.action-login #main, .action-register #main, .action-lost_password #main{
+	display: table;
+	width: 100%;
+    height: 100%;
+    background-color:#ffffff;
+}
+
+.action-register #content,
+.action-login #content{
+    background-size: 50% 100%;
+}
+
+.action-register .box{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.action-register #login-form, .action-login  #login-form, .action-lost_password  #content form{
+    background-color: #ffffff;
+    border: none;
+    margin: 0 auto;
+    width: 50%;
+    padding: 60px 0;
+    height: 100%;
+    display: table !important;
+    float:right;
+}
+
+#login-form-openid {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+
+#login-form-openid input[type=submit]{
+	margin: 0 auto !important;
+}
+
+option {
+    background: #fff;
+    border: none;
+}
+
+select:hover,
+option:hover,
+select:focus > option:checked{
+	/*background:#F7F7F7;*/
+}
+
+select > option:hover{
+    color: #F7F7F7;
+    cursor: pointer;
+}
+
+#issue-form select:focus > option:checked{
+	background:#eeeeee;
+	color:#000000;
+}
+
+#issue-form select:focus > option:checked, #issue-form select >  option:hover{
+	color:#000000;
+}	
+
+.action-register #main{
+	background:#fff;
+}
+
+.action-register #content h2, .action-lost_password #content h2{
+	display:none;
+}
+
+.action-login #login-form label[for=password] a, 
+.action-login label[for=autologin], label[for='pref_hide_mail'], em.info{
+	color: #BBBBBB;
+	letter-spacing: 0;
+	font-size:1.1rem;	
+}
+
+.form-control, input[type=text], input[type=date], input[type=file], input[type=password], textarea{
+    font-size: 1.3rem;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding: .375rem .75rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    background-color: transparent !important;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    border-radius: 4px;
+    min-height: 28px;
+    min-width: 30px;
+}
+
+.attachments_fields input.filename {
+    width: auto;
+}
+
+form fieldset #name{
+	width:auto;
+	display:inline-block;
+	text-align:left;
+}
+
+.controller-projects input{
+	text-align:left!important;
+}
+
+input[value="Apply"],
+.box.tabular .floating input[type="checkbox"]{
+	/*width: auto!important*/
+}
+
+input[value="Copy"],
+input[value=Save]{
+	width:auto!important
+}
+
+.box.tabular#project_modules{
+	margin-top: 0;
+}
+
+.box.tabular#project_modules label,
+.box.tabular#project_trackers label,
+.box.tabular#project_issue_custom_fields label{
+	padding-left:7px;
+	display:inline-block!important;
+}
+
+.tab-content#tab-content-activities td{
+	position: relative;
+}
+
+.action-login #username,
+.action-login #password{
+	text-align:center;
+}
+
+#content .action-register input[type=text], 
+#content .action-register input[type=password], 
+#content .action-register select, 
+#content .action-lost_password input[type=text]{
+	background-color: rgba(255,255,255, 0.05) !important;
+	padding: 10px;	
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+body:not(.admin).login::after, 
+.register::after,
+#top-menu ul li:first-child a::after, 
+.logout::after,
+.my-account::after{
+	font-family: 'zenmine' !important;
+    display: inline-block;
+    width: 14px;
+    font-weight:normal;
+    font-size:17px;
+    font-weight: 100;
+    position: relative;
+    top: 3px;
+    left: 0;
+}
+
+.home,
+.logout,
+.my-account {
+	font-size:0!important;
+}
+
+#new_project input[type=text]{
+	text-align: left;
+}
+
+#new_project textarea{
+	text-align:left;
+}
+
+#login-form form, .action-lost_password form .box.tabular{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.logo_login, .action-login form > input, .action-login form > label, .action-register #new_user p, .action-lost_password p{
+	width: 320px !important;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.action-login input[type=submit], 
+.action-register input[type=submit], 
+.action-lost_password input[type=submit]{
+	border:0;
+	font-size: 1.2rem;
+	padding: 12px 24px !important;
+	width: auto !important;
+	margin: 50px auto 0 auto !important;
+	cursor:pointer;
+    border-radius: 4px;
+}
+
+.action-login input[type=submit], .action-register input[type=submit]{
+	float: none !important;
+}
+
+
+.action-login #quick-search, .action-register #quick-search, .action-lost_password #quick-search{
+	display:none;
+}
+
+#login-form a.lost_password {
+    width: 320px;
+    margin: 0 auto;
+    display: block;
+    text-align: right;
+    float: none;
+}
+
+
+/**********************************************************/
+/* USER */
+/**********************************************************/
+
+#user_login, #user_firstname, #user_lastname, #user_mail, #my_account_form select, #user_form select, #user_identity_url{
+	width: inherit;
+}
+
+.vcard{
+	border-spacing: 0;
+}
+
+/**********************************************************/
+/* MY PAGE */
+/**********************************************************/
+
+.mypage-box{
+	padding: 0;
+	position:relative;
+	background: #FFF;
+	border: 0;
+}
+
+.mypage-box p{
+	padding: 10px 20px;
+	margin: 0;
+}
+
+.mypage-box form{
+	background-color: #FFFFFF;
+	display:block;
+}
+
+.mypage-box form td{
+	height:20px;
+}
+
+.mypage-box h3{
+	font-weight: 500;
+    font-size: 1.8rem;
+    padding: 17px 25px 10px 25px;
+}
+
+.controller-welcome #content{	
+	font-size:1.4rem;
+}
+
+.controller-welcome .wiki:before{
+	font-size: 70px !important;
+}
+
+#my-page .list th.checkbox, #my-page .list td.checkbox{
+	display:table-cell;
+}
+
+.mypage-box input[type=submit]{
+	margin-left:20px;
+}
+
+.mypage-box input[type=submit]+a{
+	background-color:#f7f7f7;
+	color:#bbb;
+}
+
+.mypage-box input[type=submit]+a:hover{
+	color:#ffffff;
+	background-color:#bbb;
+}
+
+
+/**********************************************************/
+/* OVERVIEW */
+/**********************************************************/
+
+.controller-projects.action-show .list.issue-report{
+	width:100%;	
+}
+
+
+/**********************************************************/
+/* PROJECTS */
+/**********************************************************/
+
+#projects-index ul.projects div.root a.project{
+	font-size: 2rem;
+	font-weight:400;
+	text-decoration:none;
+}
+
+.my-project.icon-user{
+	padding-left:0 !important;
+}
+
+.projects .project:hover{
+	text-decoration:none;
+	color: #333;
+}
+
+label[for=closed]{
+	margin-right: 20px;
+	position:relative;
+}
+
+#projects-index + p{
+	text-align: left !important;
+	margin-top: 20px;
+}
+
+.my-project{
+	background:none;
+	color: #555;
+}
+
+.my-project:hover:after{
+	opacity: 1;
+}
+
+.controller-projects.action-show div:not(.contextual) > .icon::before{
+	content:"";
+}
+
+.controller-projects.action-show div:not(.contextual):not(.drdn-items):not(.mypage-box):not(.mypage-box > div) > .icon, .controller-projects.action-show .box h3{
+	background-image: none;
+	padding-left:0;
+	display: inline-block;
+}
+
+#projects-index .wiki.description{
+	font-size:12px;
+	margin-left:0px;
+    line-height: 1.5;
+}
+
+#projects-index ul.projects li.root>ul.projects {
+   padding: 0 10px;
+   border-left: 1px solid #BBBBBB;
+}
+
+.projectshide {
+	cursor:pointer;
+	margin-right: 6px;
+	display: inline-block;
+}
+
+#projects-index ul.projects li.child{
+	margin-bottom:4px;
+	margin-top:4px;
+}
+
+.controller-projects.action-settings .list{
+	background-color:#fff;
+}
+
+.controller-projects.action-show .splitcontentleft .wiki{
+	/*margin-top: -25px;*/
+	/*font-weight: 600;*/
+	margin-bottom: 20px;
+}
+
+button.jstb_zenedit, button.jstb_zenedit.theme{
+	background: none !important;
+    border: none !important;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.jstEditor.zen button.jstb_zenedit.theme{
+	display:none !important;
+}
+
+
+/**********************************************************/
+/* ACTIVITY */
+/**********************************************************/
+
+div#activity dl{
+	margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 36px;
+}
+
+div#activity dd span.author{
+	padding-top: 5px;
+    display: block;
+}
+
+#activity dt img.gravatar {
+    float: left;
+    margin: -4px 1em 1em 0;
+    height: 30px;
+    width: 30px;
+}
+
+div#activity dl .icon{
+	background-image:none;
+}
+
+div#activity dl dt{
+    margin-left: 40px;
+    border-top: 1px solid;
+    padding-top: 16px;
+    padding-left: 14px;
+    border-color: #999999;
+    background-color:#FFFFFF;
+}
+
+div#activity dt.grouped, div#activity dd.grouped {
+    margin-left: 86px;
+    border:none;
+}
+
+div#activity dl dt::before {
+    font-family: 'zenmine';
+    content: "\e8f8";
+    position: absolute;
+    bottom: -50%;
+    left: -45px;
+    font-size: 17px;
+    background: #fff;
+    border-radius: 100%;
+    padding: 6px;
+    z-index: 1;
+    color: #BBBBBB;
+}
+
+div#activity dl dt::after {
+    font-family: 'zenmine';
+    content: "\e8ae";
+    position: absolute;
+    left: -5px;
+    transform: rotate(48deg);
+    bottom: -25%;
+    color: #fff;
+    background: #fff;
+}
+
+div#activity dt a{	
+	font-weight: 700;
+}
+
+.controller-activities .previous{
+	margin: 0;
+    float: left;
+    width: auto;
+}
+
+.controller-activities .next{
+	margin: 0;
+    float: right;
+    width: auto;
+}
+
+div#activity dt .time{
+	font-size: 1.2rem;
+	color: #666;
+	margin-right: 16px;
+	font-weight: 500;
+}
+
+dt{
+	position:relative;
+}
+
+dt .time{
+	position:absolute;
+	right:0;
+}
+
+#activity dt a{
+	font-size:1.3rem;
+	color: #5578eb; 
+}
+
+div#activity dt.me .time{
+	border-bottom: 0;
+	border-radius: 4px;
+	color: #fff;
+	background: #bbbbbb;
+	padding: 4px 8px;
+	margin-right:10px;
+	font-weight: 900;
+}
+
+div#activity dd{
+	margin-bottom: 14px;
+	/*margin-bottom: 25px;*/
+	background-color: #FFFFFF;
+	font-size: 1.3rem;
+	padding-top: 2px;
+    padding-bottom: 12px;
+    padding-left: 59px;
+}
+
+.controller-activities h2{
+	margin-left: 0 !important;
+}
+
+#activity{
+	position:relative;
+	padding-top:20px;
+}
+
+#activity::before {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    content: 'l';
+    top: 20px;
+    left: 7px;
+    background: #ccc;
+    font-size: 0;
+    z-index: 1;
+}
+
+#activity h3:before{
+    font-family: 'zenmine';
+    display: inline-block;
+    content: "";
+    border-radius: 20px;
+    border: 2px solid;
+    padding: 8px;
+    margin-left: -30px;
+    background: #f3f5f7;
+    position: absolute;
+    border-color:#999999;
+}
+
+#activity h3, #activity h4{
+    font-size: 16px;
+    margin-bottom: 0;
+    padding: 0px 0px 0px 40px;
+    border-radius: 4px;
+	border-bottom:none;
+	position:relative;
+	z-index:777;
+	margin-left: -12px;
+}
+
+#activity dt img.gravatar {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+	margin-top: -5px;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+
+/**********************************************************/
+/* ROADMAP */
+/**********************************************************/
+
+.version-article .icon-only.icon-edit:after{
+	content:none;
+}
+
+.version-article, #roadmap{
+	padding:20px;
+	border-radius:3px;
+	background-color:#fff;
+}
+
+.controller-versions #sidebar ul li{
+	display: -webkit-inline-box;
+}
+
+.list.versions-planning-board{
+	background-color: #FFF;
+	border-radius: 5px;
+}
+
+div#roadmap .related-issues {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.version-overview{
+	display:inline-block;
+	width:60%;
+}
+
+div.version-completed.version-closed, div.version-incompleted.version-open{
+      margin-top: 40px;
+}
+
+
+/**********************************************************/
+/* PEOPLE */
+/**********************************************************/
+
+.controller-people #content h2:before{
+	margin-right:0;
+}
+
+table.people.index {
+    border-top: 0 !important;
+    border-right: 0 !important;
+    border-left: 0 !important;
+}
+
+div.person.details{
+	background:none !important;
+	border:0 !important;
+}
+
+.select-users fieldset label{
+	clear:both;
+}
+
+.controller-people_holidays  table.list td:last-child{
+	text-align:right;
+}
+
+.controller-people_holidays  table.list td:last-child a{
+	margin-right:20px;
+	letter-spacing: 1px;
+}
+
+.select2-container--default .select2-selection--single {
+    background: #fff url(../images/vcard.png) no-repeat 2px 50%;
+    border: 0 !important;
+    border-radius: 2px;
+    height: 30px !important;
+}
+
+.select2-selection__arrow{
+	background-image: url(../images/chevron-down.svg) !important;
+	/*top: initial !important;
+    right: 14px !important;*/
+    top: 12px !important;
+    right: 5px !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	border:none !important;
+}
+
+.ui-icon-closethick{
+	background:none !important;
+	text-indent:initial;
+	color:initial;
+}
+
+.select2-dropdown{
+	border: 0 !important;
+	padding: 10px !important;
+}
+
+.select2-results__option {
+    padding: 8px 20px !important;
+}
+
+.filter .select2-selection--multiple .select2-search--inline .select2-search__field {
+    min-width: 150px;
+}
+
+/**********************************************************/
+/* CONTACTS */
+/**********************************************************/
+
+
+.buttons {
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.mypage-box td.buttons{
+    vertical-align: bottom !important;
+}
+
+div.contact {
+    border: 0 !important;
+}
+
+table.note_data td.name h4 {
+    letter-spacing: 0 !important;
+    margin: 10px 0 0 0 !important;
+    padding-top: 5px !important;
+	position: relative;
+}
+
+table.note_data .content.preview {
+    padding: 0% 2% 2% 2%;
+}
+
+.controller-contacts #recently_viewed table td a{
+	padding:0;
+}
+
+.icon-phone {
+    background-image: none!important;
+}
+
+.icon-fav-off, .icon-fav {
+    background-image: none!important;
+}
+
+
+
+/**********************************************************/
+/* DEALS */
+/**********************************************************/
+
+
+.controller-deals #recently_viewed table td a{
+	padding:0;
+}
+
+.total{
+}
+
+div.deal {
+    padding: 10px !important;
+    margin-bottom: 10px !important;
+    border: 0 !important;
+}
+
+
+/**********************************************************/
+/* TIME */
+/**********************************************************/
+
+
+#criterias + a{
+	float: none !important;
+	display: inline-block;
+}
+
+#new_time_entry a:last-of-type{
+	border: 0;
+    background-color:rgba(187,187,187,0.15);
+    color: #bbb;
+    display: inline-block;
+}
+
+#new_time_entry a:last-of-type:hover{
+	background-color:#bbb;
+	color:#fff;
+}
+
+
+/**********************************************************/
+/* GANTT */
+/**********************************************************/
+
+.controller-gantts .buttons a {
+	float: none !important;
+	display: inline-block;
+}
+
+.controller-gantts .buttons {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    margin-top: 1em;
+	display:initial !important;
+}
+
+
+/**********************************************************/
+/* CALENDAR */
+/**********************************************************/
+
+table.cal{
+	background-color:#fff;
+}
+
+p.cal.legend .starting, p.cal.legend .ending, p.cal.legend .starting.ending{
+	padding-left:0;
+}
+
+.controller-calendars .buttons a {
+	float: none !important;
+	display: inline-block;
+}
+
+.controller-calendars .buttons {
+    font-size: 0.9em;
+    margin-bottom: 0;
+    margin-top: 1em;
+    z-index: -1;
+}
+
+.controller-people_calendars .buttons{
+	display:flex;
+}
+
+.cal .odd{
+	background-color: #f6f7f8;
+}
+
+.cal div.issue {margin-bottom:5px!important}
+
+table.cal td.today {
+    background: #fbfdff;
+    border: 2px solid #109225;
+}
+
+table.cal td.today p.day-num {
+    font-size: 1.4rem;
+    color: #109225;
+}
+
+table.cal td.today p.day-num::before {
+    font-family: "zenmine";
+    content: "\e8f8";
+    font-size: 1.4rem;
+    color: #109225;
+    padding-right: 4px;
+}
+
+
+/**********************************************************/
+/* ISSUES */
+/**********************************************************/
+
+body.controller-issues #content{
+	min-height: 680px;
+}
+
+.icon-reload, .icon-reload::before,.icon-cancel, .icon-cancel::before{
+  color:#999!important;
+}
+
+.edit_issue .splitcontent{
+	/*overflow: initial;*/
+}
+
+#attributes .splitcontentleft{
+	clear: both;
+}
+
+	
+.splitcontentleft, #list-left {
+    float: left;
+    width: 49%;
+    border-radius: 3px;
+    padding-right: 8px;
+}
+
+
+div.issue .attributes .attribute .label {
+    width: 170px;
+    margin-left: 0;
+    float: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #666;
+    position: relative;
+    margin-bottom: 14px;
+    text-transform: none;
+    font-weight:500;
+    font-size:1.3rem;
+}
+
+table.list tbody tr:hover {
+    background-color: #f6f7f8;
+}
+
+div.issue .attributes {
+    margin-top: 2em;
+    padding: 2%;
+    border: 1px solid #ccc;
+    display: grid;
+}
+
+.journal.has-details .details li {
+    /*clear: both;*/
+    list-style: none;
+}
+
+.journal.has-details .details li:before {
+	font-family: 'zenmine';
+    content: "\e8e5"!important;
+    padding-right: 5px;
+    margin-left: -15px;
+    padding-right: 6px;
+}
+
+div.issue form{
+	display:inline;
+}
+
+div.issue .description {
+	padding-top: 5px;
+}
+
+form#new-relation-form input, form#new-relation-form a{
+	float:none;
+	border-width:2px;
+}
+
+#relation_issue_to_id, form#new-relation-form select{
+	background-color:#efefef;
+}
+
+div.issue .next-prev-links{
+	margin-bottom:20px;
+}
+
+div.issue div.subject h3 {
+	font-size: 24px;
+}
+
+div.issue{	
+	background-color: #FFF;
+	border: 0;
+	padding: 30px;
+	margin-bottom: 30px;
+}
+
+#history .journal_message{
+    margin-left: 30px;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+#history {
+	border: none;
+	padding-right:0;
+}
+
+body.avatars-on div.journal {
+    padding-left: 0;
+}
+
+div.journal {
+    overflow: auto;
+    margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	border: 1px solid #efefef;
+}
+
+div.journal h4{	
+	background-color: #fff;
+    /*padding: 10px 45px;*/
+	padding: 10px;
+    border-bottom: 1px dotted #d6d6d6;
+}
+
+#history div:target h4::after, #history div:target h4 span{
+    /*color: #DDEEFF;*/
+	background-color: #DDEEFF;
+}
+
+div.journal h4 .journal-link{	
+	float:right;
+	/*margin-right:-20px;*/
+}
+
+div.journal h4::after {
+    font-family: 'zenmine';
+    content: "\e8ae";
+    position: absolute;
+    /*left: 2px;*/
+    left: 16%;
+    transform: rotate(48deg);
+    color: #fff;
+    background: #fff;
+    border: 1px solid #ececec;
+    z-index: -1;
+}
+
+div.journal ul.details, ul.revision-info {
+    color: #666666;
+    margin-bottom: 14px;
+	padding-left: 40px;
+	padding-right: 25px;
+}
+
+div.journal .wiki, div.journal.private-notes .wiki{
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-left: 0;
+	padding-bottom: 15px;
+}
+
+div.journal form{
+	padding:10px;
+}
+
+div.journal form >  p{
+	color: transparent;
+	display: flex;
+}
+
+div.journal form > p a{
+    background-color: rgba(167,167,167,0.15);
+    color: #bbb;
+    padding: 12px 20px;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 2px;*/
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin-right: 10px;
+	text-decoration:none;
+	border-radius: 4px;
+}
+
+div.journal form p a:hover{
+    color: #fff !important;
+    background-color: #bbb;
+
+}
+
+div.journal.has-notes{
+	margin-left:30px;
+}
+
+#history div.journal.has-notes{
+	margin-left:0;
+}
+
+.journal del>i:first-of-type, .journal i:first-of-type {
+	color: #8a2657;
+}
+
+.journal i:last-of-type {
+	color: #17612f;
+	font-style: normal;
+}
+
+span.journal-actions {
+    position: relative;
+    margin-right: 20px;
+}
+
+span.journal-actions a {
+    text-decoration: none;
+}
+
+span.journal-actions a:hover {
+    font-weight: 700;
+}
+
+p.other-formats {
+	margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    color:#BBBBBB;
+}
+
+.controller-activities p.other-formats{
+	margin-top:0;
+}
+
+.other-formats a{
+	color:#999;
+}
+
+.other-formats span:first-child {
+    margin-left: 7px;
+}
+
+h4 {
+    padding-bottom: 10px;
+}
+
+#all_attributes .icon.icon-edit {
+    padding: 6px 16px;
+    display: inline-table;
+}
+
+.controller-issues .attachments .contextual .icon-only.icon-edit{
+	width:18px;
+	text-decoration: none;
+	background: none;
+}
+
+#issue_tree .contextual,
+#relations .contextual{
+	position:relative;
+	z-index:7;
+}
+
+#ticket_data .icon-email{
+	padding-left:0;
+}
+
+#issue-form.edit_issue{
+	color: transparent;
+}
+
+.edit_issue fieldset{
+	margin-bottom: 20px;
+}
+
+.conflict-details .conflict-journal {
+	text-align:left;
+}
+
+#issue-form.edit_issue .conflict +  p {
+	color:initial;
+}
+
+#issue-form.edit_issue .conflict +  p +  p{
+	margin-bottom:40px;
+	display:table-caption;
+}
+
+#issue-form.edit_issue .conflict +  p + p + .box{
+	clear:both;
+}
+
+.controller-queries.action-edit .block_columns span.checkbox, .controller-queries.action-edit .block_columns + p span.checkbox {
+	float:none;
+	margin-right: 2px;
+    margin-left: -20px;
+}
+
+.check_box_group.bool_cf label{
+	display:inline-block;
+	width:initial;
+}
+
+.check_box_group.bool_cf label input{
+	width:initial;
+}
+
+
+.controller-issues.action-show .splitcontent + p{
+	clear:both;
+
+}
+
+.controller-issues .tabular p{
+	min-height: 3rem;
+}
+
+.check_box_group span.checkbox:not(.on){
+	background:#f1f1f1;
+}
+
+#checklist_form_items{
+	display: inline-block;
+}
+
+
+/**********************************************************/
+/* WIKI */
+/**********************************************************/
+
+.controller-wiki.action-show #wiki_form p a{
+	border-width:2px;
+	display: inline-block;
+}
+
+div.wiki *:not(pre)>code, div.wiki>code {
+    background: #3e5b7629;
+    padding: 0.1em 0.1em;
+    border-radius: 0.1em;
+    color: #808080;
+}
+
+/**********************************************************/
+/* NEWS */
+/**********************************************************/
+
+#news-form input[type=submit] + a +a{
+	float:left;
+}
+
+.controller-news .news-article{
+    background: #fff;
+    padding: 2%;
+    margin-bottom: 1%;
+    border-radius: 4px;
+}
+
+/**********************************************************/
+/* SETTINGS */
+/**********************************************************/
+
+.action-settings .tab-content{
+	margin-top:15px;
+}
+
+#tab-content-versions fieldset > *{
+	display:inline-block;
+	margin-right:10px;
+}
+
+#tab-content-versions fieldset{
+	width:97%;
+}
+
+.buttons .icon.icon-reload{
+	background-color: rgba(187,187,187,0.15) !important;
+}
+
+.icon.icon-reload.btn.btn-sm.btn-outline-dark, .icon-cancel.btn.btn-sm.btn-outline-dark{
+	background-color: rgba(187,187,187,0.15);
+}
+
+.icon.icon-reload{
+	background-color: rgba(187,187,187,0.15);
+}
+
+.icon.icon-reload:hover,.icon.icon-cancel:hover{
+	background-color: #BBBBBB !important;
+	color:#FFFFFF !important; 
+}
+
+.icon.icon-reload:hover::before, .icon.icon-reload.btn.btn-sm.btn-outline-dark:hover:before, .icon.icon-cancel.btn.btn-sm.btn-outline-dark:hover:before{
+	color:#FFFFFF !important; 
+}
+
+#tab-content-versions fieldset input[type=submit]{
+	padding:10px 14px !important;
+}
+
+#modules-form .box + p{
+	display:none;
+}
+
+#new-relation-form input[type="text"], #new-relation-form select {
+    border: 1px;
+    border: #ccc 1px solid;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+#new-relation-form p > *{
+	float:initial;
+}
+
+#new-relation-form input[type="submit"] + a {
+    border: 0;    
+}
+
+#project_modules.box a, #ajax-modal .icon.icon-checked{
+    margin-right: 6px;
+    padding: 0;
+    margin-left: 0;
+    border: none;
+}
+
+#project_modules.box a:hover{
+	background:none !important;
+}
+
+
+/**********************************************************/
+/* FORUM */
+/**********************************************************/
+
+
+table.boards a.board{
+	padding-left:0;
+}
+
+table.boards a.board::before{
+    margin-right: 4px;
+}
+
+.reply .icon.icon-comment, .reply .icon.icon-del, .reply .icon.icon-edit{
+	border:0;
+	padding:0;
+}
+
+.reply .icon.icon-comment:hover, .reply .icon.icon-del:hover, .reply .icon.icon-edit:hover{
+	background: transparent !important;
+}
+
+.message.reply {
+    background-color: #fff;
+    padding: 20px;
+    margin-top:21px;
+}
+
+#message-form span.checkbox{
+	float:none;
+	margin-right:0;
+	vertical-align: middle;
+    margin-left: -20px;	
+}
+
+
+/**********************************************************/
+/* CONTEXT MENU */
+/**********************************************************/
+
+#context-menu li{
+	padding: 0 !important;
+	border: 0 !important;
+}
+
+
+#context-menu li:hover {
+    border: 0 !important;
+    background-color: transparent !important;
+    border-radius: 0 !important;
+	padding: 0 !important;
+	color: #FFF !important;
+	background-repeat: no-repeat;
+}
+
+#context-menu ul{
+	border: 1px lightgrey !important;
+	padding: 15px !important;
+	box-shadow: 0 6px 8px 1px rgba(0,0,0,0.14);
+	border-radius: 4px!important;
+}
+
+#context-menu li a.icon{
+	background-image:none !important;
+	padding-top: 1px !important;
+	padding-bottom: 1px !important;
+	text-transform: none !important;
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    margin-bottom: 5px !important;
+}
+
+#context-menu a:hover, #context-menu .icon:hover{
+	color:#333 !important;
+	background-color: #efefef !important;
+}
+
+#context-menu .icon-del:hover, #context-menu .icon-lock:hover {
+	background-color:#ff000021!important;
+}
+
+#context-menu a:before, #context-menu a:after{
+	content:"" !important;
+	margin-right:0 !important;
+	font-size: initial !important;
+    vertical-align: initial !important;
+    margin-left: 0px !important;
+}
+
+
+#context-menu > ul > .folder > a:after{
+	content:"\e844";
+	font-family:"zenmine";
+	float:right;
+	padding-top: 6px;
+}
+
+#context-menu li a.submenu {
+	padding-right: 0 !important;
+    padding-left: 8px !important;
+}
+
+#context-menu a:hover{
+	border-radius: 0 !important;
+	border :0;
+}
+
+
+
+/**********************************************************/
+/* POPUP */
+/**********************************************************/
+
+.ui-dialog-content.ui-widget-content .buttons{
+	text-align:center;
+	margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.ui-dialog-content.ui-widget-content input[type='submit'], .ui-dialog-content.ui-widget-content input[type='button']{
+	border-radius:20px;
+	float: none;
+	background: transparent;
+	cursor: pointer;
+}
+
+.ui-dialog-content.ui-widget-content input[type='submit']:hover, .ui-dialog-content.ui-widget-content input[type='button']:hover{
+	color: #FFF !important;
+}
+
+.ui-dialog .icon-user{
+	background: none !important;
+    padding: 0 !important;
+}
+
+
+/**********************************************************/
+/* BULK ACTIONS */
+/**********************************************************/
+
+#bulk_edit_form span.checkbox, #bulk_edit_form .cb_status{
+	float:none;
+}
+
+
+/**********************************************************/
+/* FILTERS STYLING */
+/**********************************************************/
+
+a.collapsible::before, fieldset.collapsible>legend {
+    text-transform: uppercase !important;
+    font-weight: 400 !important;
+    font-size: 1.1rem !important;
+    padding: 12px 0 0 15px;
+    margin: 0;
+    width: 100%;
+    display: block;
+    float: none;
+    background: none !important;
+    opacity:0.5;
+}
+
+a.collapsible.collapsed::before, .collapsible.collapsed > legend::before {
+    font-family: 'zenmine';
+    content: "\e844" !important;
+    position: absolute;
+    left: 12px;
+    /*top: 14px;*/
+    font-size: 1.5rem;
+    color: #333;
+    opacity: 0.4;
+    margin-top:-2px;
+        -webkit-transition: 0.1s ease-out;
+    -moz-transition:  0.1s ease-out;
+    transition:  0.1s ease-out;
+}
+
+.autoscroll fieldset.collapsible > legend {
+	width: 96%;
+	margin:12px 0;
+}
+
+.autoscroll fieldset.collapsible > legend::before {
+	position: initial;
+}
+
+a.collapsible.collapsed:hover:before, fieldset.collapsible.collapsed>legend:hover:before {
+      -webkit-transform: rotateZ(90deg);
+      -moz-transform: rotateZ(90deg);
+      transform: rotateZ(90deg);
+}
+
+fieldset.collapsible.collapsed>legend:hover, fieldset.collapsible:not(.collapsed)>legend{
+	opacity: 1;
+}
+
+a.collapsible:not(.collapsed)::before, .collapsible:not(.collapsed)>legend:before {
+    font-family: 'zenmine';
+    content: "\e844" !important;
+    position: absolute;
+    left: 12px;
+    /*top: 14px;*/
+    font-size: 1.5rem;
+    color: #333;
+    opacity: 1;
+    margin-top:-2px;
+}
+
+a.collapsible:not(.collapsed)::before, fieldset.collapsible:not(.collapsed)>legend::before {
+      -webkit-transform: rotateZ(90deg);
+      -moz-transform: rotateZ(90deg);
+      transform: rotateZ(90deg);
+}
+
+
+
+#query_form {
+	width:100%;
+    padding-bottom: 20px !important;
+}
+
+a.icon {
+    margin-bottom: 5px !important;
+}
+
+table.query-columns td.buttons{
+	display: table-cell !important;
+}
+
+ span.query-columns select{	
+	vertical-align:middle;
+    border-color: #BBBBBB;
+    border-radius: 4px;
+}
+
+span.query-columns .buttons{
+	position:relative;
+	display: inline-grid! important;
+	vertical-align:middle;
+	margin-right:28px;
+	margin-left:10px;
+}
+
+body.controller-issues .query-totals{
+	margin-top: 0;
+}
+
+.filters .buttons{
+	padding-bottom:30px;
+}
+
+tr.group span.totals {
+    font-size: 100%;
+}
+
+/**********************************************************/
+/* SETTINGS TABS STYLING */
+/**********************************************************/
+
+.select2-container, .box.tabular select:not([multiple]), .add-filter select, fieldset select:not([multiple]), .values select:not([multiple]), .operator select, #columns, #criterias {
+	background-color: transparent!important;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right:10px;
+}
+
+fieldset#filters td.operator select {
+	max-width:120px;
+}
+
+
+/**********************************************************/
+/* FILE DROP AREA */
+/**********************************************************/
+
+input.file_selector.filedrop {
+    border: 2px dashed #bbb !important;
+    -webkit-border-radius: 5px !important;
+    border-radius: 5px !important;
+    padding: 30px 50px !important;
+    text-align: center !important;
+    line-height: 10px !important;
+    background-color: white !important;
+    border-style: dashed !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    width: 50% !important;
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06) !important;
+    cursor: pointer;
+}
+
+.controller-issues input.file_selector.filedrop{
+	width: 85% !important;
+}
+
+
+
+/**********************************************************/
+/* SECTION SEPARATOR (ISSUE PAGE) */ 
+/**********************************************************/
+
+hr {
+    border-style: solid !important;
+    border-color: #e7e7e7;
+    border-bottom-width: 1px !important;
+}
+
+div.issue hr:first-of-type {
+    display: none;
+}
+
+div.issue .description {
+    margin-top: 10px;
+}
+
+
+/**********************************************************/
+/* LABELS ALIGNMENT */ 
+/**********************************************************/
+
+a.icon.icon-checked:hover{
+	background:transparent!important
+}
+
+#new_membership #principal_search{
+	text-align:left;
+	padding:0px .5rem!important;
+}
+
+body:not(.action-settings):not(.controller-settings) .tab-content p label {
+    display: inline-block;
+    margin-right: 7px;
+    font-weight:500;
+}
+
+.tab-content#tab-content-info p label,
+body.controller-boards.action-new p label
+{
+	width: 9%;
+	text-align:left;
+	display:inline-block;
+}
+
+.tab-content#tab-content-info p input,
+body.controller-boards.action-new p input{
+	display:inline-block;
+}
+
+#all_attributes{
+	position:relative;
+}
+
+.action-new:not(.controller-deals) #all_attributes p {
+    border-bottom: 1px solid #e7e4e4;
+    padding-bottom: 20px;
+}
+
+.action-new #all_attributes p label, .action-new .tabular label  {
+	display: inline-block;
+    min-width: 160px;
+    text-align: left;
+}
+
+.check_box_group label, #watchers_inputs label, #issue_is_private_label{
+	min-width: initial !important;
+	width: initial !important;
+}
+
+input#issue_subject, input#document_title {
+    width: calc(99% - 190px) !important;
+}
+
+.action-new #all_attributes p input{
+	text-align:left;
+	display:inline-block;
+	padding-left: 7px !important;
+	width:initial;
+	/*border:1px solid #ccc;*/
+}
+.action-new #all_attributes p select {
+	font-family:inherit;
+	display:inline-block;
+}
+
+body.controller-issues.action-new{
+	width:auto;
+}
+
+body.controller-issues.action-new input[type="checkbox"]{
+	width:25px!important
+}
+
+body.controller-issues.action-new label{
+	margin:0 7px 0 0;
+	padding:0;
+}
+
+body.controller-issues.action-new #issue_is_private_wrap .filtercheckmark{
+	top:5px;
+}
+
+body.controller-issues.action-new #all_attributes p{
+	border:none;
+	padding:0;
+	margin-bottom:7px;
+}
+
+body.controller-issues.action-new #issue_description_and_toolbar{
+	vertical-align:top;
+	display:inline-block;
+	width:90%;
+}
+
+body.controller-issues.action-new .splitcontentleft, body.controller-issues.action-new .splitcontentright{
+	border:none!important;
+}
+
+body.controller-issues.action-new #issue_project_id,
+body.controller-issues.action-new .splitcontentleft select,
+body.controller-issues.action-new .splitcontentright select{
+	background-position: 97% center;
+}
+
+
+body.controller-issues.action-new .splitcontentright .list_cf.check_box_group label{
+	display: block!important;
+	text-align: left;
+}
+
+body.controller-issues.action-new #attributes a{
+	/*font-size: 0 !important;
+	padding: 0 !important;*/
+}
+
+body.controller-issues.action-new .splitcontentleft .icon-add::after{
+	content: "\e8b1"!important;
+	color: #333;
+	opacity: 0.6;
+}
+
+body.controller-issues.action-new .splitcontentleft .icon-add:hover:after{
+	opacity: 1;
+}
+
+.bool_cf{
+	position:relative;
+}
+
+.bool_cf .filtercheckmark {
+    left: 18%;
+    top: -10px!important;
+}
+
+#attributes .bool_cf.check_box_group{
+	display:inline; 
+}
+
+body.controller-issues.action-new .splitcontentright .filtercheckmark{
+	top:5px;
+}
+
+body.controller-issues.action-new .splitcontentright .list_cf.check_box_group{
+	border: 1px solid #CCCCCC;
+}
+
+
+body.controller-issues.action-new .splitcontent{
+	overflow:hidden;
+}
+
+body.controller-issues.action-new .file_selector.filedrop{
+	width:94%!important
+}
+
+#issue_estimated_hours{
+	margin-right:7px;
+}
+
+#attributes.attributes select{
+	width: initial;
+}
+
+body:not(.controller-products.action-new) #attributes.attributes .splitcontentleft,
+body:not(.controller-products.action-new) #attributes.attributes .splitcontentright{
+	/*border:1px solid #ccc;*/
+}
+
+#attributes.attributes .splitcontent:last-child .splitcontentright p:first-child input[type="checkbox"]{
+	margin-right:0!important
+}
+
+#attributes.attributes .splitcontent:last-child .splitcontentright .list_cf.check_box_group{
+	padding:1.5%!important;
+	border-radius:3px;
+	width: initial;
+}
+
+.action-new #all_attributes p:nth-child(3){
+	padding-top:40px;
+}
+
+.action-new #attributes.attributes  p:nth-child(3){
+	padding-top:0;
+}
+
+.action-new #attributes.attributes  p:last-child{
+	border:none;
+	padding:0!important;
+	margin:0!important;
+}
+
+.action-new .splitcontent{
+	margin-bottom:21px;
+	margin-left:3px;
+}
+
+#issue_is_private_wrap{
+    top:0;
+    right: 0;
+    width: auto;
+    border: none!important;
+}
+
+#issue_is_private_wrap label{
+	width:auto!important;
+}
+
+
+/**********************************************************/
+/* LABELS ALIGNMENT IN FILTERS*/ 
+/**********************************************************/
+
+#query_form_content label.inline {
+   display: inline-block !important;
+   padding-right: 14px !important;
+   position: relative;
+}
+
+
+/**********************************************************/
+/* DARK MODE SWITCH */
+/**********************************************************/
+
+
+:root {
+    --color-green: #00a878;
+    --color-red: #cacaca;
+    --color-button: #fdffff;
+    --color-black: #CCC;
+}
+
+.switch-button {
+    display: inline-block;    
+}
+
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 4rem;
+    height: 2rem;
+    border-radius: 2rem;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
+}
+
+
+/**********************************************************/
+/* LAST TWEAKS */ 
+/**********************************************************/
+
+td.todo {
+    height: 2px !important;
+    top:5px;
+    position:relative;
+}
+
+td.closed {
+    height: 2px !important;
+}
+
+td.done {
+    height: 2px !important;
+}
+
+.jstBlock .wiki-preview {
+    padding: 2px;
+}
+
+body:not(.action-login):not(.action-register):not(.action-lost_password) #main.flip #sidebar{
+	margin-left: 2% !important;
+}
+
+#main.flip .openclose{
+    float:right;
+}
+
+#main.flip .openclose::before {
+    transform: rotate(90deg);
+    right: -42px;
+    left: unset;
+}
+
+#main.flip .sidebar-hide {
+    margin-right: -14% !important;
+    margin-left: 0 !important;
+}
+
+
+/**********************************************************/
+/* HACK IE11 */
+/**********************************************************/
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	select::-ms-expand {
+		display: none;
+	}
+	
+	#quick-search label{
+		height: 23px;
+	}
+	
+	#quick-search #q{
+		height: 39px;
+		padding: 8px;
+	}
+	
+	.controller-activities dt.icon{
+		background-image: none;
+	}
+
+	body.action-register #content{
+        /*height:100px;*/
+    }
+	
+	#q::-ms-clear {
+		display: none;
+	}
+
+}
+
+/**********************************************************/
+/* HACK FIREFOX */
+/**********************************************************/
+
+@-moz-document url-prefix() {
+
+	.admin.controller-custom_fields .splitcontentright fieldset, .admin.controller-users .splitcontentright fieldset, .admin.controller-users .splitcontentleft fieldset{
+     display:block !important;
+  }
+  
+   .admin.controller-custom_fields .splitcontentright fieldset legend{
+	   width:100% !important;
+   }
+
+   .action-login #content, .action-register #content, .action-lost_password #content{
+		display: contents;
+	}
+  
+}

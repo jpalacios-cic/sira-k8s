@@ -1,0 +1,37 @@
+<%= hidden_field_tag @trackers = Tracker.all%>
+<%= hidden_field_tag @estados = IssueStatus.all%>
+
+<table>
+	<tbody>
+		<tr>
+			<th>Horas Máximas Permitidas</th>
+			<td>
+				<input type="text" id="max_horas" value="<%= settings['max_horas'] %>" name="settings[max_horas]" >
+			</td>
+		</tr>
+		<tr>
+			<th>Tareas que requiere esta validaci&oacute;n</th>
+			<td>			
+				<%= select_tag 'settings[id_tarea]', options_from_collection_for_select(@trackers, :id, :name, Setting.plugin_mopa["id_tarea"]),multiple: true, :include_blank => true %>
+			</td>
+		</tr>
+		<tr>
+			<th>Activar control de tareas certificadas</th>
+			<td>			
+				<input type="checkbox" name="settings[isCertificadoActivo]" value="1" <%= (@settings["isCertificadoActivo"] == "1"? "checked" : "" )%>/>
+			</td>
+		</tr>
+		<tr>
+			<th>Estados en las se permitira imputar horas</th>
+			<td>			
+				<%= select_tag 'settings[id_estados]', options_from_collection_for_select(@estados, :id, :name, Setting.plugin_mopa["id_estados"]),multiple: true, :include_blank => true %>
+			</td>
+		</tr>
+         	<tr>
+			<th>URL Base de Mopa</th>
+			<td>			
+				<input type="text" id="urlMopa" value="<%= settings['urlMopa'] %>" name="settings[urlMopa]" >
+			</td>
+		</tr>
+	</tbody>
+</table>

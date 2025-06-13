@@ -1,0 +1,83 @@
+/* Zenmine Theme version 6.0.1, Copyright (C) 2019-2025 - Luis Blasco www.bestredminetheme.com */
+
+
+/**********************************************************/
+/* COMPACT THEME */
+/**********************************************************/
+
+/* Configuration in order to compact different layout elements */
+
+#top-menu {
+	padding: 0; height: 28px; width: 100%;
+}
+
+#top-menu a, #top-menu #loggedas {
+    height: 28px;
+}
+
+#header {
+    min-height: 42px; background-position-y: -8px; background-position-x: 0;
+}
+
+#header h1 {
+    margin: 8px 0; padding-left: 56px;
+}
+
+#header h1 .breadcrumbs +  .current-project {
+    line-height: 14px;
+}
+
+#header #main-menu {
+    height: 37px;
+}
+
+#main-menu ul:not(.menu-children) {
+    margin-left: 0%;
+}
+
+#main-menu li a, #main-menu li a:hover {
+    padding: 8px 14px;
+}
+
+#main-menu.tabs a.selected:after, #main-menu.tabs a:hover:after {
+    top: 10px;
+}
+
+#main-menu li a.new-object {
+	padding: 0px 6px 0px 20px !important;
+}
+
+#quick-search {
+    padding: 4px 0;
+}
+
+#quick-search #q, .live_search_field {
+    padding: 12px 14px;
+}
+
+#quick-search select, #project-jump .drdn-trigger, #block-select {
+    padding: 2px 10px;
+}
+
+#quick-search form a {
+	top:6px;
+}
+
+#project-jump .drdn-trigger::after, label[for=block-select]::after {
+	padding: 4px 8px;
+}
+
+body:not(.action-login):not(.action-lost_password):not(.action-register) #main {
+    padding: 0 1%;
+}
+
+table.list >  tbody >  tr >  td{
+    height: 20px;
+    padding-top: 2px !important;
+    padding-bottom: 2px !important;
+}
+
+table.list >  tbody >  tr >  td:not(.dmsf-title){
+    padding-left: 2px !important;
+    padding-right: 2px !important;
+}

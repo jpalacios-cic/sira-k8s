@@ -1,0 +1,402 @@
+/* Zenmine Theme version 1.3, Copyright (C) 2019 Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* FAVICON */
+/**********************************************************/
+
+/* Just replace file called "favicon.ico" in the "favicon" folder */
+
+
+/**********************************************************/
+/* LOGIN BACKGROUND */
+/**********************************************************/
+    /* There are more than 20 backgrounds located in your customize folder. You can copy the name of your
+    preferred one and substitute it here below.*/ 
+    /* YOUR OWN IMAGE: You can also use your own background. Copy the image in the customize folder, then copy its name
+    and substitute it here below. Recommended size for the background image es 1200 x 1800 px.*/
+
+#hero {
+	background-position: center;
+	background-image: url(bg-login-edificio.jpg);
+
+}
+
+
+/**********************************************************/
+/* LOGOS */
+/**********************************************************/
+/* You can use two logos, one for the login/register page and another one for the header.*/
+/* Copy your logo file in the customize folder, then copy its name and substitute it here below.*/
+/* Recommended size for login's logo is 500 x 380 px. Recommended size for header's logo is 100 x 100 px.*/
+
+.logo_login{
+	background-image: url(sira-logo.png);
+}
+
+
+#header {
+	background-image: url(sira-logo.png);
+}
+
+#header h1 {
+    min-height: 26px;
+    margin-left: 70px;
+}
+
+/**********************************************************/
+/* FONTS */
+/**********************************************************/
+/* Roboto is the default font for Zenmine. To change it, please read our knowledge base article */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+body *{
+	font-family: "Roboto", sans-serif;
+}
+
+
+/**********************************************************/
+/* COLORS */
+/**********************************************************/
+/* In Zenmine you will be able to change a number of the theme colors. To change them, please
+modify the color code stated under each class block. You may use hex, RGB or HSL color codes)*/
+
+/* Top menu colors*/
+
+/* Top menu background color */
+#top-menu {
+    background: #28B16B;
+}
+
+/* Top menu links color */
+#top-menu a, #top-menu a::before, #top-menu a::after{
+    color: #FFFFFF;
+}
+
+/* General links color*/
+a, a:link,
+a:visited,
+.sort-handle,
+#header a,
+#header h1,
+#sidebar h3,
+input[type=submit],
+.form-control,
+#main-menu li a.selected, 
+#main-menu li a:hover,
+#main-menu li a.selected:hover,
+#main-menu .menu-children li a:hover,
+#main-menu li .selected::before,
+#main-menu li a:hover:before,
+#sidebar a:hover,
+#sidebar .contextual a,
+#sidebar a.selected,
+#sidebar p label,
+#admin-index #admin-menu ul li a::before,
+.mypage-box h3 a,
+.projects.root .root ul.projects::before,
+.collapsible > legend,
+.icon.icon-zoom-in, .icon.icon-zoom-out,
+.subject a,
+.assigned_to a,
+.controller-settings fieldset > legend,
+.controller-reports .icon-only.icon-zoom-in::after{
+	color: #058442;
+}
+
+/* General buttons background color and border radius*/
+.action-login input[type=submit],
+.action-register input[type=submit],
+.action-lost_password input[type=submit],
+#news-form input[type=submit] + a +a,  
+.icon.icon-preview,  
+.icon.icon-reply, 
+.icon.icon-helpdesk-reply, 
+.icon.icon-pdf, 
+.icon.icon-add-payment, 
+.icon-order-add, .icon-order-add, 
+.contextual .icon-vote:not(.vote), 
+.contextual .icon-unvote:not(.vote), 
+#sidebar input[type=submit] +  a, 
+.controller-wiki.action-show #wiki_form p a:nth-of-type(2),  
+.icon.icon-email:not(.email):not(span), 
+#issue-form input[type=submit] +  a + a, 
+.icon.icon-passwd, .icon.icon-duplicate, 
+.icon.icon-test, .icon.icon-summary,  
+body:not(.admin):not(.action-login):not(.action-register):not(.action-lost_password) input[type=submit], 
+.icon.icon-fullscreen, 
+.icon.icon-import, body:not(.controller-admin) #content .icon.icon-user:not(td), .icon.icon-email-add, 
+.icon.icon-lock, .icon.icon-copy, body:not(.controller-projects) .icon.icon-fav, 
+body:not(.controller-projects) .icon.icon-fav-off, .icon.icon-time-add,  .icon.icon-edit, 
+body:not(.admin) .icon.icon-user:not(td), body:not(.admin).icon.icon-lock, 
+.icon.icon-checked, .icon.icon-zoom-in, .icon.icon-zoom-out, .icon.icon-save,
+.contextual .icon.icon-add,
+fieldset input[type=submit], admin fieldset #name,
+.drdn .drdn-trigger, .drdn.expanded .drdn-trigger,
+.gantt_subjects div.issue-subject:hover,
+.icon.icon-stats.btn.btn-sm.btn-primary,
+.icon.icon-move.btn.btn-sm.btn-outline-dark, .icon.icon-history.btn.btn-sm.btn-outline-dark,
+input.autocomplete,
+.icon.icon-email-logs, .icon.icon-invoice-add-context,
+.btn-sm.btn-outline-dark, .icon.icon-fav:not(.my-project), .icon.icon-fav-off:not(.my-project){
+	background-color: rgba(0,133,202,0.15);
+    border-radius: 4px;
+}
+
+/* General buttons background and font color when hovering over with the cursor*/
+
+.action-login input[type=submit]:hover,
+.action-register input[type=submit]:hover,
+.action-lost_password input[type=submit]:hover,
+#main-menu.tabs a:hover:after,
+#project-jump .drdn-items>a:hover,
+#admin-index #admin-menu ul li:hover,
+#admin-index #admin-menu ul li:hover a,
+#admin-index #admin-menu ul li:hover a::before,
+#news-form input[type=submit] + a + a:hover,
+#sidebar input[type=submit] + a:hover,
+.icon.icon-preview:hover, 
+.icon.icon-history:hover, .icon.icon-move:hover, 
+.icon.icon-reply:hover, icon.icon-helpdesk-reply:hover,
+.icon.icon-add-payment:hover, .icon.icon-add-payment:hover,
+.icon.icon-email:not(.email):not([title]):hover,
+.icon.icon-order-add:hover, .icon.icon-comment:not(.btn-sm):hover, .icon.icon-email-add:hover,
+.icon.icon-passwd:hover, .icon.icon-duplicate:hover,
+input[type=submit] + a:hover, body:not(.admin):not(.action-login):not(.action-register):not(.action-lost_password) input[type=submit]:hover,
+.icon.icon-fullscreen:hover, .icon.icon-import:hover, .icon.icon-lock:hover, body:not(.controller-projects) .icon.icon-fav:hover, 
+.icon.icon-copy:hover, body:not(.controller-projects) .icon.icon-fav-off:hover, .icon-reply:hover,
+.icon-helpdesk-reply:hover, .icon-time-add:hover, :not(td) > .icon.icon-edit:hover,
+body:not(.admin) #content .icon.icon-user:not(td):hover,
+.buttons .icon.icon-save:hover,
+.contextual .icon.icon-add:hover, body:not(.admin).icon.icon-lock:hover,
+.icon.icon-zoom-in:hover, .icon.icon-zoom-out:hover, fieldset input[type=submit]:hover, admin fieldset #name:hover,
+.icon.icon-stats.btn.btn-sm.btn-primary:hover,
+.icon.icon-move.btn.btn-sm.btn-outline-dark:hover, .icon.icon-history.btn.btn-sm.btn-outline-dark:hover,
+.icon.icon-summary:hover, .icon.icon-email-logs:hover, .icon.icon-invoice-add-context:hover,
+#main-menu.tabs a.selected:after,
+.btn-sm.btn-outline-dark:hover, .icon.icon-fav:not(.my-project):hover, .icon.icon-fav-off:not(.my-project):hover{
+	background-color: rgb(0,133,202);
+	color:#fff;       
+}
+
+
+/* Border color of form fields when cursor is active*/
+#header form:focus, input[type=text]:focus, input[type=date]:focus, input[type=file]:focus, input[type=password]:focus, textarea:focus{
+	
+    border-color: rgb(0,133,202);
+}
+
+
+/* Mobile menu background color */
+
+.mobile-toggle-button, .flyout-menu{
+
+	background-color: rgb(0,133,202) !important;
+}
+
+
+
+/**********************************************************/
+/* TRACKERS COLOR */
+/**********************************************************/
+
+/* If you want to change the tracker colors, just change the hex codes in the following table */
+/* If you want to give a color to a tracker > 10, please read our knowledge base */
+
+/*
+14	Petición
+16	Tarea
+*/
+tr.tracker-14 .id>a, a.tracker-14, .relations>span>a.tracker-14, .parent>a.tracker-14, .tooltip span.tip a.tracker-14 {
+    color: #56c559 !important;
+}
+
+tr.tracker-16 .id>a, a.tracker-16, .relations>span>a.tracker-16, .parent>a.tracker-16, .tooltip span.tip a.tracker-16 {
+    color: #56c559 !important;
+}
+
+/*
+18	Evolutivo
+28	Cambio
+*/
+tr.tracker-18 .id>a, a.tracker-18, .relations>span>a.tracker-18, .parent>a.tracker-18, .tooltip span.tip a.tracker-18 {
+    color: #238ed8 !important;
+}
+
+tr.tracker-28 .id>a, a.tracker-28, .relations>span>a.tracker-28, .parent>a.tracker-28, .tooltip span.tip a.tracker-28 {
+    color: #238ed8 !important;
+}
+
+/*
+19	Correctivo
+15	Incidencia
+*/
+
+tr.tracker-19 .id>a, a.tracker-19, .relations>span>a.tracker-19, .parent>a.tracker-19, .tooltip span.tip a.tracker-19 {
+    color: #e6194B !important;
+}
+
+tr.tracker-15 .id>a, a.tracker-15, .relations>span>a.tracker-15, .parent>a.tracker-15, .tooltip span.tip a.tracker-15 {
+    color: #e6194B !important;
+}
+
+/*
+27	Subtarea
+*/
+tr.tracker-27 .id>a, a.tracker-27, .relations>span>a.tracker-27, .parent>a.tracker-27, .tooltip span.tip a.tracker-27 {
+    color: #c650d8 !important;
+}
+
+/*
+17	Reunión
+22	Gestión
+*/
+tr.tracker-17 .id>a, a.tracker-17, .relations>span>a.tracker-17, .parent>a.tracker-17, .tooltip span.tip a.tracker-17 {
+    color: #16855B !important;
+}
+tr.tracker-22 .id>a, a.tracker-22, .relations>span>a.tracker-22, .parent>a.tracker-22, .tooltip span.tip a.tracker-22 {
+    color: #16855B !important;
+}
+
+/*
+7	Formación
+*/
+tr.tracker-7 .id>a, a.tracker-7, .relations>span>a.tracker-7, .parent>a.tracker-7, .tooltip span.tip a.tracker-7 {
+    color: #020085 !important;
+}
+
+/*
+29	TareaGlobal
+*/
+tr.tracker-29 .id>a, a.tracker-29, .relations>span>a.tracker-29, .parent>a.tracker-29, .tooltip span.tip a.tracker-29 {
+    color: #800000 !important;
+}
+
+/*
+25	Compromiso
+26	Riesgo
+*/
+tr.tracker-25 .id>a, a.tracker-25, .relations>span>a.tracker-25, .parent>a.tracker-25, .tooltip span.tip a.tracker-25 {
+    color: #808000 !important;
+}
+tr.tracker-26 .id>a, a.tracker-26, .relations>span>a.tracker-26, .parent>a.tracker-26, .tooltip span.tip a.tracker-26 {
+    color: #808000 !important;
+}
+
+
+
+
+/**********************************************************/
+/* PRIORITIES COLORS */
+/**********************************************************/
+
+/* If you want to change the priority colors, just change the color codes in the following table */
+/* For more information about changing priorities colors in Zenminem, please read our KB */
+
+
+/* Default background and font color for non standard priorities */
+.priority.attribute .value div, .issue .priority:not(.attribute) div{
+    background: rgba(0,133,202,0.15);
+    color: rgb(0,133,202) ;
+}
+
+
+/* Background & font colors for Redmine standard's priorities*/
+
+.priority_Low{
+    background: rgba(160,214,204,0.15) !important;
+    color: rgb(160,214,204) !important;
+}
+
+.priority_Normal{
+    background: rgba(160,160,160,0.12) !important;
+    color: rgb(160,160,160) !important;
+}
+
+.priority_High{
+    background: rgba(255,162,54,0.15) !important;    
+    color: rgb(255,162,54) !important;
+}
+
+.priority_Urgent{
+    background: rgba(255,57,122,0.15) !important;
+    color: rgb(255,57,122) !important;
+}
+
+.priority_Immediate{
+    background: rgba(187,119,255,0.15) !important;
+    color: rgb(187,119,255) !important;
+}
+
+
+/**********************************************************/
+/* SIDEBAR SIDE */
+/**********************************************************/
+
+/* Uncomment the following lines to change sidebar to the right side */
+
+/*#sidebar{
+	float: right !important;
+	width: 12% !important;
+	margin-right: 0% !important;
+}*/
+
+
+/**********************************************************/
+/* FOOTER */
+/**********************************************************/
+
+/* If you want to hide the footer, please uncomment the second line */
+
+#footer {
+	/*display: none;*/
+}
+
+/* If you want to change the text appearing in the footer after the copyright notice, please change the text between inverted commas in the second line. */
+
+#footer .bgl:before {
+    content: '© 2020 CIC Consulting Informático. Todos los derechos reservados.';
+}
+
+#footer .bgr {
+    display: none;
+}
+
+
+/**********************************************************/
+/* OTROS */
+/**********************************************************/
+/*en la tabla de horas, una palabra muy grande saldría de marco*/
+table#time_input_table tr td div {
+    overflow:hidden !important;
+}
+
+
+/**********************************************************/
+/* Arreglos */
+/**********************************************************/
+
+.mypage-box .icon::before {
+    vertical-align: middle !important;
+}
+
+.icon-group, .icon-groupnonmember, .icon-groupanonymous {
+    background-image: none;
+    font-family: "zenmine" !important;
+    content: "\e8ea" !important;
+}
+
+/* Fix: Boton de cerrar menu desplazado */
+body:not(.action-login):not(.action-register):not(.action-lost_password) #main #content{
+    position: relative;
+}
+.openclose::before {
+    left: -42px;
+    top: 5px;
+    margin-left: 0px;
+}
+
+/* Fix: la pagina actual no se marca bien */
+.pagination ul.pages li.current {
+    background: #BBBBBB !important;
+}

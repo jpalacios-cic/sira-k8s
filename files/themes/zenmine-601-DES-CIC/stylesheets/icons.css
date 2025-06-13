@@ -1,0 +1,1179 @@
+/* Zenmine Theme version 6.0.1, Copyright (C) 2019-2025 - Luis Blasco www.bestredminetheme.com */
+
+@font-face {
+  font-family: "zenmine";
+  src: url('../fonts/zenmine.eot?t=1525787366991'); /* IE9*/
+  src: url('../fonts/zenmine.eot?t=1525787366991#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/zenmine.woff?t=1525787366991') format('woff'), /* chrome, firefox */
+  url('../fonts/zenmine.ttf?t=1525787366991') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/zenmine.svg?t=1525787366991#zenmine') format('svg'); /* iOS 4.1- */
+}
+
+@font-face {
+  font-family: "filetypes";
+  src: url('../fonts/filetypes.eot?t=1525787366991'); /* IE9*/
+  src: url('../fonts/filetypes.eot?t=1525787366991#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../fonts/filetypes.woff?t=1525787366991') format('woff'), /* chrome, firefox */
+  url('../fonts/filetypes.ttf?t=1525787366991') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../fonts/filetypes.svg?t=1525787366991#filetypes') format('svg'); /* iOS 4.1- */
+}
+
+#main-menu.tabs a:not(.new-object)::before{
+  font-family: "zenmine";
+  content: "\e878";
+  line-height: inherit;
+}
+
+#main-menu .menu-children li a:before{
+  font-family: none !important;
+  content: none !important;
+}
+
+#admin-menu li .tags::before, #admin-menu li .ldap-sync::before, .icon:not(h3,.sort,.icon-magnifier)::before,.icon-plugins:before, #admin-menu li a::before{
+  font-family: "zenmine" !important;
+  content: "\e878" !important;
+}
+
+
+#top-menu .icon:not(h3)::before, #top-menu .icon-plugins:before {
+    content: "" !important;
+}
+
+.icon-file::before, .icon.icon-file::before, .icon.icon-history::before {
+  font-family: "zenmine";
+  content: "\e870"!important;
+}
+
+.icon-checked::before, .icon.icon-checked::before, .icon.icon-test::before,.icon.icon-issue-closed:before, .icon-issue-closed:before, .icon-ok::before, .icon.icon-ok::before, .icon-only.icon-ok::before{
+  font-family: "zenmine";
+  content: "\e8e5"!important;
+}
+
+.icon-only.icon-ok, .icon-only.icon-error{
+  width: 16px;
+}
+
+.icon-reload:before, .icon.icon-reload:before, .icon.icon-multiple::before,.icon.icon-cancel::before{
+  font-family: "zenmine";
+  content: "\e8ae"!important;
+}
+
+#admin-menu li .roles::before, .icon-roles:before, .icon.icon-roles:before{
+  font-family: "zenmine";
+  content: "\e8c2"!important;
+}
+
+#admin-menu li .email-logs::before, a.icon-email-logs::before, .icon-email::before, .icon.icon-email::before, .icon.icon-email-to::before{
+  font-family: "zenmine";
+  content: "\e88a"!important;
+  font-size: 1.4rem !important;
+  vertical-align: middle !important;
+}
+
+.journal a.icon-email-logs::before{
+  vertical-align: initial !important;	
+}
+
+#admin-menu li .agile::before, #main-menu.tabs .agile::before, .icon.agile::before, .flyout-menu .agile::before{
+  font-family: "zenmine";
+  content: "\f94a"!important;
+}
+
+.backlog::before{
+  font-family: "zenmine";
+  content: "\f94a"!important;
+  transform: rotate(90deg);
+  display: inline-block;
+}
+
+
+
+#admin-menu li .contacts::before, #main-menu.tabs .contacts::before, .icon.contacts::before, .flyout-menu .contacts::before, .flyout-menu .wiki::before{
+  font-family: "zenmine";
+  content: "\e837"!important;
+}
+
+#main-menu.tabs .deals:before, .flyout-menu .deals:before{
+  font-family: "zenmine";
+  content: "\e838"!important;
+}
+
+#main-menu.tabs .orders::before, .flyout-menu .orders::before{
+  font-family: "zenmine";
+  content: "\e84b"!important;
+}
+
+#admin-menu li .helpdesk::before, .icon.helpdesk::before{
+  font-family: "zenmine";
+  content: "\e883"!important;
+}
+
+#admin-menu li .workflows::before, .icon-workflows:before, .icon.icon-workflows:before{
+  font-family: "zenmine";
+  content: "\e91e"!important;
+}
+
+#admin-menu li .invoices::before, #main-menu .expenses::before, #main-menu.tabs .invoices::before, .icon.invoices::before, .icon-money-dollar:before, .icon.icon-money-dollar:before,.flyout-menu .invoices::before, .flyout-menu .expenses::before{
+  font-family: "zenmine";
+  content: "\e917"!important;
+}
+
+#admin-menu li .finance::before, .finance::before, .icon.finance::before{
+  font-family: "zenmine";
+  content: "\e831"!important;
+}
+
+
+ #admin-menu li .people::before, #admin-menu li .groups::before, .icon.people::before, .icon.icon-group::before, .icon-group::before, .flyout-menu .people::before{
+  font-family: "zenmine";
+  content: "\e8ea"!important;
+}
+
+#admin-menu li .products::before, #main-menu.tabs .products::before, .icon.products::before, .gantt_subjects .icon-package a::before, .flyout-menu .products::before{
+  font-family: "zenmine";
+  content: "\e8a1"!important;
+}
+
+.icon-save::before, .icon.icon-save::before{
+  font-family: "zenmine";
+  content: "\e8bc"!important;
+}
+
+.overview::before{
+  font-family:'zenmine';
+  content: "\e84b"!important;
+}
+
+.activity::before{
+  font-family:'zenmine';
+  content: "\e8f8"!important;
+}
+
+.icon.icon-time-entry:before{
+  font-family: "zenmine";
+  content: "\e84d" !important;
+}
+
+.icon.icon-issue-edit:before, .icon.icon-edit::before{
+  font-family: "zenmine";
+  content: "\e866" !important;
+}
+
+#admin-menu li .custom-fields::before, .icon.icon-custom-fields:before{
+  font-family: "zenmine";
+  content: "\e867" !important;
+}
+
+.icon.icon-issue-note:before, .flyout-menu .contacts::before{
+  font-family: "zenmine";
+  content: "\e890" !important; 
+}
+
+#admin-menu li .trackers::before, .icon.icon-issue:before, .gantt_subjects_container a.issue::before, .filename .icon.icon-project::before{
+  font-family: "zenmine";
+  content: "\e87d"!important; 
+}
+
+.icon-help {
+    background-image: none; 
+}
+
+#issue_tracker_id + .icon-help {
+    background-image: url(../images/help.png);
+}
+
+
+#admin-menu li .info::before, .icon.icon-help:before{
+  font-family: "zenmine";
+  content: "\e87f"!important; 
+}
+
+#admin-menu li .ldap-authentication::before, .icon-error::before, .icon.icon-error::before, .icon.icon-warning::before, .icon-server-authentication::before, .icon.icon-server-authentication::before{
+  font-family: "zenmine";
+  content: "\e81e" !important;   
+}
+
+.icon.roadmap::before, .roadmap::before{
+  font-family: "zenmine";
+  content: "\e88c"!important;
+} 
+
+.icon.issues::before, .issues::before{
+  font-family: "zenmine";
+  content: "\e87d"!important;
+}
+
+#admin-menu li .issue-statuses::before, .icon.icon-issue-edit.issue-statuses::before{
+  font-family: "zenmine";
+  content: "\e8dc"!important;
+}
+
+.icon.icon-time::before, .icon-time::before,.time-entries::before, .icon.icon-time-add::before{
+  font-family:'zenmine';
+  content: "\e84d"!important;
+}
+
+.icon.icon-stats::before{
+  font-family: "zenmine";
+  content: "\e8ac"!important;
+}
+
+.icon.icon-locked::before, .icon.icon-passwd::before, .icon-lock::before, .icon.icon-lock::before{
+  font-family: "zenmine";
+  content: "\e887"!important;
+}
+
+.icon-sticky.icon-locked::before,.icon.bookmark::before{
+  font-family: "zenmine";
+  content: "\e83b"!important;
+}
+
+.icon.gantt::before, .gantt::before{
+  font-family:'zenmine';
+  content: "\e831" !important;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+
+.icon.calendar::before, .calendar::before{
+  font-family:'zenmine';
+  content: "\e83a" !important;
+}
+
+.icon.news::before, .news::before{
+  font-family:'zenmine';
+  display:inline-block;
+  content: "\e870" !important;
+}
+
+#admin-menu li .projects::before, .projects .child .project::before, #main-menu.tabs a.projects::before, body:not(.controller-trackers):not(.controller-users) .icon-projects::before, body:not(.controller-trackers):not(.controller-projects):not(.controller-users) .projects:not(.list)::before, .gantt_subjects .icon-projects a::before {
+  font-family:'zenmine';
+  content: "\e874" !important;
+}
+
+.project.root::before, .icon.my-project::before{
+	content: none!important;
+}
+
+.projects .child .project::before{
+  margin-right:6px;
+  font-size: 1.3rem;
+}
+
+.projects .child .projectshide + .project::before{
+  content: "" !important;
+  margin-right: 0;
+}
+
+.projectshide.open:before, .projectshide.closed:before{
+    cursor: pointer;
+    display: inline-block;
+    font-size: 18px;
+    margin: 10px 0px 10px 0px;
+    font-family: "zenmine";
+}
+
+.projectshide.open:before {
+    content: "\e91a" !important;
+}
+
+.projectshide.closed:before {
+    content: "\e918" !important;
+}
+
+.icon.icon-add::before, .icon-add::before, #project_custom_field_values_3_add_link::before, .icon.icon-add-bullet::before, #expense_contact_id_add_link:before, #order_contact_id_add_link:before, #deal_contact_id_add_link:before{
+  font-family:'zenmine';
+  content: "\e8b1" !important;
+}
+
+.icon.icon-link-add:before{
+  font-family:'zenmine';
+  content: "\e882" !important;
+}
+
+.icon-link-break::before{
+  font-family:'zenmine';
+  content: "\e881" !important;
+}
+
+
+#project_custom_field_values_3_add_link{
+    font-size: 1.6rem;
+    margin-left: 8px;
+    color: #333;
+    text-decoration:none;
+}
+
+.documents::before, .flyout-menu .repository::before, #main-menu .dmsf::before{
+  font-family:'zenmine';
+  content: "\e90d" !important;
+}
+
+.repository::before{
+  font-family:'zenmine';
+  content: "\e91e" !important;
+}
+
+#main-menu .wiki::before{
+  font-family:'zenmine';
+    content: "\e837" !important;
+}
+
+#main-menu .boards::before, table.boards a.board::before, .flyout-menu .boards::before{
+  font-family: "zenmine";
+  content: "\e890" !important;
+}
+
+.splitcontentleft .wiki::before{
+  display:none;
+}
+
+.files::before, .icon.icon-upload::before, #main-menu.tabs .drive.selected::before{
+  font-family:'zenmine';
+  content: "\e8e3" !important;
+}
+
+body:not(.controller-settings) .settings:not(fieldset)::before{
+  font-family:'zenmine';
+  content: "\e90a" !important;
+}
+
+#admin-menu li .settings::before, #admin-menu .icon.icon-settings::before{
+    font-family: 'zenmine';
+    content: "\e90a" !important;
+}
+
+.icon.icon-zoom-in:before, .issues.box .icon-only.icon-zoom-in:after{
+  font-family:'zenmine';
+  content: "\e8f9" !important;
+}
+
+.icon.icon-zoom-out:before, .issues.box .icon-only.icon-zoom-out:after{
+  font-family:'zenmine';
+  content: "\e8fa" !important;
+}
+
+.icon.icon-fullscreen:before, button.jstb_zenedit:before, button.jstb_zenedit.theme:before{
+  font-family:'zenmine';
+  content: "\e868" !important;
+}
+
+.icon.icon-folder:before, .icon.icon-projects:before, .icon-projects:before, .flyout-menu .projects::before{
+  font-family:'zenmine';
+  content: "\e874"!important;
+}
+
+div.wiki-page .icon-only.icon-edit{
+  display:inline;
+}
+
+.icon-only.icon-edit{
+  display:contents;
+  font-size:0;
+  text-decoration:none;
+}
+
+.icon-edit::before {
+  font-family:'zenmine';
+  content: "\e866"!important;
+  font-size:1.4rem;
+}
+
+.icon-copy::before, .icon.icon-copy::before{
+  font-family:'zenmine';
+  content: "\e855"!important;
+}
+
+.icon.icon-helpdesk::before{
+  font-family:'zenmine';
+  content: "\e883"!important;
+}
+
+.journal-actions .icon-only {
+  padding-left:6px;
+  display:inline;
+  font-size: 0;
+}
+
+.journal-actions .icon-only::after {
+  font-size: 1.4rem;
+}
+
+.icon-only.icon-not-ok{
+    display: initial;
+    font-size:1.5rem;
+    text-decoration:none;
+}
+
+.dmsf .icon.icon-unlock::before, .dmsf .icon-unlock::before{
+  font-family: "zenmine"!important;
+  content: "\e887"!important;
+  margin-left: 12px;
+  margin-right: -30px;
+}
+
+.icon.icon-unlock::before, .icon-unlock::before{
+  font-family: "zenmine"!important;
+  content: "\e880"!important;
+}
+
+.ui-icon-closethick:before, .icon-only.icon-not-ok:after, .icon.icon-disable::before, .icon-only.icon-clear-query::after{
+  font-family: "zenmine"!important;
+  content: "\f900"!important;
+}
+
+.icon-only.icon-clear-query{
+	font-size: 0 !important;
+  float: right;
+  width: 15px;
+}
+
+.icon-only.icon-clear-query::after{
+	font-size: 16px;
+}
+
+body:not(.controller-projects) .icon.icon-fav-off:before, .icon-only.icon-magnifier::before, .icon.icon-fav-off::before{ 
+  font-family: "zenmine"!important;
+  content: "\e86a"!important; 
+}
+
+.icon-only.icon-magnifier{ 
+	font-size: 0;
+	display: contents;
+	text-decoration:none;
+}
+
+.icon-only.icon-magnifier::before{
+	font-size:1.2rem;
+}
+
+body:not(.controller-projects) .icon.icon-fav:before{
+    font-family: "zenmine"!important;
+    content: "\e86e"!important;
+}
+
+body:not(.controller-projects) .icon.icon-comment:not(.answers):not(.last-comment):before, .icon-only.icon-comment::before{
+    font-family: "zenmine"!important;
+    content: "\e890"!important;
+}
+
+.home::after, .flyout-menu .home::before{
+  font-family: "zenmine"!important;
+  content:'\e879' !important;
+}
+
+#admin-menu li .users::before, .my-account::after, .icon-contact:before, .icon.icon-company-contact::before, .icon-company-contact::before, .icon-user::before, .icon.icon-user::before{
+  font-family: "zenmine"!important;
+  content: "\e8e9" !important;
+  vertical-align: unset !important;
+}
+
+.logout::after{
+  font-family: "zenmine"!important;
+  content:'\e888' !important;
+}
+
+body.controller-workflows.action-edit form p a::before, body.controller-workflows.action-permissions form p a::before, #admin-menu li .enumerations::before, .icon.icon-summary:before, .toggle-multiselect::before, .icon-list::before, .icon.icon-list::before{
+    font-family: "zenmine"!important;
+    content: "\e886"!important;
+}
+
+.resource-planning-chart .user-resource-bookings.open span.expander::before{
+  font-family: "zenmine"!important;
+  content: "\e91a"!important;
+}
+
+.resource-planning-chart .user-resource-bookings:not(.open) span.expander::before{
+  font-family: "zenmine"!important;
+  content: "\e918"!important;
+}
+
+.icon.icon-helpdesk-reply::before{
+  font-family: "zenmine";
+  content:"\e890"!important;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(10deg);
+}
+
+.fa-question::before{
+  content: "?" !important;
+  font-size:1.5rem;
+}
+
+tr.project.idnt td.name span:before {
+    font-family: "zenmine";
+    content: "\e856" !important;
+    position: relative;
+    margin-right: 4px;
+}
+
+body:not(.admin).login::after,
+.register::after{
+    font-family: "zenmine";
+    content: "\e8e9";
+    position: relative;
+    top: 4px;
+    left: 7px;
+    margin-left:7px;
+}
+
+.icon.icon-link-add, .icon-public-link, .journal .contextual .icon-only, .icon.icon-email-logs, .icon-only.icon-magnifier, .sort-handle, table.cal a.issue, p.cal.legend .starting, p.cal.legend .ending, p.cal.legend .starting.ending, table.boards a.board, .drdn-items a.icon, .icon-package, .icon-file, button.tab-left, button.tab-right, .icon-zoom-in, .icon-edit, .icon-shared, .icon-helpdesk, .icon-company-contact, .icon-issue, .icon-error, .icon-ok, .icon-not-ok, .icon.icon-checked, .icon-only.icon-checked, .icon-only.icon-ok, .icon-lock, .icon-locked, .jstElements button, .icon-contact, .icon-issue-closed, .resource-planning-chart .user-resource-bookings span.expander, .icon-attachment, .journal-actions a, .icon-email, .icon-comment, .icon-comments, .icon-project, .icon-projects{
+    background-image: none !important;
+}
+
+#project_custom_field_values_3_add_link img{
+  display:none;
+}
+
+.icon.icon-import::before{  
+  font-family: "zenmine"!important;
+  content: "\e8e3"!important;
+}
+
+.icon.icon-phone::before {   
+  font-family: "zenmine"!important;
+  content: "\e8a5"!important;
+  font-size: 1.4rem;
+}
+
+.icon-only.icon-error::before, .icon-ok::before, .icon.icon-ok::before, .icon-only.icon-ok::before, .drive.selected::before, #files-sidebar-menu .icon.icon-del::before, .icon.icon-upload::before, .icon.bookmark::before, .controller-projects .news.box::before, .controller-projects .members.box::before, #admin-menu li a::before, .issues::before, .icon:not(.icon-email)::before, .icon-time::before, #main-menu ul li a::before,.issues th a::after{ 
+    font-family: 'zenmine';
+    font-size: 1.8rem;
+    margin-right: 5px;
+    vertical-align: sub;
+    margin-left: -2px;
+}
+
+.selection .icon.icon-contact:before{
+  vertical-align: middle !important;
+  font-family: "zenmine" !important;
+  content: "\e837" !important;
+}
+
+.project.icon-fav::before{
+	vertical-align: initial;
+	margin-left: 0;
+}
+
+body:not(.controller-settings) .issues th a:after{
+  font-family:'zenmine';
+  content: "\e842";
+  opacity:0.2;
+  position: relative;
+  margin-left: 2px;
+  font-size:1.5rem;
+}
+
+body:not(.controller-settings) .issues th a:hover:after{
+  opacity:0.8;
+}
+
+/*.issues th a:hover:after{
+  font-family:'zenmine';
+  content: "\e842";
+  opacity: 0.8;
+}*/
+
+
+a.sort.asc::after{
+  font-family:'zenmine';
+  content: "\e845"!important;
+  opacity: 1;
+}
+
+a.sort.desc::after{
+  font-family:'zenmine';
+  content: "\e842"!important;
+  opacity: 1;
+}
+
+p.cal.legend .starting.ending::before, ul.cal .starting.ending a.issue::before{
+  font-family:'zenmine';
+  content: "\e915";
+  color:#333333;
+  margin-right: 4px;
+}
+
+p.cal.legend .starting::before, ul.cal .starting a.issue::before{
+  font-family:'zenmine';
+  content: "\e844";
+  color:#1DC9A0;
+}
+
+p.cal.legend .ending::before, ul.cal .ending a.issue::before{
+  font-family:'zenmine';
+  content: "\e843";
+  color:#FD397A;
+}
+
+.issues th a.selected::after{
+  font-family:'zenmine';
+  content: "\e842";
+  opacity: 0.9;
+}
+
+#project-jump .drdn-trigger::after, label[for=block-select]::after{
+    font-family: 'zenmine' !important;
+    content: "\e842";
+}
+
+.drdn-items.selection>*.selected:before{
+    font-family : "zenmine";
+    content:"\e8e5";
+}
+
+.projects .icon-projects,
+.issues .icon::before{
+  display:none;
+}
+
+
+.icon.icon-attachment::before, .icon-attachment::before{
+  font-family:'zenmine';
+  content: "\e904"!important;
+  font-size:1.3rem;
+}
+
+.attachments .icon-magnifier, .icon-warning{
+  background:none;
+}
+
+
+.delete.icon-only.icon-del,
+.icon-only.icon-download{
+  width:auto;
+  padding:0;
+  background-image:none;
+  text-decoration:none;
+  font-size:0;
+}
+
+.delete.icon-only.icon-del::before, .icon-only.icon-download::before{
+  font-size:1.2rem;
+}
+
+.delete.icon-only.icon-del::after{
+  content:"";
+}
+
+.description .contextual .icon-comment:after{
+  display: none;
+}
+
+.attachments .icon-only.icon-edit:hover:after{
+  opacity: 1;
+}
+
+.icon-download::after{
+  font-family:'zenmine';
+  content: "\e864"!important;
+
+}
+
+.icon-only.icon-comment::after{
+  font-family:'zenmine';
+  content: "\e890"!important;
+
+}
+
+.icon-only.icon-del::after, .icon.icon-del::before, .icon-only.icon-del::before{
+  font-family:'zenmine';
+  content: "\e8d9" !important;
+  color: #FD397A;
+}
+
+.attachments_form .icon-only.icon-del{
+  width: 12px;
+  background: none;
+}
+
+.icon-del:before, .icon-only.icon-del:before, #files-sidebar-menu .icon.icon-del::before {
+  font-family: 'zenmine';
+  content: "\e8d9"!important;
+  color:#FD397A;
+}
+
+.attachments .icon-only.icon-edit::after{
+  font-family:'zenmine';
+  content: "\e866" !important;
+  opacity: 0.6;
+}
+
+.icon-time-add::before{
+  font-family:'zenmine';
+  content: "\e84d" !important;
+}
+
+.icon.icon-document:before  {
+  font-family:'zenmine';
+  content: "\e90d" !important;
+}
+
+.icon-document{
+  background:none;
+}
+
+.icon.icon-wiki-page:before {
+  font-family:'zenmine';
+  content: "\e837" !important;
+}
+
+.icon.icon-message:before, .icon.icon-reply:before  {
+  font-family:'zenmine';
+  content: "\e891"!important;
+}
+
+.icon-history {
+    background-image: none;
+}
+
+.drdn-items .icon-history::before{
+  font-family:'zenmine';
+  content: "\e866"!important
+}
+
+.wiki_page-1-watcher.icon.icon-fav::before{
+  font-family:'zenmine';
+  content: "\e86e"!important;
+  color:#fff;
+}
+
+.wiki_page-1-watcher.icon.icon-fav,
+.wiki_page-1-watcher.icon.icon-fav.btn.btn-sm.btn-outline-dark{
+  color:#fff!important;
+}
+
+.wiki_page-1-watcher.icon.icon-fav-off::before{
+    font-family:'zenmine';
+    content: "\e86a"!important;
+}
+
+/*.controller-projects .icon-fav::before{
+  font-family: "zenmine"!important;
+  content: "\e86e"!important; 
+}*/
+
+.my-project::after{
+  font-family: zenmine !important;
+    content: "\f8e5" !important;
+    font-size: 1.3rem;
+    padding-left: 6px;
+    color: #555;
+    opacity: 0.5;
+    vertical-align: super;
+}
+
+
+.controller-my .contextual .icon-settings:after,
+.contextual .sort-handle::after{
+  font-family:'zenmine';
+  content: "\e89c";
+  color:#666;
+  font-size:1.5rem;
+  display:inline-block;
+}
+
+ .mypage-box .contextual .icon-settings::after{
+    content: "\e8c3" !important;
+    cursor:pointer;
+}
+
+ .mypage-box h3 .icon-add::after{
+    content:"\e8b1";
+    color: #5679eb;
+}
+
+ .mypage-box .icon-close::before, .controller-my .close-icon::before{
+    font-family: "zenmine";
+    content: "\e8d9";
+    color:#FD397A;
+    display: inline-block;
+    margin-top: 3px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+.controller-reports .icon-only.icon-zoom-in::after{
+  font-family: "zenmine";
+  content: "\e8f9";
+  font-size: 1.4rem;
+}
+
+.icon.icon-preview::before{
+  font-family: "zenmine";
+  content: "\e8bd"!important;
+}
+
+
+.sort-handle::before {
+  font-family: 'zenmine';
+  content: "\e89c";
+}
+
+.icon-only.icon-not-ok::after {
+  font-family: 'zenmine';
+  content: "\f900"!important;
+}
+
+.drdn .drdn-trigger .icon-actions::after{
+  color:#fff;
+  font-family: 'zenmine';
+  content: "\e8b1"!important;
+}
+
+button.tab-left::before{
+    font-family:'zenmine';
+    content: "\e843";
+    font-size:1.9rem;
+}
+
+button.tab-right::after{
+    font-family:'zenmine';
+    content: "\e844";
+    font-size:1.9rem;
+}
+
+a.icon-actions{
+ font-size: 0;
+}
+
+a.icon-actions::before{
+  font-family: 'zenmine';
+  color: #bbb !important;
+  content:'\e89b';
+  font-size: 1.3rem;
+  margin-left:-8px;
+}
+
+a.icon-actions:hover::before{
+  font-family: 'zenmine';
+  color: #000 !important;
+}
+
+.buttons > a.icon-actions{
+  display: inline-block!important;
+}
+
+.icon-download::before, .icon.icon-download::before {
+    font-family: "zenmine";
+    content: "\e864"!important;
+}
+
+/*.totop::before{
+  content: "\e848";
+  top: 15px;
+}
+
+.goup::before{
+    content: "\e845";
+    top:63px;
+}
+
+.godown::before{
+  content: "\e842";
+  bottom:63px;
+}
+
+.tobottom::before{
+  content: "\e846";
+  bottom:15px;
+}*/
+
+#expense_contact_id_add_link, #order_contact_id_add_link, #deal_contact_id_add_link{
+  text-decoration:none;
+}
+
+#expense_contact_id_add_link:before, #order_contact_id_add_link:before, #deal_contact_id_add_link:before{
+  font-size:1.5rem;
+  margin-left:10px;
+  color:#666;
+}
+
+.journal_message .icon-email-to::before, .icon.icon-email-add::before{
+  font-family: "zenmine";
+  content: "\e88a"!important;
+}
+
+.icon.icon-call::before, .icon-call::before{
+  font-family: "zenmine";
+  content: "\e8a5"!important;
+}
+
+.icon-web::before, .icon.icon-web::before{
+  font-family: "zenmine";
+  content: "\e883"!important;
+}
+
+.icon.icon-rosette::before {
+  font-family: "zenmine";
+  content: "\e8cd"!important;
+}
+
+.icon-duplicate::before, .icon.icon-duplicate::before {
+  font-family: "zenmine";
+  content: "\e855"!important;
+}
+
+.icon.icon-date::before{
+  font-family: "zenmine";
+  content: "\e83a"!important;
+}
+
+.icon-invoice-public-link::before, .icon.icon-public-link::before, .icon.icon-shared::before{
+  font-family: "zenmine";
+  content: "\e884"!important;
+}
+
+.icon-public-link {
+    background-image: none;
+}
+
+.icon-add-payment::before {
+  font-family: "zenmine";
+  content: "\e917"!important;
+}
+
+.icon-order-add::before { 
+  font-family: "zenmine";
+  content: "\e84b"!important;
+}
+
+.icon-only.icon-checked {
+    width: auto;
+    font-size: 16px;
+    text-align: center;
+    padding: 0;
+}
+
+a.icon-actions{
+  background:none;
+  vertical-align: initial;
+    padding: 0 8px;
+    text-decoration:none;
+    margin-left:14px;
+}
+
+.project .icon-only.icon-checked::after{
+  display:none
+}
+
+
+.icon-only::after{
+  content:"";
+}
+
+.journal .contextual .icon-only{
+  font-size:0;
+  overflow:initial;
+  display:initial;
+  margin-left:0;
+}
+
+.journal .contextual .icon-only:before{
+  font-size:1.4rem;
+}
+
+.buttons .icon-only{
+  background: none;
+  text-decoration: none;
+}
+
+.icon-move {
+    background-image: none;
+}
+
+.icon.icon-move::before {
+    font-family: "zenmine";
+    content: "\e8ae"!important;
+}
+
+.flyout-menu .resources::before, #main-menu .resources::before{
+  font-family: "zenmine";
+  content: "\e8ac"!important;
+}
+
+ .redmine .icon-settings::before{
+    font-family: "zenmine";
+    content: "\e8c3" !important;
+}
+
+span.journal-actions .icon-only::after{
+  content:"" !important;
+}
+
+
+
+/**********************************************************/
+/* WYSIWYG */
+/**********************************************************/
+
+
+.jstElements {
+	vertical-align: inherit !important;
+}
+
+.jstElements button{
+    border-width: 0 !important;
+    border-radius: 2px;
+    vertical-align: bottom;
+    opacity: 1 !important;
+}
+
+.jstElements button:not(.icon-money-dollar):hover{
+    /*background-color: rgb(85,120,235)!important;*/
+    color: #666 !important;
+}
+
+.jstElements button:before {
+  font-family: "zenmine";
+  content: "\e878";
+  /*font-size:1.5rem !important;*/
+}
+
+.jstb_strong:before {
+  font-family: "zenmine";
+  content: "\e901"!important;
+}
+
+.jstb_em:before {
+  font-family: "zenmine";
+  content: "\e900"!important;
+}
+
+.jstb_ins:before {
+  font-family: "zenmine";
+  content: "\e8ff"!important;
+}
+
+.jstb_del:before {
+  font-family: "zenmine";
+  content: "\f93d"!important;
+}
+
+.jstb_code:before {
+  font-family: "zenmine";
+  content: "\e915" !important;
+}
+
+.jstb_h1:before {
+  font-family: "zenmine";
+  content: "\e8df" !important;
+}
+
+.jstb_h2:before {
+  font-family: "zenmine";
+  content: "\e8df"!important;
+  font-size:1.2rem !important;
+}
+
+.jstb_h3:before {
+  font-family: "zenmine";
+  content: "\e8df"!important;
+  font-size:1rem !important;
+}
+
+.jstb_ul:before {
+  font-family: "zenmine";
+  content: "\e886"!important;
+}
+
+.jstb_ol:before {
+  font-family: "zenmine";
+  content: "\f92b"!important;
+}
+
+.jstb_bq:before {
+  font-family: "zenmine";
+  content: "\f925"!important;
+}
+
+.jstb_unbq:before {
+  font-family: "zenmine";
+  content: "\f934"!important;
+}
+
+.jstb_pre:before {
+  font-family: "zenmine";
+  content: "\e927"!important;
+}
+
+.jstb_precode:before {
+  font-family: "zenmine";
+  content: "\e915"!important;
+}
+
+.jstb_link:before, .icon-shared::before{
+  font-family: "zenmine";
+  content: "\e884"!important;
+}
+
+.jstb_img:before {
+  font-family: "zenmine";
+  content: "\e858"!important;
+}
+
+.jstb_help:before {
+  font-family: "zenmine";
+  content: "\e903"!important;
+}
+
+.jstb_responses:before {
+  font-family: "zenmine";
+  content: "\e890"!important;
+}
+
+.jstElements .icon.icon-user:before {
+  font-family: "zenmine";
+  content: "\e8e9" !important;
+  font-size:1.5rem !important;
+  margin:0 !important;
+}
+
+/**********************************************************/
+/* DSMF */
+/**********************************************************/
+
+
+.icon.icon-file::before{
+    font-family: "filetypes" !important;
+    font-size: 2.5rem;
+    margin-left: -5px;
+    vertical-align: middle;
+}
+
+.icon-file.filetype-doc::before,
+.icon-file.filetype-docx::before { content: "\ea19" !important; }
+.icon-file.filetype-xls::before,
+.icon-file.filetype-xlsx::before { content: "\ea16" !important; }
+.icon-file.filetype-ppt::before,
+.icon-file.filetype-pptx::before { content: "\ea11" !important; }
+.icon-file.filetype-vsd::before,
+.icon-file.filetype-vsdx::before { content: "\ea14" !important; }
+.icon-file.filetype-mpp::before { content: "\ea08" !important; }
+.icon-file.filetype-odt::before { content: "\ea0c" !important; }
+.icon-file.filetype-ods::before { content: "\ea0b" !important; }
+.icon-file.filetype-ott::before { content: "\ea0d" !important; }
+.icon-file.filetype-odp::before { content: "\ea0a" !important; }
+.icon-file.filetype-odg::before { content: "\ea09" !important; }
+
+
+.icon-file.text-x-c::before { content: "\ea02" !important; }
+.icon-file.text-x-csharp::before { content: "\ea1a" !important; }
+.icon-file.text-x-java::before { content: "\ea06" !important; }
+.icon-file.text-x-javascript::before { content: "\ea07" !important; }
+.icon-file.text-x-php::before { content: "\ea0f" !important; }
+.icon-file.text-x-ruby::before { content: "\ea12" !important; }
+.icon-file.text-xml::before { content: "\ea17" !important; }
+.icon-file.text-css::before { content: "\ea1b" !important; }
+.icon-file.text-html::before { content: "\ea04" !important; }
+.icon-file.application-pdf::before { content: "\ea0e" !important; }
+
+.icon-file.image-gif::before,
+.icon-file.image-tiff::before,
+.icon-file.image-jpeg::before,
+.icon-file.image-png::before { content: "\ea05" !important; }
+
+.icon-file.application-zip::before,
+.icon-file.application-x-gzip::before { content: "\ea18" !important; }

@@ -1,0 +1,293 @@
+/* Zenmine Theme version 5.0, Copyright (C) 2019-2022 - Luis Blasco www.bestredminetheme.com */
+
+
+#admin-menu li a{
+	margin-bottom: 5px !important;
+}
+
+fieldset{
+	border: none;
+	padding: 0;
+}
+
+#permissions .icon-checked, #role-permissions-trackers .icon-checked, #tracker_project_ids .icon-checked{
+	background-color:transparent;
+	padding:4px;
+}
+
+#permissions fieldset{
+	margin-bottom: 15px;
+    border-bottom: 1px solid #f7f7f7;
+    padding-bottom: 15px;
+}
+
+#permissions fieldset legend{
+	font-size:1.4rem !important;
+	margin-bottom: 10px;
+}
+
+.ui-sortable-handle{
+	background-image: none;
+	vertical-align: initial;
+	margin-right:8px;
+}
+
+.ui-sortable-handle::before{
+	font-size: 1.5rem;
+	vertical-align: bottom;
+}
+
+#role-permissions-trackers{
+	margin-bottom:20px;
+}
+
+div.modal {
+    border-radius: 0;
+    border: 0;
+}
+
+.tabular.settings p{
+	padding-left:initial;
+}
+
+.tabular.settings label:not(.inline){
+	margin-left: initial;
+	width: auto !important;
+	width: 160px !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none;
+    background: none;
+}
+
+.controller-admin.action-index a.icon{
+	margin-bottom:0 !important;
+}
+
+.admin #sidebar a.selected{
+	margin-left: -9px;
+    padding-bottom: 12px;
+	background-color: transparent;	
+}
+
+.objects-selection {
+    height: auto;
+    overflow: auto;
+    width: 100%;
+}
+
+
+.admin h2{
+	color: #fff;
+	margin-bottom: 10px;
+}
+
+fieldset input[type=submit]{
+	border-color: #fff;
+	min-height: 38px;
+}
+
+.controller-enumerations h3{
+	font-weight: 500;
+}
+
+.controller-enumerations h2{
+	float:left;
+}
+
+.controller-enumerations h2 + h3{
+	margin-top:0;
+	clear:both;
+}
+
+#admin-menu li .icon,  #admin-menu li .additionals, #admin-menu li a{
+	background: none !important;
+	/*color:#333;*/
+	padding: 4px 0;
+	white-space: nowrap;
+}
+
+.controller-admin.action-index #admin-menu li a{
+	white-space: normal;
+}
+
+#sidebar  #admin-menu li .additionals, #sidebar #admin-menu li .icon-help {
+	border-top: 1px solid rgba(255,255,255,0.3);
+	display: block;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+#admin-index #admin-menu li {
+    background: #fff;
+    margin: 15px;
+    border-radius: 4px;
+    display: inline-block;
+    width: 130px;
+    height: 100px;
+    vertical-align: top;
+    padding: 10px;
+    position: relative;
+    word-break: break-word;
+}
+
+#admin-menu li a:before{	
+	text-align: center;
+	margin: 4px 8px;
+	opacity:0.3;		
+}
+
+#admin-menu li a:hover:before{	
+	opacity: 1;		
+}
+
+#admin-index #admin-menu li a:before{
+	display: block;
+	font-size: 35px !important;
+	margin-bottom: 20px;
+}
+
+#admin-index #admin-menu li a {
+	color: #666;
+    text-align: center;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    display: block;
+    line-height: 1.8rem;
+    text-decoration: none;
+    width: 80%;
+    margin:0 10%;
+}
+
+#admin-menu a.selected{
+	padding-left: 0 !important;
+	margin-left: 0 !important;
+	width: 100% !important;
+}
+
+#admin-menu a.selected:before{
+    opacity: 1;
+    margin-bottom:0;
+}
+
+tr.group.open td{
+	background-color:#f7f7f7;
+}
+
+tr.group.open td.role{
+	font-weight: 300 !important;
+	vertical-align: middle;
+}
+
+.action-info td:first-of-type{
+	font-weight:700;
+}
+
+.action-info .name, .action-info .tick{
+	width:50% !important;
+}
+
+.controller-trackers .projects{
+ 	/*display: initial !important;*/
+}
+
+.controller-trackers .projects::before{
+ 	content: none;
+}
+
+#watchers_inputs .floating{
+	display:inline-block;
+	margin-right:21px;
+	width:auto;
+}
+
+.controller-workflows.action-edit form p > *, .controller-workflows.action-permissions form p >*{
+	position:relative;
+	vertical-align:top;
+}
+
+.controller-workflows.action-edit form p .toggle-multiselect, .controller-workflows.action-permissions form p .toggle-multiselect{
+	/*display:none;*/
+	padding-right: 40px;
+}
+
+.simplecolorpicker.button {
+    border: 1px solid #FFF;
+    height: 20px;
+    width: 20px;
+}
+
+#notified-projects>ul, #tracker_project_ids>ul, #custom_field_project_ids>ul{
+	max-height:initial;
+	float:left;
+}
+
+.admin table.list td.buttons a{
+	text-transform:none;
+	letter-spacing:0;
+	font-weight:500;
+}
+
+table.memberships td.roles p input[type='submit'], table.memberships td.roles p input[type='submit'] + a{
+    float: left;
+    padding: 8px 20px !important;
+    min-width: 0 !important;
+    margin-top: 10px;
+    letter-spacing: 1px;
+}
+
+table.memberships td.roles p input[type='submit'] + a{
+    padding: 6px 20px !important;
+}
+
+ .controller-gantts p.contextual, .controller-people_settings.action-index .tab-content .contextual, .controller-settings.action-plugin .tab-content .contextual, .controller-gantts #options + .contextual, #tab-content-deal_statuses >  .contextual:first-child, #tab-content-memberships >  p:first-child, #tab-content-departments >  .contextual:first-child{
+	display: inline-block;
+    margin-bottom: 30px;
+	margin-top: 10px;
+}
+
+body.controller-workflows.admin #content form{
+	display: table;
+	width:100%;
+}
+
+body.controller-workflows.admin #workflow_form table select{
+	background-color:#eee;
+}
+
+
+#new_membership span.checkbox, .cb_status {
+    position: absolute;
+    margin-left: -20px;
+}
+
+label[for=tag_color], label[for=order_status_color_name]{
+	margin-left:30px;
+}
+
+.select-users fieldset label {
+    display: block !important;
+}
+
+.box .objects-selection > div, #user_group_ids {
+    column-count: initial;
+    /*column-width: initial;*/
+    /*-webkit-column-count: initial;*/
+    -webkit-column-count: auto;
+    /*-webkit-column-width: initial;*/
+    -webkit-column-width: 200px;
+    -webkit-column-gap: initial;
+    -webkit-column-rule: initial;
+    -moz-column-count: initial;
+    -moz-column-width: initial;
+    -moz-column-gap: initial;
+    -moz-column-rule: initial;
+}
+
+
+.controller-admin.action-info pre{
+    font-family: Consolas, Menlo, "Liberation Mono", Courier, monospace !important;
+}

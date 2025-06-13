@@ -1,0 +1,35 @@
+
+pipeline {
+    agent {	
+        label 'linux'
+    }
+
+    options {
+        withFolderProperties()
+    }
+
+    stages {
+        stage('Docker build + push') {
+            when { anyOf { branch 'master'; branch 'develop' } }
+            steps {
+                script {
+                    def config = readJSON file: 'config.json'
+
+                    def dockerName = config.imageName
+                    def dockerFolder = env.DOCKER_FOLDER
+                    def dockerBranch = ""
+
+                    if(env.BRANCH_NAME != 'master') {
+                        dockerFolder += '-dev'
+                    }
+
+                    docker.withRegistry('https://'+env.DOCKER_REGISTRY, env.DOCKER_REGISTRY_USER) {
+                        def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
+                        image.push()
+                        sh "docker rmi ${image.id}"
+                    }
+                } 
+            }
+        }
+    }
+}

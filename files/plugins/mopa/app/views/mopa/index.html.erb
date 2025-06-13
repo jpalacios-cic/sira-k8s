@@ -1,0 +1,38 @@
+<div class="contextual">
+<a class="icon  roadmap  btn btn-sm btn-primary"  target="_blank" href="<%= Setting.plugin_mopa['urlMopa'] %>/<%= @project.identifier %>"">Ir al proyecto en MOPA</a>
+</div>
+<h2>Horas Certificadas</h2>
+
+
+<div class="autoscroll">
+<table class="list issues odd-even">
+
+	<thead>
+		<tr>
+			<th>Proyecto</th>
+			<th>Responsable</th>
+			<th>A&ntilde;o</th>
+			<th>Mes</th>
+			<th>H. Imputadas</th>
+			<th>H. Certificadas</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @certificaciones.each do |certificacion| %>
+	 <% if certificacion[11]==1 %>
+			<tr class="filaIncorrecta">
+	 <% else %>
+	  <tr class="filaCorrecta">
+	 <% end %>
+				<td><%= certificacion[2] %></td>
+				<td><%= certificacion[3] %></td>
+				<td><%= certificacion[7] %></td>
+				<td><%= certificacion[8] %></td>
+				<td><%= certificacion[10] %></td>
+				<td><%= certificacion[9] %></td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
+</div>
+</div>

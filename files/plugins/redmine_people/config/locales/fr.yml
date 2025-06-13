@@ -1,0 +1,229 @@
+# French strings go here for Rails i18n - Denis BERHAUT 12/04/2024
+fr:
+  label_people: Entreprise
+  label_people_edit_person: Modifier les informations de l'utilisateur
+  label_people_new_person: Nouvel utilisateur
+  label_people_group_plular: Groupes
+  label_people_search: Recherche par nom
+  label_people_show_on_map: Affiche sur la carte
+  label_people_person: Utilisateur
+  label_people_all: Affiche tous les utilisateurs
+  label_people_next_birthdays: Prochain anniversaire
+  label_people_new_people: Nouvel utilisateur
+  label_people_male: Homme
+  label_people_female: Femme
+  label_people_settings: Informations utilisateur
+
+  button_people_edit_profile: Edition du profil
+
+  label_people_avatar: Avatar
+  label_people_job_title: Fonction
+  label_people_phone: Téléphone
+  label_people_phone_plural: Téléphones
+  label_people_skype: Skype
+  label_people_twitter: Twitter
+  label_people_facebook: Facebook
+  label_people_linkedin: LinkedIn
+  label_people_middlename: Second prénom
+  label_people_background: Descriptif
+  label_people_address: Adresse
+  label_people_gender: Genre
+  label_people_birthday: Date de naissance
+  label_people_appearance_date: Date d'entrée
+  label_people_age: Age
+
+  people_permission_edit_people: Modifier l'utilisateur
+  people_permission_view_people: Voir l'utilisateur
+  people_permission_add_people: Ajouter un utilisateur
+  people_permission_delete_people: Effacer un utilisateur
+  people_permission_add_attachments: Ajouter une pièce jointe
+  people_permission_edit_announcement: Modifier les notifications
+  people_permission_view_performance: Voir les performances
+  people_permission_view_leave: Voir les absences
+  people_permission_edit_leave: Modifier les absences
+  people_permission_edit_personal_leave: Modifier ses propres absences
+
+  #0.0.2
+  label_people_acl_settings: Configuration des droits
+  label_people_visibility: Visibilité de l'utilisateur
+  label_people_visibility_select: Affiche l'utilisateur
+  label_people_visibility_resistered: Pour les utilisateurs enregistrés uniquement
+  label_people_visibility_selected: Pour les utilisateurs sélectionnés
+  label_people_visibility_anonymous: Pour les utilisateurs anonymes
+
+  #0.0.3
+  label_department_plural: Directions
+  label_department_new: Nouveau département
+  label_department: Département
+  label_department_head: Responsable
+  label_people_department: Département
+  label_people_at_department: à
+  field_department_parent: Sous-département de
+  people_permission_edit_departments: Modifier le département
+
+  #0.1.5
+  people_permission_delete_departments: Supprimer le département
+
+  #0.1.6
+  label_people_new_mail: Nouveau message
+
+  #0.1.7
+  label_people_show_for_registered_users: Show people for registered users
+
+  #1.1.0
+  label_people_tags_plural: Tags
+  label_visibility_public: tous les utilisateurs
+  label_visibility_private: uniquement moi
+  label_people_default_list_style: Style de liste par défaut
+  label_people_list_partial_style: Style de liste
+  label_people_list_excerpt: Liste d'extraits
+  label_people_list_list: Table
+  label_people_company: Entreprise
+  button_people_edit_query: Modifier la requête
+  button_people_delete_query: Supprimer la requête
+  people_permission_manage_public_people_queries: Gérer les requêtes publiques
+  label_people_add_tag: + ajouter un tag
+  field_person_full_name: Nom et prénom
+  label_people_edit_tags: Modifier les tags
+  people_permission_manage_tags: Gérer les tags
+  label_people_hide_age: Cacher l'âge
+  label_people_is_system: Système
+  label_people_edit_own_data: Modifier ses propres informations
+
+  # 1.2.0
+  label_announcement_description: Description
+  label_announcement_frequency: Fréquence
+  label_announcement_active: Actif
+  label_announcement_start_date: Date de début
+  label_announcement_end_date: Date de fin
+  label_announcement_end_department: Département
+  label_announcement_new: Nouvelle notification
+  label_announcement_plural: Notifications
+  label_announcement_successful_update: Notification enregistrée
+  label_announcement: Notification
+  label_people_use_announcement: Utiliser les notifications
+  field_frequency: Fréquence
+  field_end_date: Date de fin
+  field_kind: Type
+
+  frequency_once: unique
+  frequency_everyday: quotidienne
+  frequency_wday: hebdomadaire
+  frequency_mday: mensuelle
+
+  announcement_kind_notice: Information
+  announcement_kind_warning: Alerte
+  announcement_kind_error: Erreur
+  announcement_status_active: Actif
+  announcement_status_all: Tous
+  label_people_close: Chômé
+  label_people_birthday_today: Anniversaires du jour
+  label_people_birthday_tomorrow: Anniversaires de demain
+  label_people_birthday_this_week: Anniversaires de la semaine
+  label_people_show_birthday_announcements: Montrer les anniversaires
+  label_people_subordinates: Subordonnés
+  label_people_manager: Manager
+  people_permission_edit_subordinates: Modifier les subordonnés
+
+  label_people_default_group: Groupe par défaut
+  label_people_choose_manager: Choisir le manager
+
+  label_people_work_experience: Expérience professionnelle
+  label_people_work_experience_new: Nouvelle expérience professionnelle
+  label_people_work_experience_edit: Modifier l'expérience professionnelle
+  label_people_previous_company_name: Société précédente
+  label_people_previous_job_title: Précédente fonction
+  label_people_from_date: Du
+  label_people_to_date: Au
+  label_people_to_description: Description
+
+  label_people_performance: Performance
+  label_people_total_hours: Heures totales
+  label_people_overtime: Heures supplémentaires
+  label_people_weekends: Week-ends
+  label_people_hour: h
+  label_people_minute: m
+  label_people_deviation: Déviation
+  label_time_spent: Temps passé
+  label_people_period: Période
+
+  label_people_calendar: Calendrier
+  label_people_holidays: Vacances
+  label_people_organization_chart: Organigramme
+  label_people_organization_name: Nom de l'organisation
+  label_people_set_organization_name: Définir le nom de l'organisation
+  label_people_organization_head: Dirigeant de l'organisation
+  label_people_birthdays: Anniversaires
+
+  label_people_holiday_name: Nom
+  label_people_holiday_start_date: date de début
+  label_people_holiday_end_date: Date de fin
+  label_people_holiday_description: Description
+  label_people_holiday_is_workday: Jour travaillé
+  label_people_holiday_notify: Notifier
+  label_people_holiday_notify_subject: "Vacances %{name} ajoutées du %{from} au %{to}."
+  label_people_holidays_next: Prochaines vacances
+
+  label_people_holiday_new: Nouvelles vacances
+  label_people_holiday_edit: Modifier les vacances
+
+  people_permission_manage_departments: Gérer les départements
+
+  people_permission_edit_work_experience: Modifier l'expérience professionnelle
+  people_permission_edit_own_work_experience: Modifier sa propre expérience professionnelle
+  people_permission_manage_calendar: Gérer le calendrier
+
+  notice_failed_to_save_people: "Echec à l'enregistrement de %{count} personnes sur un %{total} sélectionné de : %{ids}."
+  people_label_bulk_edit_selected_people: Modifier tous les utilisateurs sélectionnés
+
+  label_people_add_tags: Ajouter des tags
+  label_people_delete_tags: Supprimer des tags
+  label_people_report_plural: Rapport collaborateurs
+  label_people_user_activity: Activité de l'utilisateur
+  label_people_average_time_per_day: Moyenne quotidienne
+  label_people_total_coverage: Couverture totale
+  label_people_filter_activity_type: Type d'activité
+  label_people_filter_time_interval: Période du rapport
+
+  label_activity_type_issue_create: Créer une demande
+  label_activity_type_issue_update: Mettre à jour une demande
+  label_activity_type_spent_time_added: Saisir temps
+
+  label_people_by_month: Par mois
+  label_people_by_year: Par année
+
+  label_people_leave_plural: Absences
+  label_people_leave_planner: Planning des absences
+  label_people_leave_type: Type d'absence
+  label_people_leave_types: Types d'absences
+  label_people_leave_type_new: Nouveau type d'absence
+  label_people_leave_type_edit: Modifier le type d'absence
+  label_people_leave_new: Nouvelle absence
+  label_people_leave_edit: Modifier l'absence
+  label_people_leave_comment: Saisir un commentaire
+  label_people_graph: Graphique
+  label_people_not_approved: Non autorisée
+  label_people_scheduled_for: pour
+  label_people_added_day_off: Jour chômé ajouté
+  label_people_approved_notification: Statut du jour chômé modifié
+  label_people_notes_notification: Notification du jour chômé modifiée
+
+  notice_leave_type_successfully_destroyed: Type d'absence supprimé
+
+  field_paid: Payé
+  field_approvable: A approuver
+  field_approved: Approuvé
+  field_color: Couleur
+  field_leave_type: Type d'absence
+  field_hours_per_day: Heures/jour
+  field_duration: Durée
+  field_hours_per_day_abbreviation: h/j
+
+  label_people_contact_plural: Contacts
+
+  people_permission_view_reports: Voir les rapports
+
+  activerecord:
+    errors:
+      messages:
+        greater_than_or_equal_to_start_date: doit être égal ou supérieur à la date de début

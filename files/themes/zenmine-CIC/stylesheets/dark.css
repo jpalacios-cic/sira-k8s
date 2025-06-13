@@ -1,0 +1,66 @@
+/* Zenmine Theme version 5.0, Copyright (C) 2019-2022 - Luis Blasco www.bestredminetheme.com */
+
+
+/**********************************************************/
+/* DARK MODE */
+/**********************************************************/
+
+body > :not(img){
+    filter: invert(1) hue-rotate(180deg) brightness(100%) contrast(70%) saturate(100%);
+}
+
+/*body img, #twofa_code, #hero, .issue-card .thumbnail, .jwplayer:not(.jwfullscreen){*/
+body img :not(#twofa_code), .thumbnails, .fancybox-image, .gravatar, #twofa_form, #hero, .issue-card .thumbnail, .jwplayer:not(.jwfullscreen){
+    filter: invert(1) hue-rotate(180deg) brightness(110%) contrast(110%)  saturate(120%)
+}
+
+body #wrapper{
+    background-color: #f5f5f5;
+}
+
+body #top-menu a, body #top-menu a::before, body #top-menu a::after{
+    color: #000 !important;
+}
+
+body #top-menu{
+	background: #e0e0e0 !important;
+}
+
+#twofa_code{
+    background-color: #ffffff;
+}
+
+
+
+/**********************************************************/
+/* DARK SYSTEM MODE */
+/**********************************************************/
+
+/* Increase lightness, add "brightness(110%)" to the body filter property*/
+/* Increase contrast, add "contrast(110%)" to the body filter property*/
+
+
+/*@media (prefers-color-scheme: dark) {
+
+    body{
+        filter: invert(1) hue-rotate(180deg) brightness(100%) contrast(70%) saturate(100%);
+    }
+
+
+    img{
+        filter: invert(1) hue-rotate(180deg) brightness(100%) contrast(100%)  saturate(100%);
+    }
+
+    #wrapper{
+        background-color: #f5f5f5;
+    }
+
+    #top-menu a, #top-menu a::before, #top-menu a::after{
+        color: #000 !important;
+    }
+
+    #top-menu{
+        background: #e0e0e0 !important;
+    }
+    
+}*/

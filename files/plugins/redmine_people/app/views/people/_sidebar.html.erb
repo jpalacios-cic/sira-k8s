@@ -1,0 +1,23 @@
+<% content_for :sidebar do %>
+
+    <% unless true || Department.all_visible_departments.blank? %>
+      <h3><%= l(:label_department_plural) %></h3>
+      <%= department_tree_links(Department.all_visible_departments) %>
+    <% end %>
+
+    <% if Person.all_visible_next_birthdays.present? %>
+    <h3><%= l(:label_people_next_birthdays) %></h3>
+    <%= render :partial => 'people/person_birthday', :collection => Person.all_visible_next_birthdays %>
+    <% end %>
+
+    <% if PeopleHoliday.next_holidays.present? %>
+    <h3><%= l(:label_people_holidays_next) %></h3>
+    <%= render :partial => 'people_holidays/next_holidays' %>
+    <% end %>
+
+    <% if Person.all_visible_new_people.present? %>
+    <h3><%= l(:label_people_new_people) %></h3>
+    <%= render :partial => 'people/person_data', :collection => Person.all_visible_new_people %>
+    <% end %>
+
+<% end %>

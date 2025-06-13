@@ -1,0 +1,1586 @@
+/* Zenmine Theme version 5.0, Copyright (C) 2019-2022 - Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* PEOPLE */
+/**********************************************************/
+
+img.gravatar{
+	border-radius:5%;
+}
+
+div.journal h4 img.gravatar{
+	margin-left:0;
+}
+
+#avatar img.gravatar{
+	height: 27px;
+	width: 27px;
+}
+
+.avatar img.gravatar{
+    vertical-align: middle;
+    /*height: 57px;
+    width: 57px;*/
+}
+
+#people_list{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+
+table.people.index td.checkbox {
+    padding: 12px 0px 0px 20px !important;
+}
+
+.person.attributes tr:hover{
+	background:none !important;	
+}
+
+.person.attributes tr th{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+.person.attributes tr td{
+	padding-top:0;
+	vertical-align:top;
+	font-weight: 500;
+}
+
+#attributes a {
+    text-transform: none !important;
+    letter-spacing: initial !important;
+    font-size: 1.3rem !important;
+    padding: 0 !important;
+}
+
+#attributes a.icon-only.icon-add, #order_contact_id_add_link{
+	background: none;
+	text-decoration:none;
+}
+
+.subject_header .name{
+	vertical-align: bottom !important;
+	padding-left: 20px;
+}
+
+.controller-people.action-show h2{
+	display:none;
+}
+
+.controller-people #query_form{
+	padding-bottom: 0 !important;
+}
+
+.controller-people.action-show div.person.details table.subject_header {
+    width: initial;
+}
+
+.controller-people.action-show div.person.details table.subject_header {
+    width: initial;
+}
+
+.controller-people.action-show table.subject_header {
+    width: initial;
+}
+
+.controller-people #query_form .collapsible.collapsed>legend:before {
+    left: 2px;
+    top: 14px;
+}
+
+.controller-people #query_form .collapsible:not(.collapsed)>legend:before {    
+    left: 2px;
+    top: 14px;
+}
+
+.contact.details{
+	margin-top:20px;
+}
+
+#content div.contact {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+.contact.details table.subject_header{
+	padding:4px 10px
+}
+
+table.contacts.index tr.context-menu-selection td {
+    color: #5679EB !important;
+}
+
+
+table.person_data{
+	padding:0 10px;
+}
+
+table.person_data td.name h4 {
+    margin: 7px 0 10px 0 !important;
+    padding: 0 !important;
+    line-height: inherit !important;
+    position: inherit !important;
+}
+
+table.person_data td{
+	padding:0 !important;
+}
+
+table.person_data tr:hover{
+	background: transparent !important;
+}
+
+div#sidebar div.contextual{
+	margin-right:0 !important;
+}
+
+.contact.sidebar th{
+	font-weight: 500;
+}
+
+.contact.sidebar.attributes td{
+	padding: 5px 0;
+	word-break: break-all;
+}
+
+table.contacts.index tbody tr:hover{
+	background-color: rgba(85,120,235,0.05) !important;
+}
+
+table.contacts.index{
+	border: 0 !important;
+}
+
+table.contacts.index tr{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	background-color: transparent;
+}
+
+
+table.note_data a.delete:hover {display: none;}
+table.note_data a.delete {display: none;}
+
+#sidebar #notes h4{
+	position: inherit;
+}
+
+#sidebar .note.content.preview {
+	font-size: 1.1rem !important;
+	word-break: break-word;
+}
+
+#sidebar .icon-attachment{
+	background-image: none;
+	padding:0 !important;
+}
+
+.controller-contacts.action-show .icon-only.icon-download, .controller-contacts.action-show .icon-only.icon-download{
+	display: none !important;
+}
+
+.attachments.size{
+	float: left;
+}
+
+div#sidebar div.contact.card {
+	background: transparent !important;
+    overflow-x: inherit !important;
+    padding: 0;
+    width: 100%;
+    margin-right: 0;
+}
+
+.small-card .contact.card h2:before{
+	content: none;
+}
+
+div.person.details table.subject_header td.subject_info{
+	border-left:0;
+}
+
+.small-card .contact.card *{
+	background-image: none !important;	
+}
+
+table.subject_header td.avatar {
+    text-align: left !important;
+    /*width: 0 !important;*/
+}
+
+.small-card .contact.card td, .small-card .contact.card p,  .small-card .contact.card a{
+	padding-left: 0 !important;	
+}
+
+.small-card .contact.card td > *{
+	display: block !important;
+}
+
+ .small-card .contact.card a{
+	 text-transform: none !important;
+	 font-size: 11px !important;
+	 letter-spacing: 0px !important;
+ }
+
+ div.contact.card table.subject_header td.name {
+    padding-left: 4px;
+    padding-top: 0px;
+    vertical-align: top !important;
+}
+
+#sidebar h4.contacts_header{
+	font-size: 11px;
+	text-transform: none;
+	color: #666 !important;
+	border: 0;
+}
+
+h4.contacts_header a{
+	padding: 0 !important;
+}
+
+#recently_viewed{
+	padding: 0 10px;
+}
+
+table.people.index td.name h1, table.contacts.index td.name h1 {
+    font-size: 15px !important;
+    font-weight: 700 !important;
+}
+
+.contact.sidebar.attributes.vcard a{
+	display: initial !important;
+}
+
+.contact.sidebar.attributes.vcard th{
+	padding: 5px 4px 5px 0;
+}
+
+#content :not(.note_data_header) table.note_data {
+    overflow: auto;
+    margin-bottom: 30px;
+	background-color: #fff;
+	border-radius: 4px;
+	border-collapse: collapse;	
+}
+
+#content table.note_data td{
+	padding:0;
+}
+
+#content table.note_data .contextual{
+    margin: 10px;
+    position: absolute;
+    right: 2%;
+    z-index: 999;
+}
+ 
+#content table.note_data h4{
+	border:0;
+	padding: 10px 20px;
+}
+ 
+table.note_data td.name div.wiki{
+	padding: 10px 20px 15px 20px;
+	margin:0;
+}
+
+.people_header .live_search{
+	display: inline-block;
+}
+
+
+#sidebar #add_issue_form textarea, #sidebar #add_issue_form #issue_subject{
+	width: 90% !important;
+}
+
+#ticket_data_form .select2-selection__rendered {
+	color: #333;
+	padding-top: 5px;
+}
+
+#ticket_data_form .select2-search__field{
+	width: 80%;
+	border: 0;
+}
+
+form#ticket_data_form {
+	margin-bottom: 20px !important;
+    /*padding: 20px!important;
+	width: 83%;*/
+}
+
+#sidebar #issue_contacts{
+	clear: both;
+}
+
+.select2-container, .select2-selection{
+	/*min-width: 200px;*/
+	background: none !important;
+	padding: 4px;
+}
+
+.select2-selection--multiple{
+	/*min-width: 224px;*/
+}
+
+.select2-container--default{
+	/*min-width: 224px;*/
+}
+
+.edit_helpdesk_ticket label{
+	height: 16px !important;
+}
+
+.select2-container--default .select2-dropdown{
+    border: 1px solid #ccc !important;
+    margin-left: -1px;
+    margin-top: -6px;
+}
+
+#sidebar .select2-container, .select2-selection{
+	width:100%;
+}
+
+/*.select2.select2-container{
+	margin-top: 12px;
+    background-color: #fff !important;
+    z-index: 10;
+    border-radius: 0;
+}*/
+
+#issue_helpdesk_ticket_attributes_contact_id_add_link img,  #invoice_contact_id_add_link img{
+	display:none;
+}
+
+#issue_helpdesk_ticket_attributes_contact_id_add_link,  #invoice_contact_id_add_link{
+	margin-left:10px;
+	text-decoration:none;
+}
+
+.controller-contacts #query_form, .controller-deals #query_form{
+	display: block;
+}
+
+.controller-contacts .live_search{
+	display:inline-block;
+}
+
+.controller-contacts .live_search input::placeholder {
+  	color: rgba(0,0,0,0.15);
+}
+
+table.people.index tbody tr:hover{
+	background-color: rgba(85,120,235,0.05) !important;
+}
+
+
+.controller-people fieldset.collapsible{
+	background-color:#FFFFFF !important;
+	padding: 12px 16px 4px 16px !important;
+}
+
+.controller-people fieldset.collapsible > legend{
+	float:left;
+	padding:0;
+}
+
+#sidebar #add_issue_form{
+	display: table;
+    width: 100%;
+}
+
+#sidebar #add_issue_form input[type=submit] + a{
+	float: none;
+	width: auto;
+	margin-left: 4px;
+}
+
+#sidebar #add_issue_form input[type=submit]{
+	margin-top: 0;
+}
+
+#sidebar #contact_issues + div{
+	clear: both;
+}
+
+.select2-container--default .select2-selection--single.icon .select2-selection__rendered{
+	display: inline-table; 
+}
+
+.select2-container .select2-selection--single .select2-selection__clear{
+	margin-left:20px;
+}
+
+
+/**********************************************************/
+/* TAGS */
+/**********************************************************/
+
+span.tag-label-color, .tag-label-color{
+	border: 0 !important;
+	padding: 0 8px!important;
+	color: #fff;
+}
+
+.tags-cloud a, span.tag-label-color a{
+	padding: 4px 0 !important;
+	text-transform: none !important;
+	letter-spacing: 0px !important;
+	font-size:1rem !important;
+	display: block;
+	line-height: 1rem !important;
+}
+
+#sidebar span.tag-label-color a{
+	padding-bottom: 0 !important;
+}
+
+.admin .list tr .tag-label-color a{
+	color: #fff !important;
+}
+
+#issue_tags .select2-selection{
+	vertical-align: -15%;
+    border: 0;
+    padding: 6px 8px;	
+    border-radius: 3px;
+	width: 96%;
+}
+
+
+/**********************************************************/
+/* ADDITIONALS */
+/**********************************************************/
+
+.gototop {
+    text-align: center !important;
+    float: left;
+    width: 100%;
+}
+
+
+/**********************************************************/
+/* GANTT */
+/**********************************************************/
+
+
+.gantt_subjects_container{
+	padding-left:2px;
+}
+
+tr span.expander:hover, .gantt_subjects div > span.expander{
+	cursor:pointer;
+}
+
+tr span.icon-expended {
+    background: url(../images/arrow_down.png) no-repeat 2px 50%;
+}
+
+.controller-gantts #query_form_with_buttons .contextual{
+	padding-bottom: 20px;
+	padding-right: 10px;
+	position: relative;
+	z-index: 7;
+}
+
+.controller-gantts.action-show #query_form{
+	padding-bottom:0 !important;
+}
+
+.controller-gantts.action-show .table table{
+    background-color:#FFFFFF;
+    /*padding-left: 2px;*/
+	width: 100%;
+}
+
+.controller-gantts.action-show .pagination ul.pages li{
+	min-width:80px;
+}
+
+.gantt_hdr {
+    position: absolute;
+    top: 0;
+    height: 16px;
+    border: 1px solid #f7f7f7 !important;
+    text-align: center;
+    overflow: hidden;
+	z-index: auto !important;
+}
+
+.gantt_subjects{
+	font-size: 0.9em;	
+	font-weight: 700;
+	color:#BBB;
+}
+
+.gantt_subjects div {
+    font-weight: 500;
+    line-height:inherit;
+    width: 82% !important;
+}
+
+.issue-overdue, .issue-behind-schedule{
+	color:#000;
+}
+
+.gantt_subjects_container a.issue{
+	margin-right: 2px;
+    border: none !important;
+    font-size: 1.1rem;
+}
+
+.gantt_subjects .icon:not(.icon-projects):before{
+	content:"";
+}
+
+.gantt_subjects .icon.icon-projects:before, .gantt_subjects .icon.icon-projects a{
+	font-size: 1.3rem !important;
+    /*padding-left: 6px;*/
+}
+
+.gantt_subjects .icon.icon-package a:before, .gantt_subjects_container a.issue::before{
+	font-size: 1.3rem !important;
+}
+
+.gantt_subjects span{
+	background-image:none;
+}
+
+.gantt_subjects .icon a::before, .gantt_subjects_container a.issue::before{
+	margin-right: 5px;
+	vertical-align: text-top;
+}
+
+.controller-gantts img.gravatar {
+    border-radius: 50%;
+    margin-left: 16px;
+    width: auto;
+    height: 100%;
+	vertical-align: bottom;
+	margin: 0 5px 0 0 !important;
+}
+
+div.tooltip:hover span.tip {
+    display: block;
+    position: absolute;
+    top: 12px;
+    width: 85%;
+    min-width: 160px;
+    border: 0;
+    background-color: #fff;
+    padding: 13px;
+    font-size: 1.1rem;
+    color: #505050;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+div.tooltip:hover span.tip a{
+	display:block;
+	margin-bottom:4px;
+}
+
+fieldset > legend {
+	font-size: inherit !important;
+}
+
+@media screen and (max-width: 899px){
+	
+	.controller-gantts img.gravatar {
+		margin-left: 0;
+	}
+	
+}
+
+
+/**********************************************************/
+/* AGILE */
+/**********************************************************/
+
+
+.controller-agile_boards.action-index #main #content{
+	/*position:initial !important;*/
+}
+
+.controller-agile_boards #query_form_with_buttons .buttons{
+	margin-bottom: -20px;
+    width: 100%;
+}
+
+.controller-agile_boards .live_search{
+    display:inline-block;
+}
+
+.controller-agile_boards .live_search input::placeholder {
+  color: rgba(0,0,0,0.15);
+ }
+
+.issue-card {
+    padding: 4px 20px 35px 20px !important;
+    border-top: 0 !important;
+	border-bottom: 0 !important;
+	border-right: 0 !important;
+    margin: 0 0 7px 0 !important;
+    word-wrap: break-word;
+    text-align: left;
+    white-space: normal;
+    cursor: move !important;
+    position: relative;
+	border-radius:3px;
+}
+
+.controller-agile_boards .issue-card  {
+	padding: 10px 0 20px 0!important;
+    border-left-width: 3px !important;
+}
+
+.issue-card div.checklist input[type=checkbox]{
+	margin-left:5px !important;
+}
+
+.issue-card .user{
+	/*float:right;*/
+}
+
+
+.issue-card .info {
+    /* border-top: 1px solid #FFFFFF !important; */
+    /* padding-top: 10px !important; */
+    /* margin-top: 10px !important; */
+    padding-left: 20px;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    border: 0 !important;
+}
+
+.issues-board .add-issue {
+    background: transparent;
+    padding: 5px 10px !important;
+    margin: 0 !important;		
+}
+
+.issues-board .add-issue .new-card__input {
+    outline: none;
+    width: 96% !important;
+	opacity:0.5;
+    border: 0px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+	font-size: 10px;
+	font-weight:700;
+}
+
+table.list.issues-board th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center !important;
+    font-size: 1.3rem !important;
+}
+
+html.agile-board-fullscreen .icon-fullscreen{
+	text-indent: inherit !important;
+	margin-right: 20px;
+	font-size:0;
+	padding: 8px 0 8px 20px !important;
+}
+
+.card-fields .floating label span {
+	width: 19px !important;
+	display: initial !important;
+}
+
+.card-fields .floating label span.on {
+	width: 10px !important;
+}
+
+.issue-card span.checkbox{
+	margin-left: -26px!important;
+	margin-top: -6px !important;
+}
+
+.issue-card .issue-id, .issue-card .name{
+	padding: 0 20px;
+}
+
+.card-fields .floating {
+    margin-top: 5px;
+}
+
+.controller-agile_versions .issue-card{
+	padding: 20px 0 !important;
+	border-left: 5px !important;
+}
+
+.controller-agile_boards .info.description.last_comment {
+    /* padding-left: 20px; */
+    word-break: break-all;
+}
+
+.controller-agile_boards .icon.icon-comment.last-comment{
+	padding-left:0;
+}
+
+.controller-agile_boards .icon.icon-comment.last-comment:hover{
+	background-color:transparent;	
+}
+
+table.list.issues-board.sticky{
+	left:auto !important;
+	background-color:#fff;
+}
+
+#header.sticky + #main table.list.issues-board.sticky{
+	/*top:120px !important;*/
+	top:50px !important;
+}
+
+.issues-board.status-colors.sticky{
+	z-index:10 !important;
+}
+
+.agile-chart-container {
+    max-width: none;
+    max-height: 500px;
+}
+
+.issue-card img.gravatar, .list.users img.gravatar {
+    height: 18px;
+    width: 18px;
+}
+
+.controller-agile_boards #context-menu{
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.buttons .modal-action-button {
+    height: 40px;
+}
+
+.issue-card p.project {
+    margin: 0 20px 10px 20px;
+}
+
+.issue-card .attributes {
+    margin: 5px 20px 0 20px;
+}
+
+.issue-card .attributes .user{
+    float: none;
+}
+
+.issue-card .info {
+	border-top: none;
+}
+
+.issue-card .info.description {
+    margin: 0 20px 5px 20px;
+	width: initial;
+	padding: 0;
+}
+
+.issue-card.context-menu-selection .attributes, .issue-card.context-menu-selection em.info {
+    color: #000000 !important;
+}
+
+.query-totals {
+	margin-top:0 !important;
+    text-align: right;
+    font-size: 1.6rem;
+    margin: 0 0 14px 0;
+    color: #555;
+}
+
+.select2-container--open{
+	z-index:999;
+}
+
+
+/**********************************************************/
+/* HELPDESK */
+/**********************************************************/
+
+.controller-settings.action-plugin #tab-content-general > p:last-of-type .radiobox{
+	opacity:1 !important;
+}
+
+.controller-settings.action-plugin #tab-content-general > p:last-of-type span.radiobox{
+	display:none;
+}
+
+div.email-template{
+    border: 0 !important;
+}
+
+.admin #tab-content-templates fieldset:nth-child(2){
+	background-color: transparent !important;
+}
+
+#tab-content-widget p{
+	float:none;
+}
+
+.helpdesk_chart{
+	width: initial !important;
+}
+
+.icon.icon-helpdesk:before, .icon.icon-company-contact:before{
+    margin-right: 8px;
+}
+
+form#ticket_data_form, #add_issue_form {
+    background: rgba(255,255,255,0.1)!important;
+    display: block;
+    padding: 6px;
+    margin-bottom: 6px;
+    margin-right: 0!important;
+    border: 0!important;
+	border-radius: 3px!important;
+	float: left;
+	width:100%;
+}
+
+#customer_profile_and_issues{
+	/*float:inherit;*/
+	margin-bottom:20px;
+	width:100%;
+}
+
+#customer_profile_and_issues #customer_profile{
+	/*display:inherit;*/
+	width:100%;
+}
+
+/*#issue-form*/ .icon-email-to{
+	background-image: none!important;
+	padding-left:0;
+}
+
+
+.attributes #ticket_data{
+	margin-bottom:1%;
+}
+
+/*div.email-template{
+	background-color: #f7f7f7 !important;
+    padding: 30px !important;
+    margin-bottom: 20px !important;
+}*/
+
+.mail_rule_block{
+	background-color:#fff;
+	border-radius:4px;
+	padding:1%;
+}
+
+.journal_message .icon-email-to{
+	background:none !important;	
+}
+
+.icon-call {
+	background:none !important;
+}
+
+.icon-web {
+	background:none !important;
+}
+
+.helpdeks-ticket-line{
+    margin: 0px!important;
+}
+
+.helpdesk-send-response-wrapper{
+	padding-left: 10px;
+}
+
+/*.helpdesk-ticket-to{
+	margin-left: 150px;
+}*/	
+
+
+/**********************************************************/
+/* FAVOURITE PROJECTS */
+/**********************************************************/
+
+.controller-favorite_projects .filters {
+	margin-top: 60px;
+}
+
+.controller-favorite_projects .filters legend {
+	float: left;
+	padding: 0 0 10px 15px;
+}
+
+.controller-favorite_projects .filters h2 {	
+	position: absolute;
+    margin-top: -62px;
+	/*margin-left: -25px;*/
+}
+
+.controller-favorite_projects div.row {
+    padding-left: 0 !important;
+}
+
+.controller-favorite_projects div.project_card {
+	width: 17%;
+    height: 150px;
+    float: left;
+    margin: 0 1% 20px 0;
+    position: relative;
+    text-align: left;
+    padding: 1%;
+    text-shadow: none;
+    border: solid 0;
+	padding-bottom: 10px;
+	border-radius: 4px;
+}
+
+div.project_card .parent > h4{
+	width: initial !important;
+	padding-right: 5px !important;
+}
+
+.controller-favorite_projects div.project_card div.title{
+	width: 100%;
+}
+
+.controller-favorite_projects div.project_card:hover{
+	background-color: #fff !important;	
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.06);
+}
+
+.controller-favorite_projects div.project_card .people{
+	bottom:10px;
+}
+
+.controller-favorite_projects .contextual{
+	color: transparent;
+}
+
+.controller-favorite_projects .contextual a{
+	/*background: transparent;*/
+    /*border-radius: 30px;*/
+    padding: 12px 20px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+    font-size: 1.3rem;
+    cursor: pointer;
+    /* font-weight: 700; */
+    text-decoration: none;
+}
+
+.controller-favorite_projects .contextual a:hover{
+    color: #fff !important;
+}
+
+.admin .box .box{
+	padding:0;	
+	box-shadow: none !important;
+}
+
+.admin .box .box label, .admin .box .box p{
+	width: initial;
+	margin-left: 0;
+	padding-left: 0;
+	padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+div.project_card .description{
+	width: initial !important;
+}
+
+
+/**********************************************************/
+/* CHECK LIST */
+/**********************************************************/
+
+#history .details span.checkbox{
+	float:none;
+	margin-left:-20px;
+	margin-right:4px;
+	vertical-align: bottom;
+    margin-top: 4px;
+}
+
+#history .details span.checkbox.on + i{
+    text-decoration: line-through;
+	opacity:0.5;
+}
+
+#checklist span.checkbox.on{
+	background-color:#fff;
+}
+
+span.checklist-edit-box input {
+    width: 250px !important;
+}
+
+#checklist_form{
+	padding-top:12px;
+	padding-bottom:12px;
+}
+
+#checklist_form .icon, #checklist_form .icon:hover{
+	border:0;
+	padding:0;
+}
+
+#attributes .icon-only.icon-add{
+	width: 16px;
+}
+
+#checklist_form .icon::before,  #attributes .icon-only.icon-add::before{
+	font-size: 16px !important;
+}
+
+#context-menu.checklist-menu{
+	top:initial !important;
+	left:initial !important;
+	margin-left: 350px;
+    margin-top: -50px;
+}
+
+
+/**********************************************************/
+/* INVOICES */
+/**********************************************************/
+
+div.issue.invoice{
+	background-color:#fff!important;
+}
+
+.icon-pdf, .icon-add-payment{
+	background-image: none !important;
+	text-decoration:none !important;
+	padding: 13px 22px !important;
+	margin-right: 2px !important;
+}
+
+div.account, div.operation{
+	background-color:#fff!important;
+}
+
+table.invoice-lines tr.total th{
+	text-align: right !important;
+}
+
+table.invoices-stat.statuses th{
+	padding: 0 !important;
+}
+
+table.invoice-lines.form tr.line.fields td.price input {
+    display: inline-block;
+}
+
+table.invoice-lines.form tr.line.fields td, table.product-lines.form tr.line.fields td {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+}
+
+#invoice_form p.object-select select{
+	width:initial !important;
+}
+
+.icon-invoice-public-link {
+    background-image: none!important;
+}
+
+/**********************************************************/
+/* ORDERS */
+/**********************************************************/
+
+
+.controller-orders .live_search{
+	display:inline-block;
+}
+
+.icon-invoice-add-context{
+	background-image: none !important;
+	text-decoration:none !important;
+	padding: 13px 22px !important;
+	margin-right: 2px !important;
+}
+
+div.details table.product-lines tr.total th{
+	text-align: right !important;
+}
+
+.list.product-lines{
+	width:99%;
+}
+
+.controller-orders.action-new .autoscroll{
+    float: left;
+    width: 100%;
+}
+
+.orders span.tag-label-color {
+    background-color: #759FCF!important;
+}
+
+/**********************************************************/
+/* PRODUCTS */
+/**********************************************************/
+
+.controller-products .live_search {
+    display: inline-block;
+}
+
+.controller-products .product.details{
+	background-color: #fff !important;
+}
+
+.icon-order-add{
+	background-image: none !important;
+	text-decoration:none !important;
+	padding: 13px 22px !important;
+	margin-right: 2px !important;
+}
+
+#products_form span{
+	word-wrap: normal;
+}
+
+.select2-container--default .select2-selection--multiple{
+	border:0 !important;
+}
+
+/**********************************************************/
+/* QUESTIONS & ANSWERS */
+/**********************************************************/
+
+.votes.icon-vote, .question-meta .icon-vote:not(.vote),   .contextual .icon-vote, .contextual .icon-unvote:not(.vote), .question-meta .icon-view{
+	background-image: none;
+}
+
+input.questions-search{
+	border: 0 !important;
+	border-radius: 25px !important;
+	background-image: none !important;
+	height: 35px !important;
+	font-size: 14px !important;
+	width: 100% !important;
+}
+
+.topic {
+    padding: 10px 0 30px !important;
+}
+
+
+/**********************************************************/
+/* EASY GANTT */
+/**********************************************************/
+
+.redmine .icon-settings{
+	background-image: none !important;
+	text-decoration: none !important;
+	padding: 6px 16px !important;
+	margin-right:2px;
+}
+
+.redmine #button_save{
+	padding: 8px 16px !important;
+	margin-right:2px;
+}
+
+.redmine .push-left .checkbox:not(input){
+	position: absolute;
+    margin-left: -24px;
+    margin-top: 6px;	
+}
+
+.redmine .push-left .checkbox.on:not(input){
+}
+
+.redmine .push-left input.checkbox{
+	margin-left:20px;
+}
+
+.icon-stats{
+	background-image:none;
+}
+
+#top-menu .icon{
+	padding-left:0;
+}
+
+.gantt-menu-button .icon.icon-calendar {
+    background-image: none!important;
+}
+
+#button_jump_today::before, #button_day_zoom::before, #button_week_zoom::before, #button_month_zoom::before{
+	display: none;
+}
+
+#easy_gantt .icon-settings::after{
+	display:none;
+}
+
+#easy_gantt .contextual.settings::before{
+	display:none;
+}
+
+#easy_gantt #button_print::before{
+	display:none;
+}
+
+
+/**********************************************************/
+/* LAPD */
+/**********************************************************/
+
+.controller-ldap_settings .group{
+	color:#000;
+}
+
+.controller-ldap_settings #wrapper{
+	min-height:100%;
+}
+
+.controller-ldap_settings #main-menu{
+	display:none;
+}
+
+#ldap_attributes {
+	display:grid;
+	background: rgba(255,255,255,0.1);
+}
+
+#ldap_attributes label{
+    width: 295px;
+	float:left;
+	text-align:right;
+}
+
+
+
+/**********************************************************/
+/* SCRUM */
+/**********************************************************/
+
+body.action-login #sidebar,  body.action-register #sidebar,  body.action-lost_password #sidebar{
+	float: left;
+	overflow-x:hidden;
+	width: 12%;		
+	margin: 2%;
+	padding: 0 1% 30px 1%;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);	
+	position: absolute;
+	text-align:left;
+}
+
+body.action-login #menuhide,  body.action-register #menuhide,  body.action-lost_password #menuhide{
+	display:none;	
+}
+
+.scrum-content span.radiobox {
+    float: none;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*.scrum-content .post-it{
+	box-shadow: none;
+	background-image:none;
+}*/
+
+.scrum-content a:hover, .scrum-menu a:hover{
+	text-decoration:none;
+}
+
+.scrum-content .icon, .scrum-menu .icon{
+	border:0;
+	padding:12px;
+	font-weight:bold;
+}
+
+
+.scrum-menu .icon{
+	background-image:none;
+}
+
+.scrum-menu .icon:before{
+	font-family: 'zenmine' !important;
+	font-size: 21px;
+	font-weight:100;
+	vertical-align: -25%;
+	margin-right:6px;
+}
+
+.scrum-menu .icon-burndown:before{
+	content: "\e831"!important;
+}
+
+.scrum-menu .icon-sprint-board:before{
+	content: "\e94b"!important;
+}
+
+.scrum-menu .icon-stats:before{
+	content: "\e8ac"!important;
+}
+
+.scrum-menu .icon-sprint-board:before{
+	content:"\f94a"!important;
+}
+
+#main-menu.tabs .sprint::before, #main-menu.tabs .product-backlog::before, .flyout-menu .sprint::before {
+    font-family: "zenmine"!important;
+    content: "\f94a"!important;
+}
+
+.icon.icon-product-backlog:before{
+	content:"\f94a"!important;
+}
+
+.icon.icon-release-plan:before{
+    font-family: "zenmine"!important;
+    content: "\e831" !important;
+    transform: rotate(90deg);
+    display: inline-block;
+}
+
+.controller-settings.action-plugin.admin fieldset > *{
+	float:initial;
+	margin-right:initial;
+}
+
+
+
+/**********************************************************/
+/* CMS */
+/**********************************************************/
+
+#cms-settings-menu .icon{	
+	padding-left:20px !important;
+	margin-left:0px !important;
+	margin-right:0px !important;
+	padding-bottom:12px !important;
+}
+
+#cms-settings-menu *{
+	background-image:none;
+}
+
+#cms-settings-menu .icon:before, #cms-settings-menu .icon:after{
+	content:"" !important;
+	margin-right:0px !important;
+}
+
+#cms-settings-menu .select2-container{
+	min-width:initial;
+}
+
+#top-menu .administration + ul.menu-children a:before{
+	content:"";
+}
+
+#top-menu .administration + ul.menu-children li{
+	border-right:0;
+}
+
+
+/**********************************************************/
+/* RESOURCES */
+/**********************************************************/
+
+.controller-resource_bookings.action-index #query_form{
+	padding-bottom:0 !important;
+}
+
+.controller-resource_bookings.action-index #query_form_with_buttons > p.contextual{
+	padding:14px 0;
+}
+
+.controller-resource_bookings.action-index #content .table table{
+    background-color: #FFFFFF;
+    padding-left: 2px;
+}
+
+.controller-resource_bookings.action-index #content .table:nth-of-type(3) table {
+	padding: 20px;
+}
+
+.controller-resource_bookings.action-index #content .table:nth-of-type(3) table td a {
+    background-color: #f7f7f7;
+    padding: 8px 16px;
+    border-radius: 4px;
+    color: #BBBBBB;
+    text-decoration:none;
+}
+
+.controller-resource_bookings.action-index #content .table:nth-of-type(3) table td a:hover {
+    color: #FFFFFF;
+    background-color: #BBBBBB;
+}
+
+.resource-planning-chart .user-resource-bookings span.expander:before, .resource-planning-chart .icon-projects:before{
+	color: #bbbbbb;
+	font-size: 1.5rem;
+	margin-left: 0;
+}
+
+.controller-resource_bookings .new_resource_booking .tabular label{
+	min-width: 120px;
+	text-align: left;
+}
+
+.ui-dialog-content.ui-widget-content input[type='button']{
+	background-color: rgba(187,187,187,0.15) !important;
+	color: #bbbbbb !important;
+	border-radius: 4px !important;
+}
+
+.ui-dialog-content.ui-widget-content input[type='button']:hover{
+	background-color: #bbbbbb !important;
+	color: #ffffff !important;
+}
+
+.user-resources .autoscroll{
+	width:initial;
+}
+
+body.controller-hrm_resources .query-totals{
+	margin-top:initial !important;
+}
+
+
+/**********************************************************/
+/* CALENDAR */
+/**********************************************************/
+
+.controller-calendars #query_form #query_form_with_buttons .contextual{
+	padding:14px 0;
+}
+
+/**********************************************************/
+/* EXPENSES */
+/**********************************************************/
+
+#expense_price{
+	width: auto;
+    float: left;
+    margin-right: 10px;
+}
+
+#expense_contact_id_add_link img, #deal_contact_id_add_link img, #order_contact_id_add_link img{
+	display: none;
+}
+
+.icon-money-dollar {
+    background-image: none!important;
+}
+
+.icon-rosette {
+    background-image: none!important;
+}
+
+.icon-date {
+    background-image: none!important;
+}
+
+/**********************************************************/
+/* DMSF */
+/**********************************************************/
+
+.list .dmsf_buttons{
+	min-width: 130px !important;
+	width: 130px !important;
+}
+
+.dmsf_buttons a.icon-only{
+	display:inline;
+	font-size: 1em;
+	background:none;
+	padding-left: 10px;
+}
+
+.dmsf_buttons a.icon-only::after{
+	content: "" !important;
+}
+
+.edit_dmsf_file_revision label[for=version_0]{
+	height:100px;	
+}
+
+.dmsf-tree .icon{
+	background-image: none !important;
+}
+
+.dmsf-title a::before{
+	content:"" !important;
+}
+
+.dmsf-tree .icon-none::before{
+	display: none;
+}
+
+
+/**********************************************************/
+/* OTHERS */
+/**********************************************************/
+
+.workflows a.icon-only::after {
+    content: ""!important;
+}
+
+/**********************************************************/
+/* EVM */
+/**********************************************************/
+
+.controller-evms.action-index #query_form {
+    padding-bottom: 0 !important;
+    margin-bottom: 20px !important;
+}
+
+
+/**********************************************************/
+/* DRIVE */
+/**********************************************************/
+
+#drive-entries .list{
+	background-color:#fff;
+}
+
+
+#files-sidebar-menu .icon::before, #files-sidebar-menu .icon{
+	margin-left: 0;
+	padding: 4px 0 !important;
+	background: none !important;
+}
+
+#files-sidebar-menu .icon.icon-download::after{
+	 content: "" !important;
+}
+
+#files-sidebar-menu .icon.icon-del::before{
+	 display: inline-block;
+}
+
+#drive-entries .autoscroll{
+	background: none;
+}
+
+
+/**********************************************************/
+/* ADDITIONALS */
+/**********************************************************/
+
+#block-form{
+	display: inline-block;
+}
+
+

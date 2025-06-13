@@ -1,0 +1,1531 @@
+/* Zenmine Theme version 5.0, Copyright (C) 2019-2022 - Luis Blasco www.bestredminetheme.com */
+
+/**********************************************************/
+/* COMMON */
+/**********************************************************/
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+textarea.wiki-edit{
+    width:96% !important;
+}
+
+div.tabs-buttons {
+    position: absolute !important;
+    right: 0 !important;
+    width: 54px;
+    height: 24px;
+    background: transparent;
+    bottom: 0;
+    border-bottom: 1px solid transparent;
+}
+
+#query_form_with_buttons .buttons a{
+	border:none;
+}
+
+#query_form_with_buttons .buttons a.icon-del{
+    background: rgba(253, 57, 122, 0.15);
+    color: rgba(253, 57, 122, 1);
+}
+
+#query_form_with_buttons .buttons a.icon-del:hover{
+    background: rgba(253, 57, 122, 1);
+    color: #fff;
+}
+
+#query_form_with_buttons .buttons a.icon-del:hover::before{
+    color: #fff;
+}
+
+.controller-enumerations h3{
+	float:left;
+}
+
+.controller-enumerations:not(.action-edit):not(.action-new) p{
+	float:right;
+}
+
+tr .id > a {
+    border-radius: 2px !important;
+	border: 0!important;
+	font-size: 1.2rem;
+    display:inline-block;
+    min-width:40px;
+}
+
+tr .id > a:hover {
+    text-decoration:none;
+}
+
+tr.tracker-10 .id>a, a.tracker-10, .relations>span>a.tracker-10, .parent>a.tracker-10 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-9 .id>a, a.tracker-9, .relations>span>a.tracker-9, .parent>a.tracker-9 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-8 .id>a, a.tracker-8, .relations>span>a.tracker-8, .parent>a.tracker-8 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-7 .id>a, a.tracker-7, .relations>span>a.tracker-7, .parent>a.tracker-7 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-6 .id>a, a.tracker-6, .relations>span>a.tracker-6, .parent>a.tracker-6 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-5 .id>a, a.tracker-5, .relations>span>a.tracker-5, .parent>a.tracker-5 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-4 .id>a, a.tracker-4, .relations>span>a.tracker-4, .parent>a.tracker-4 {
+    border-radius: 2px !important;
+	border: 1px solid !important;
+}
+
+tr.tracker-3 .id>a, a.tracker-3, .relations>span>a.tracker-3, .parent>a.tracker-3 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-2 .id>a, a.tracker-2, .relations>span>a.tracker-2, .parent>a.tracker-2 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+tr.tracker-1 .id>a, a.tracker-1, .relations>span>a.tracker-1, .parent>a.tracker-1 {
+    border-radius: 2px !important;
+    border: 1px solid !important;
+}
+
+td.checkbox{
+	text-align:center;
+}
+
+table.list td{
+	font-weight:400;
+}
+
+tr span.expander {
+	margin-left: 2px;
+    padding-left: 12px;
+	margin-right: 4px;
+}
+
+.pagination ul.pages li a, .pagination ul.pages li span{
+    /*padding:0;*/
+    vertical-align: sub;
+    color:#BBBBBB;
+}
+
+span.pagination {
+    text-align: center;
+    letter-spacing: 0;
+    font-size: 1.3rem;
+    color: #999;
+    padding: 20px;
+    background-color: #FFFFFF;
+    margin: 0;
+    font-weight: 300 !important;
+}
+
+.controller-activities span.pagination{
+    background-color:transparent;
+}
+
+.previous{
+	margin-right: 4px !important;
+}
+
+.previous a, .next a{
+    display: inline-block;
+    height: 21px;
+    border-radius: 3px;
+    vertical-align: text-bottom;
+}
+
+.next.page{
+	margin-left: 4px !important;
+}
+
+span.pagination .items{
+	float: right;
+	padding-right: 20px;
+}
+
+.pagination ul.pages li{
+	border:0;
+	margin:0;
+}
+
+.controller-activities .pagination ul.pages li{
+    background:#fff;
+}
+
+.controller-activities .pagination ul.pages li a{
+    color: #999;
+    padding: 5px 14px 8px 14px;
+}
+
+.controller-activities .previous, .controller-activities .next{
+    font-size:13px;
+    height: auto!important;
+    width: auto!important;
+}
+
+.controller-activities .previous a::before, .controller-activities .previous a::after{
+    display:none
+}
+
+.pagination ul.pages li.current{
+	background: #BBBBBB;
+}
+
+.pagination ul.pages li.current span{
+    color:#FFFFFF;
+}
+
+body:not(.controller-calendars) .pagination ul.pages li{
+
+	vertical-align: text-bottom;
+	background-color: #F7F7F7;
+	border-radius: 4px!important;
+	margin-right:3px;
+	width:30px;
+	height:30px;
+}
+
+body:not(.controller-calendars) .pagination ul.pages li.page:hover{
+	background-color:#BBBBBB;
+}
+
+body:not(.controller-calendars) .pagination ul.pages li.page:hover a{
+	color:#fff;
+}
+
+.pagination .per-page span.selected {
+    font-weight: 400;
+}
+
+div.flash.notice {
+    background: url(../images/check.svg) no-repeat;
+    background-color: #1DC9A0;
+    color: #fff;
+    background-size: 24px;
+    background-position: 10px;
+}
+
+#errorExplanation {
+    background: none;
+    background-color: #e86b95;
+    color: #ffffff;	
+}
+
+div.flash.notice , #errorExplanation, #errorExplanation + p, h2 ~ #errorExplanation {
+	text-align: center;
+    margin-top: 20px;	
+    margin-bottom: 30px;
+}
+
+.per-page{
+	float:left;
+	padding-left:20px;
+}
+
+#query_form_content{
+	font-size:inherit;
+}
+
+#query_form_content label.inline{
+	display:table;
+}
+
+.action-password .tabular label {
+    width: 100%;
+    max-width: 100px;
+    margin-right: 1%;
+}
+
+.action-password .tabular label,
+.action-password input[type=password]{
+    display: inline-block;
+}
+
+table.list:not(.odd-even) tbody tr:nth-child(odd), .odd, #issue-changesets div.changeset:nth-child(odd){
+	background-color: transparent;
+	border-bottom: 1px solid #efefef;
+}
+
+table.list:not(.odd-even) tbody tr:nth-child(even), .even, #issue-changesets div.changeset:nth-child(even) {
+	border-bottom: 1px solid #efefef;
+}
+
+
+table.list tbody tr.assigned-to-me td, table.list tbody tr.assigned-to-me a {	
+	font-weight:700 !important;
+}
+
+button.tab-left, button.tab-right{
+	border:0 !important;
+    width:30px;
+}
+
+table.list:not(.odd-even) tbody tr:nth-child(even), .even, #issue-changesets div.changeset:nth-child(even){
+	background-color: transparent;
+}
+
+.hascontextmenu {
+    cursor: auto;
+}
+
+.list.files{
+    display:table !important;
+}
+
+.list.files th{
+    padding: 1% 2%;
+}
+
+.ui-menu.ui-widget-content {
+    z-index: 999;
+}
+
+/**********************************************************/
+/* CHECKBOX */
+/**********************************************************/
+
+/*@supports(-webkit-appearance: none) or (-moz-appearance: none) {
+  input[type='checkbox'],
+  input[type='radio'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+
+input[type='checkbox'] {
+      border-radius: 7px;
+        width: 5px;
+        height: 9px;
+        border: 2px solid #000000;
+        border-top: 0;
+        border-left: 0;
+        left: 7px;
+        top: 4px;
+}*/
+
+
+.checkbox {
+    position: relative;
+    z-index: 5;
+	cursor: pointer;
+	margin-right: 8px;
+}
+
+span.checkbox, .cb_status {
+    z-index: 10;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: #FFF;
+    float:left;
+	margin-right: -20px;
+	border-radius:2px;	
+	
+	transition: background-color 0.25s;
+	-moz-transition: background-color 0.25s;
+	-webkit-transition: background-color 0.25s;
+	-o-transition: background-color 0.25s;
+}
+
+span.checkbox.on {
+	width: 9px;
+    height: 9px;
+	border: 5px solid #FFF;
+}
+
+.hascontextmenu td span.checkbox, th span.checkbox, #people_list span.checkbox, .controller-issues.action-index form:not(#csv-export-form) span.checkbox, table.list tbody tr span.checkbox {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.warning span.checkbox{
+	float:none;
+	margin-right:0;
+}
+
+.warning + p {
+    width: 280px;
+    margin: 20px auto 0 auto;
+}
+
+#csv-export-form label{
+	display:inline-block;
+}
+
+
+/**********************************************************/
+/* RADIO */
+/**********************************************************/
+
+input[type=radio]{
+	height: 18px;
+}
+
+.radiobox {
+    position: relative;
+    z-index: 5;
+	cursor: pointer;
+	/*clear: both;*/
+	margin-top:2px;
+	margin-right: 8px;
+}
+
+span.radiobox{
+    z-index: 10;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background: #FFF;
+    float:left;
+	margin-left: 10px;
+	margin-right: -20px;
+	border-radius: 10px;	
+	
+	transition: background-color 0.25s;
+	-moz-transition: background-color 0.25s;
+	-webkit-transition: background-color 0.25s;
+	-o-transition: background-color 0.25s;
+}
+
+span.radiobox.on {
+	width: 9px;
+    height: 9px;
+	border: 5px solid #FFF;
+}
+
+span.radiobox:hover{
+
+}
+
+      
+/**********************************************************/
+/* LABELS */
+/**********************************************************/
+
+.tabular label{
+    margin-left: initial;
+    width: 160px;
+    font-weight: 400;
+    text-align: left;
+    float: left;
+    display: initial;
+}
+
+.tabular label.block {
+    display: table-row !important;
+}
+
+#context-menu ul ul{ 
+    margin-left:0!important;
+}
+
+#context-menu .icon.icon-edit,
+#context-menu .icon.icon.icon-fav-off,
+#context-menu .icon.icon-time-add,
+#context-menu .icon.icon-copy,
+#context-menu .icon.icon-del{
+    /*background: transparent!important;
+    color: #5679eb!important;
+    padding: 2px 0px 0px 22px!important;
+    margin-bottom: 0!important;*/
+}
+
+
+/**********************************************************/
+/* SEARCH */
+/**********************************************************/
+
+#quick-search{
+	padding: 10px 0;
+    width:470px;
+}
+
+#quick-search form label{
+    
+}
+
+#quick-search form a{
+    right:100%;
+}
+
+.quick-search::after,
+#quick-search form a::before{
+    font-family: 'zenmine';
+    content: "\e8bd";
+    font-size:18px;
+    position:relative;
+    color:#999999;
+}
+
+.quick-search:hover:after, #quick-search form a:hover:before {
+    color: #333333;
+}
+
+.quick-search::after{
+    position:absolute;
+    top:20px;
+    right:21px;
+}
+
+#quick-search #q, .live_search_field{
+	font-size: 1.2rem;
+    color: #333333 !important;
+    text-align: left;
+    padding: 18px 14px 19px 14px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.live_search_field{
+	width:initial;
+}
+
+#project-jump .drdn-trigger{
+	color:rgba(255,255,255,0.5);
+	 width: 210px;
+}
+
+div + .drdn-items.all-projects{
+    border-top: 1px dashed #ccc;
+}
+
+div + .drdn-items.projects.selection{
+    border-top: none;
+}
+
+#project-jump .drdn-content {
+    position: absolute;
+    right: -29px;
+    top: 40px;
+    background-color: #fff;
+    border: 0;
+    border-radius: 4px;
+    z-index: 99;
+    width: 230px;
+}
+
+.drdn.expanded .drdn-content{
+    padding-top: 2%;
+    box-shadow: 0 6px 8px 1px rgba(0,0,0,0.14);
+    border-radius: 4px!important;
+    border:0;
+}
+
+.contextual .drdn-items>a:hover {
+    color: initial;
+    border: 0;
+    background-color: transparent;
+}
+
+body:not(.controller.wiki.action-show) .drdn-items>* {
+    display: block;
+    border: 0;
+    color: #000 !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px 8px;
+    border-bottom: 1px solid #f1efef;
+}
+
+body:not(.controller.wiki.action-show) .drdn-items>a:hover {
+    text-decoration: none;
+    background-color:#F7F7F7;
+    color: #000 !important;
+}
+
+.drdn-content .icon.icon-add, .icon.icon-del {
+    background: transparent;
+}
+
+.live_search_field{
+	padding: 13px 20px 13px 20px;
+	vertical-align: 0;
+	width: 200px;
+	font-size: 14px !important;
+}
+
+#quick-search label {
+    overflow: visible;
+    width: 42px;
+    height: 34px;
+    display: block;
+    position: absolute;
+    right: 0;
+    /*z-index: 77777;*/
+    color:#fff;
+}
+
+#quick-search form a {
+    right: 10px;
+    position: absolute;
+    text-decoration: none;
+    opacity: 1;
+    cursor: pointer;
+    color: #000;
+    font-size: 0;
+    top: 10px;
+}
+
+#quick-search select{
+	float: left;
+	min-width: 200px;
+	max-width: 250px;
+	margin-left: 2%;
+}
+
+
+/**********************************************************/
+/* ADVANCED SEARCH */
+/**********************************************************/
+
+#search-types{
+	/*display:flex;*/
+}
+
+#search-types label{
+	margin-right:20px;
+}
+
+.hidden-for-sighted{
+	position: inherit;
+}
+
+.hidden-for-sighted + p{
+	display:flex;
+}
+
+.hidden-for-sighted +p label{
+	margin-left: 10px;
+}
+
+#search-form #options-content p{
+	display:flex;
+}
+
+
+/**********************************************************/
+/* FILTERS */
+/**********************************************************/
+
+
+body:not(.admin):not(.controller-search) form .collapsible, #sidebar > *, #project-jump, #main-menu > *{
+	border:none;
+    /*border-bottom:1px solid  #f3f5f7;*/
+    margin:0;
+    padding:0;
+    position: relative;
+
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+
+#sidebar .sidebar-tags{
+	clear:both;
+}
+
+#options{
+	border:none
+}
+
+.collapsible:not(.collapsed) div{
+    animation-duration: 1s;
+    animation-name: fadeIn;
+ }
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+
+ .collapsible.collapsed div{
+    opacity: 0;
+ }
+
+body:not(.admin) form .collapsible{
+    -webkit-transition: all ease-in-out 500ms;
+    -moz-transition: all ease-in-out 500ms;
+    -o-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 500ms;
+}
+
+body:not(.admin) form .collapsible:not(.collapsed){
+    padding: 16px 16px 0 16px;
+    margin-left: 0;
+    margin-right: 0;
+    position:relative;
+}
+
+body:not(.admin) form .collapsible.collapsed{
+   padding: 16px 16px 0 16px;
+    margin-left: 0;
+    margin-right: 0;
+    position:relative;
+    /*height:20px;*/
+}
+
+.toggle-multiselect{
+	color: rgba(255,255,255,0.5);
+	padding-left: 8px;
+	height: 40px;
+    background-image: none !important;
+    vertical-align: middle;
+}
+
+.toggle-multiselect:hover{
+	color: rgba(255,255,255,1);
+}
+
+#filters-table{
+	width:initial;
+	float:left;
+	margin-right:30px;
+}
+	
+fieldset#filters td.field{
+	position:relative;
+	width:initial;
+	padding-right:30px;	
+}
+
+.add-filter{
+
+}	
+
+fieldset#filters tr.filter{
+	height:44px;
+}
+
+fieldset#filters td.values select {
+    border-radius: 4px;
+    vertical-align: middle;
+}	
+	
+
+/**********************************************************/
+/* BUTTONS */
+/**********************************************************/
+
+.query-columns .buttons input[type=button]{ 
+    font-family: 'zenmine';
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    margin: 4px 0;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 10px;
+    z-index: 2;
+    opacity: 1;
+    color: #BBBBBB;
+    padding:0;
+}
+
+.query-columns .buttons input[type=button]:hover{
+    background-color:#BBBBBB;
+    color:#FFFFFF;
+    cursor:pointer;
+}
+
+#new_user #user_admin,
+#project_inherit_members{
+    position: relative;
+    width: auto!important;
+    display: inline-block!important;
+}
+
+#activity_scope_form p:last-child:hover:before{
+    color:#555;
+}
+
+#activity_scope_form p{
+    position:relative;
+    margin:0;
+}
+
+/*.leftarrow::after{
+	font-family: 'zenmine';
+    font-size: 16px;
+    content: "\e843";
+    display: inline-block;
+    color: #ccc;
+    position: absolute;
+    bottom: 16px;
+    left: 12px;
+}
+
+.totop::before,
+.goup::before,
+.godown::before,
+.tobottom::before{
+	font-family: 'zenmine';
+    font-size: 16px;
+    display: inline-block;
+    color: #ccc;
+    position: absolute;
+    left: 11px;
+}*/
+
+body:not(.controller-gantts):not(.controller-activities):not(.controller-calendars) .previous,
+body:not(.controller-gantts):not(.controller-activities):not(.controller-calendars) .next{
+	font-size: 0;
+}
+.previous span::before,
+.next span::before,
+.previous a::before,
+.next a::before{
+	font-family: 'zenmine';
+	display:inline-block;
+	font-size: 1.5rem;
+}
+
+body:not(.controller-gantts):not(.controller-activities):not(.controller-calendars) .previous span::before,
+body:not(.controller-gantts):not(.controller-activities):not(.controller-calendars) .previous a::before{
+    content: "\e843";
+    position: relative;
+    top: 15px;
+}
+
+body:not(.controller-gantts):not(.controller-activities):not(.controller-calendars) .next span::before,
+body:not(.controller-gantts):not(.controller-activities):not(.controller-calendars) .next a::before{
+	content: "\e844";
+	position: relative;
+    top: 15px;
+}
+
+label[for=available_c],
+label[for=selected_c]{
+	/*position:absolute;*/
+	top:21px;
+}
+
+#selected_c option:last-child{
+	border:none;
+}
+
+input[type=submit],  input[type=submit] + a{
+	background-color: transparent;
+	padding: 12px 32px;
+	float: left;
+	cursor: pointer;
+}
+
+input[type=submit], input[type=submit] + a{
+	border-width: 2px;
+}
+
+form input[type=submit]:hover{
+	color: #fff;
+}
+
+input[type=submit]:hover{
+	background: #fff;
+}
+
+#issue-form input[type=submit], #issue-form input[type=submit] +  a + a, input[type=submit] + a{	
+    border:none;
+    vertical-align: middle;
+}
+
+/*#issue-form input[type=submit] +  a + a{
+	 float:left;
+	 border-width: 3px !important;
+}*/
+
+#sidebar input[type=submit], #sidebar input[type=submit] + a{
+	margin: 20px auto 0 auto;
+}
+
+#news-form input[type=submit] + a +a,  
+.icon.icon-preview,   
+.icon.icon-reply, 
+.icon.icon-helpdesk-reply, 
+.icon.icon-pdf, 
+.icon.icon-add-payment, 
+.icon-invoice-add-context, 
+.icon-order-add, .icon-order-add, 
+.contextual .icon-vote:not(.vote), 
+.contextual .icon-unvote:not(.vote), 
+#sidebar input[type="submit"] +  a, 
+.controller-wiki.action-show #wiki_form p a:nth-of-type(2),
+.icon.icon-email:not(.email):not(span), 
+#issue-form input[type="submit"] +  a + a, 
+.icon.icon-passwd, .icon.icon-duplicate, 
+.icon.icon-test, .icon.icon-summary,  
+body:not(.admin):not(.action-login):not(.action-register):not(.action-lost_password) input[type=submit], 
+.icon.icon-fullscreen, 
+.icon.icon-import, body:not(.controller-admin) #content .icon.icon-user:not(td):not(button), .icon.icon-email-add, 
+.icon.icon-lock, .icon.icon-del, .icon.icon-copy, body:not(.controller-projects) .icon.icon-fav, 
+body:not(.controller-projects) .icon.icon-fav-off, .icon.icon-time-add,  .icon.icon-edit, 
+body:not(.admin) .icon.icon-user:not(td):not(button), .icon.icon-add, body:not(.admin).icon.icon-lock, 
+.icon.icon-checked, .icon.icon-reload, .icon.icon-zoom-in, .icon.icon-zoom-out, .icon.icon-save, 
+fieldset input[type="submit"], admin fieldset #name,
+.ui-dialog-content.ui-widget-content input[type="submit"], .ui-dialog-content.ui-widget-content input[type="button"],
+.icon.icon-stats.btn.btn-sm.btn-primary,
+.icon.icon-move.btn.btn-sm.btn-outline-dark, .icon.icon-history.btn.btn-sm.btn-outline-dark,.icon-cancel.btn-outline-dark,
+.icon.icon-email-logs,
+.btn-sm.btn-outline-dark, .icon.icon-fav:not(.my-project), .icon.icon-fav-off:not(.my-project),
+.icon.bookmark,
+.icon-only.icon-add,
+#import-form button[type="submit"] {
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: 400;
+    text-decoration: none;
+    border:none;
+    background-image: none;
+    transition: color .2s ease-out;
+    margin-right: 2px;
+}
+
+.drdn-items a,
+.drdn-items a.icon.icon-del{
+    padding:11px!important;
+    border:none;
+}
+
+body:not(.admin):not(.action-login):not(.action-register):not(.action-lost_password) input[type=submit]{
+    float:none;
+}
+
+form fieldset input.small.btn.btn-sm.btn-primary,
+form fieldset .icon-reload{
+    margin-left:14px;
+}
+
+form fieldset .icon-reload{
+    position:relative;
+    padding:12px 22px!important
+}
+
+.icon-zoom-in,
+.icon-zoom-out{
+    margin-top:14px;
+}
+
+#project_modules .icon.icon-checked, #ajax-modal .icon.icon-checked{
+    background-color:transparent;
+}
+
+.new-issue::before {
+    display: inline-block;
+    font-family: 'zenmine' !important;
+    content: "\e8b1";
+    position: relative;
+    line-height: 0;
+    left: -5px;
+    font-size: 1.8rem;
+    margin-right: 5px;
+    vertical-align: sub;
+}
+
+body:not(.admin) input[type=submit] + a{
+    float:inherit;
+    border-radius: 4px;
+    text-decoration: none;
+    padding: 12px 20px;
+    background-color: rgba(167,167,167,0.15);
+    color: #999999;
+ }
+
+ body:not(.admin) input[type=submit] + a:hover{
+    background-color: #bbb;
+    color: #fff;
+ }
+ 
+.admin input[type=submit] + a{
+	 padding-top:10px;
+	 padding-bottom:10px;
+ }
+
+ #sidebar input[type=submit] + a{
+	border-color: #fff;
+	color:#fff;
+	float:left;
+	width: 68%;
+    text-align: center;
+    padding: 11px 20px;
+    margin-top: 10px;
+ }
+ 
+td .icon.icon-edit, td .icon.icon-del, td .icon.icon-copy, td .icon.icon-lock, td .icon.icon-test{
+	padding:0;
+	border:0;
+	letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.admin #content .icon.icon-user{
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+.admin.controller-users #content .icon.icon-user:hover{
+	border-color: #fff;
+	background-color: #fff;
+}
+
+.admin .icon.icon-lock, .admin .icon.icon-email-add,  .admin #content .icon.icon-user{
+	background:none;
+}
+
+/*body:not(.admin) #query_form_with_buttons .icon*/
+body:not(.admin) .icon.icon-checked, body:not(.admin) .icon.icon-reload, body:not(.admin) fieldset input[type=submit]{
+	padding: 12px 14px;
+}
+
+input[value="Apply"]{
+    width:auto!important;
+    float:none!important;
+    display:inline-block!important;
+}
+
+.icon.icon-reload.btn.btn-sm.btn-outline-dark{
+    float:none;
+    margin-left: 6px;
+}
+
+#tab-content-versions .icon-reload{
+    padding: 10px 14px!important;
+    margin:0;
+    background-color:#f7f7f7;
+}
+
+.action-settings .icon.icon-checked {
+    padding:0!important;
+    margin-right:5px;
+    background-color: transparent !important;
+}
+
+
+.icon.icon-save, .icon.icon-zoom-out, .icon.icon-zoom-in{
+	padding: 10px 20px;	
+}
+
+.icon.icon-checked:before, .icon.icon-reload:before, .icon.icon-save:before, .icon.icon-zoom-out:before, .icon.icon-zoom-in:before, #query_form_with_buttons .icon:before{
+	font-size: 1.5rem !important;
+}
+
+.icon-only.icon-checked::before{
+    /*display:none;*/
+}
+
+.sort-handle::before {
+    display: inline-block;
+    color: black;
+    font-size: 21px;
+    margin-right: 1.5rem;
+    opacity: 0.6;
+}
+
+.icon-only.icon-not-ok::after {
+    opacity: 0.6;
+}
+
+.sort-handle:hover:before {
+    opacity: 1;
+}
+
+.icon-only.icon-not-ok:hover:after {
+    opacity: 1;
+}
+
+.new-ordine{
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+}
+
+body.controller-workflows.action-edit form p a,
+body.controller-workflows.action-permissions form p a{
+    width: 6rem;
+    display: inline-block;
+}
+
+.contextual .icon.icon-del{
+    background-color: rgba(253, 57,122,0.15) !important;
+    color: #FD397A !important;
+}
+
+.contextual .icon.icon-del:hover{
+    background-color: #FD397A !important;
+    color: #FFFFFF !important;
+}
+
+.contextual .icon.icon-del:hover::before{
+    color: #FFFFFF !important;
+}
+
+.wiki_page-1-watcher.icon.icon-fav,
+.wiki_page-1-watcher.icon.icon-fav.btn.btn-sm.btn-outline-dark{
+    color:#fff!important;
+}
+
+/*.action-settings #tab-content-activities .icon.icon-del{
+    position:absolute;
+    right:0;
+    top:-1px;
+}*/
+
+.action-settings #tab-content-repositories,
+.action-settings #tab-content-activities .table{
+    margin-top:-16px;
+}
+
+.action-settings #tab-content-repositories .table{
+    padding-top:15px;
+}
+
+#replies .icon.icon-del{
+ background:transparent!important;
+ color: #FD397A !important;
+}
+
+#replies .icon.icon-edit{
+    background:transparent!important;
+    color:blue!important
+}
+
+.other-formats a.atom, .other-formats a.pdf, .other-formats a.csv, .other-formats a.png, .other-formats a.vcf, .other-formats a.xls, .other-formats a.txt, .other-formats a.html, .other-formats a.jpg, .other-formats a.jpeg {
+    background-image:none;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    border: 1px solid #999;
+    margin-right:4px;
+    color: #999 !important;
+}
+
+.other-formats a.atom:hover,.other-formats a.pdf:hover,.other-formats a.csv:hover, .other-formats a.png:hover, .other-formats a.vcf:hover, .other-formats a.xls:hover,.other-formats a.txt:hover,.other-formats a.html:hover,.other-formats a.jpg:hover,.other-formats a.jpeg:hover {
+    background-color: #999!important;
+    color:#FFFFFF !important;
+}
+ 
+.other-formats a.atom:before, .other-formats a.pdf:before,.other-formats a.csv:before,.other-formats a.png:before,.other-formats a.vcf:before, .other-formats a.xls:before,.other-formats a.txt:before, .other-formats a.html:before{
+	font-family: 'zenmine';
+	display:inline-block;
+	margin-right:7px;
+}
+
+.atom::before{
+	content: "\e923";
+}
+
+.csv::before,.pdf::before, .png::before, .vcf::before, .xls::before, .txt::before, .html::before {
+	content: "\e864";
+    font-family: Zenmine;
+}
+
+.other-formats span + span:before{
+	content:"";
+}
+
+.tag-label-color a{
+	color: rgba(255,255,255,0.8) !important;
+}
+
+.tag-label-color a:hover{
+	color: rgba(255,255,255,1) !important;
+}
+
+
+.admin form input[type=submit]:hover, .admin .icon.icon-copy:hover, .admin fieldset input[type=submit]:hover, .admin .icon.icon-add:hover,  .admin .icon.icon-summary:hover  {
+    background: #FFF !important;
+}
+
+.admin :not(.enabled_scm) td .icon:hover{
+	background: none !important;
+}
+
+
+span.add_attachment a, .icon-add-bullet{
+	background-image:none;
+}
+
+span.add_attachment a::before {
+    content: "+ ";
+    font-size: 1.8rem;
+}
+
+input#time_entry_comments{
+    width:initial;
+}
+
+#existing-attachments>span:first-child {
+    padding-top: 50px;
+}
+
+
+
+/**********************************************************/
+/* SELECTS */
+/**********************************************************/
+
+
+form .attributes select {
+    width: initial;
+}
+
+select[multiple] option:hover {
+    color: #333333;
+}
+
+
+
+select[multiple] option {
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 1.2rem;
+    border-bottom: 1px dotted #ccc;
+}
+
+select[multiple] > option:checked {
+  background: #ccc;
+}
+
+#quick-search select,
+.box.tabular select:not([multiple]), 
+#month, #year, .controller-search #scope,
+select#contacts_settings_invoices_template,
+select#contacts_settings_disable_taxes,
+select#helpdesk_answered_status,
+select#helpdesk_reopen_status,
+select#helpdesk_tracker,
+select#helpdesk_assigned_to,
+select#role_id,
+select#tracker_id,
+.commit-keywords select,
+#columns, #criterias, .contextual select, fieldset select:not([multiple]), .add-filter select, .values select:not([multiple]), .operator select, .admin fieldset #name, #project-jump .drdn-trigger{
+    font-size: 1.3rem;
+    padding: 10px 40px 10px 14px;    
+    outline:0px;
+	 appearance:none;
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none;	
+	cursor:pointer;
+	box-sizing: content-box;	
+	border-radius: 4px;
+    background-image: url(../images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: 96% center;
+    background-size: 18px;
+    background-color: transparent;
+}
+
+input.autocomplete{	
+	background:#fff;
+	border:0;
+	padding: 3px 0px 3px 0px !important; 
+	text-align:center;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+
+#issue_parent_issue_id, #issue_deals_issue_attributes_deal_id{
+	/*border:0;
+	background-color: #FFF;
+	color:initial;*/
+}
+
+#quick-search select, #project-jump .drdn-trigger, #block-select, #activity_scope_form #user_id {
+	position:relative;
+    background-repeat: no-repeat;
+    background-position: 94% center;
+    background-color: transparent;
+    padding: 7px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px!important;
+    color: #999!important;
+    line-height: 21px;
+}
+
+#project-jump .drdn-trigger::after, label[for=block-select]::after{
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    top: 0;
+    background: #fff;
+    padding: 10px 8px;
+}
+
+#project-jump:hover .drdn-trigger::after, label[for=block-select]::after {
+    color: #333333;
+}
+
+#block-form{
+    position:relative;
+}
+
+label[for=block-select]::after{
+    top:2px;
+    background:transparent;
+}
+
+#block-form label[for=block-select]::after{
+	content:"";
+}
+#block-form #block-select:hover{
+	color:#999;
+}
+
+body.controller-my #block-form{
+	display:initial;
+}
+
+.operator:hover:after, .add-filter:hover:after {
+    color: #333333;
+}
+
+.multiselectarrow::after{
+    top:38%!important;
+}
+
+.add-filter::after{
+	right: 3px;
+    top: 2px;
+}
+#operators_spent_on,
+.operator #operators_status_id,
+#month, #months, #year, #columns,
+#add_filter_select {
+    border: 1px solid #BBBBBB;
+    border-radius: 4px;
+    max-width: 100%!important;
+    text-transform: capitalize;
+    position:relative;
+    z-index:2;
+}
+ 
+#months{
+	cursor:auto;
+    background-color: transparent;
+	text-align: center;
+    font-size:1.3rem;
+}
+
+input#months{
+    min-width: 40px;
+    height: 40px;
+}
+
+.contextual select option {
+	padding: 6px;
+	color: #666;
+    font-weight:bold;
+}
+
+.contextual select option:disabled {
+	color: rgba(31, 30, 30, 0.5);
+}
+
+.contextual select option:hover {
+}
+
+select:focus{
+	outline: none;
+}
+
+form label{
+    font-size: 1.3rem;
+    margin-right:5px;
+    margin-bottom:5px;
+}
+
+#block-form label{
+    position:initial;
+}
+
+#sidebar form label{
+    padding-bottom: 0;
+    height:32px;
+    margin:0;
+}
+
+#block-select{
+	margin-left: 6px;
+}
+
+#available_c, #selected_c{
+	padding: 0;
+	height: 150px;
+	border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.select2-dropdown {
+    background-color: #f9f9f9 !important;
+}
+
+/**********************************************************/
+/* TABS */
+/**********************************************************/
+
+#content .tabs{
+	padding-top: 14px;
+	clear: both;
+    height: 38px;
+}
+
+.tabs *{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}
+
+#content .jstTabs.tabs {
+    margin-bottom: -1px;
+    overflow: hidden;
+}
+
+#content .tabs ul li a.selected, #content .tabs ul li a {
+	border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-bottom: 1px solid #f7f7f7;
+    font-size: 1.2rem;
+    font-weight:500;
+}
+
+#content .tabs ul li a.selected{
+    background-color:#F7F7F7;
+    padding: 11px 19px 12px 19px !important;
+}
+
+#content .tabs ul li{
+	margin-bottom: 0;
+	background: none;
+    margin-right:0;
+}
+
+#content .tabs ul li a{
+	padding: 12px 20px 11px 20px !important;
+	background:transparent;
+	color: #666;
+	border-radius: 3px 3px 0 0;
+	border: 0;	
+}
+
+#content .tabs ul li a:hover{
+	background-color: #bbbbbb !important;
+    color:#FFFFFF;
+}
+
+.admin #content .tabs ul li a:not(.selected){
+	background: #ececec;
+}
+
+.admin #content .tabs ul li a:not(.selected):hover{
+	background: #e0e0e0;
+}
+
+#content .tabs ul {
+    padding: 0;
+	width: 100%;
+}
+
+
+/**********************************************************/
+/* DROP FILES */
+/**********************************************************/
+
+input.file_selector.filedrop {
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	padding: 30px;
+	text-align: center;
+	line-height: 10px;
+	background-color: rgba(255,255,255,0.5);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 50%;
+    display: block;
+}
+
+
+/**********************************************************/
+/* CHECKBOXES */
+/**********************************************************/
+
+#activity_scope_form label{
+    padding:0!important;
+}
+
+#sidebar ul li input{
+    margin-right:0;
+}
+
+.controller-versions #sidebar ul li{
+	display: -webkit-inline-box;
+	min-height: 25px;
+}
+
+
+/**********************************************************/
+/* TABLES */
+/**********************************************************/
+
+#options .table tr{
+    padding:4px 0;
+}
+
+#options .query-columns span select{
+	width: 200px;
+	height:190px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/**********************************************************/
+/* QUERYS */
+/**********************************************************/
+
+@media all and (min-width : 1425px){
+
+    #context-menu{
+        /*margin-left: -20%;*/
+     /* margin-left: -20%;*/
+      /*margin-top: -230px;*/
+    }
+    
+}
+
+@media all and (max-width : 1424px){
+
+    #context-menu{
+        /*margin-left: -20%;*/
+      /*margin-left: -230px;*/
+      /*margin-top: -230px;*/
+    }
+    
+}

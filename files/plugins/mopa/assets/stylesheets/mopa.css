@@ -1,0 +1,7 @@
+tr.filaIncorrecta {
+    color: red;
+}
+
+tr.filaCorrecta {
+    color: green;
+}

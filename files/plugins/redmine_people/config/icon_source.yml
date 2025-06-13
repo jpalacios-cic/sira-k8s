@@ -1,0 +1,28 @@
+# This file is used by icons rake task to download SVG icons from Tabler
+# Keys description:
+#   - name: destination icon name
+#     svg: source icon name from Github repository
+#     style: outline (default) or filled
+
+- name: cake
+  svg: cake
+- name: email
+  svg: mail
+- name: facebook
+  svg: brand-facebook
+- name: linkedin
+  svg: brand-linkedin
+- name: money
+  svg: cash-banknote
+- name: person
+  svg: user
+- name: phone
+  svg: phone
+- name: skype
+  svg: brand-skype
+- name: telephone
+  svg: device-landline-phone
+- name: twitter
+  svg: brand-twitter
+- name: user-suit
+  svg: tie

@@ -1,0 +1,20 @@
+# German strings go here for Rails i18n
+de:
+  field_go_to: Zum Modul
+  label_favorite_projects: Favorisierte Projekte
+  button_projects_edit_query: Abfrage bearbeiten
+  button_projects_delete_query: Abfrage löschen
+  permission_manage_public_favorite_project_queries: Öffentliche favorisierte Projekte bearbeiten
+  permission_manage_favorite_project_queries: Abfragen für favorisierte Projekte bearbeiten
+  label_members: Mitglieder
+  label_favorite_project_default_list_style: Standardlistenstil
+  label_favorite_project_list_partial_style: Listenstil
+  label_favorite_project_list_cards: Kacheln
+  label_favorite_project_list_list: Tabelle
+  label_favorite_project_tags_plural: Markierungen
+  label_favorite_project_edit_tags: Markierungen bearbeiten
+  label_favorite_project_add_tag: "+ Markierung hinzufügen"
+  label_favorite_project_overall_activity: Aktivitäten aller Projekte anzeigen
+  label_favorite_project_overall_spent_time: Aufgewendete Zeit aller Projekte anzeigen
+
+  field_tags: Markierungen

@@ -1,0 +1,43 @@
+people_queries_001:
+  id: 1
+  visibility: 2
+  type: PeopleQuery
+  name: Public query 1
+  filters: |
+    ---
+    firstname:
+      :values:
+      - "Ivan"
+      :operator: "="
+    lastname:
+      :values:
+      - "Ivanov"
+      :operator: "="
+
+  user_id: 1
+people_queries_002:
+  id: 2
+  visibility: 2
+  type: PeopleQuery
+  name: Private query 2
+  filters: |
+    ---
+    firstname:
+      :values:
+      - "Ivan"
+      :operator: "="
+
+  user_id: 4
+people_queries_003:
+  id: 3
+  visibility: 0
+  type: PeopleQuery
+  name: Private query 3
+  filters: |
+    ---
+    firstname:
+      :values:
+      - "Ivan"
+      :operator: "="
+
+  user_id: 4
