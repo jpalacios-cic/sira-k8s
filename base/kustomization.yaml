@@ -1,0 +1,19 @@
+namespace: sira
+
+resources:
+  - deployment.yaml
+  - service.yaml
+  - ingress.yaml
+  - configmap.yaml
+  - secret.yaml
+  - sira-data-pvc.yaml
+  - harbor-registry-secret.yaml
+
+
+patches:
+  - patch: |-
+      - op: replace
+        path: /spec/storageClassName
+        value: nfs-csi
+    target:
+      kind: PersistentVolumeClaim
