@@ -10,7 +10,7 @@ pipeline {
 
     stages {
         stage('Docker build + push') {
-            when { anyOf { branch 'master'; branch 'develop' } }
+            when { anyOf { branch 'main'; branch 'develop' } }
             steps {
                 script {
                     def config = readJSON file: 'config.json'
