@@ -23,11 +23,11 @@ pipeline {
                         dockerFolder += '-dev'
                     }
 
-                    //def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
+                    def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
                     echo "Haria build de la imagen ${dockerFolder}/${dockerName}:${config.version}${dockerBranch}"
                     // image.push()
                     echo "Haria push de la imagen ${dockerFolder}/${dockerName}:${config.version}${dockerBranch} al registro ${env.DOCKER_REGISTRY}"
-                    // sh "docker rmi ${image.id}"
+                    sh "docker rmi ${image.id}"
                     echo "docker rmi ${image.id}"
 
                     // docker.withRegistry('https://'+env.DOCKER_REGISTRY, env.DOCKER_REGISTRY_USER) {
