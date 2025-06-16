@@ -9,6 +9,17 @@ pipeline {
     }
 
     stages {
+        stage('Debug Environment') {
+            steps {
+                script {
+                    echo "Current workspace: ${env.WORKSPACE}"
+                    echo "Current branch: ${env.BRANCH_NAME}"
+                    echo "Docker registry: ${env.DOCKER_REGISTRY}"
+                    echo "Docker registry user: ${env.DOCKER_REGISTRY_USER}"
+                    echo "Docker folder: ${env.DOCKER_FOLDER}"
+                }
+            }
+        }
         stage('Docker build + push') {
             when { anyOf { branch 'main'; branch 'develop' } }
             steps {
