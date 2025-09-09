@@ -23,18 +23,18 @@ pipeline {
                         dockerFolder += '-dev'
                     }
 
-                    def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
-                    echo "Haria build de la imagen ${dockerFolder}/${dockerName}:${config.version}${dockerBranch}"
-                    // image.push()
-                    echo "Haria push de la imagen ${dockerFolder}/${dockerName}:${config.version}${dockerBranch} al registro ${env.DOCKER_REGISTRY}"
-                    sh "docker rmi ${image.id}"
-                    echo "docker rmi ${image.id}"
+                    // def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
+                    // echo "Haria build de la imagen ${dockerFolder}/${dockerName}:${config.version}${dockerBranch}"
+                    // // image.push()
+                    // echo "Haria push de la imagen ${dockerFolder}/${dockerName}:${config.version}${dockerBranch} al registro ${env.DOCKER_REGISTRY}"
+                    // sh "docker rmi ${image.id}"
+                    // echo "docker rmi ${image.id}"
 
-                    // docker.withRegistry('https://'+env.DOCKER_REGISTRY, env.DOCKER_REGISTRY_USER) {
-                    //     def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
-                    //     image.push()
-                    //     sh "docker rmi ${image.id}"
-                    // }
+                    docker.withRegistry('https://'+env.DOCKER_REGISTRY, env.DOCKER_REGISTRY_USER) {
+                        def image = docker.build("${dockerFolder}/${dockerName}:${config.version}${dockerBranch}")
+                        image.push()
+                        sh "docker rmi ${image.id}"
+                    }
                 } 
             }
         }
@@ -42,6 +42,11 @@ pipeline {
 			steps {
 				withCredentials([file(credentialsId: 'kubeconfig', variable: 'KUBECONFIG')]) {
 					script {
+                        def config = readJSON file: 'config.json'
+                        def dockerName = config.imageName
+                        def dockerFolder = env.DOCKER_FOLDER
+                        def dockerBranch = ""
+
 						// Actualiza el deployment de Kubernetes con la nueva imagen (si el kubeconfig está en ~/.kube/config, no es necesario especificar la ruta)
 						// sh "kubectl --kubeconfig=${KUBECONFIG} -n mopa set image deployment/sira-dev sira-dev=${env.DOCKER_REGISTRY}/${env.DOCKER_FOLDER}/${dockerName}:${config.version}${dockerBranch}"
 						// sh "kubectl --kubeconfig=${KUBECONFIG} -n mopa rollout restart deployment/sira-dev"
